@@ -1,0 +1,32 @@
+body {
+    color: #ffffff;
+    padding: 0;
+    margin: 0 0;
+    background-color: rgb(41, 41, 41);
+    background-size: 100%;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{ text-decoration: underline;}
+.app_wrapper{
+        display: inline-grid;
+        grid-template-rows: 40px auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "Header"
+                "Content"
+                "Footer";
+    margin: 0;
+    width: 100%;
+}
+/*for float*/
+.clearFix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.Content{
+    grid-area: Content;
+}

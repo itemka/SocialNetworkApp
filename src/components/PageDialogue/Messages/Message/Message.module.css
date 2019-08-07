@@ -1,0 +1,32 @@
+.Message{
+    padding: 10px 0 10px 20px;
+    margin-bottom: 10px;
+    /*background-color: lightsalmon;*/
+}
+.Message img{
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+}
+.dataMessage{
+    float: left;
+    margin-left: 0px;
+    /*background-color: cadetblue;*/
+    /*background-color: rgba(56, 98, 34, 1);*/
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    /*border: 1px solid dimgray;*/
+}
+.nameMenMessage{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.textMessage{
+    /*background-color: darkkhaki;*/
+    background-color: rgba(41, 41, 41, 0.8);
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid dimgray;
+}

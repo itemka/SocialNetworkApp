@@ -1,0 +1,28 @@
+.ProfileInfo{
+    margin: 60px 0 0 60px;
+    display: inline-grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+            "ProfileInfo_img listProfileInfo";
+    grid-gap: 10px;
+    width: 40%;
+}
+.ProfileInfo img{
+    width: 100%;
+    grid-area: ProfileInfo_img;
+    width: 100%;
+                                        box-shadow:
+                                                0 1px 4px rgba(0, 0, 0, .3),
+                                                -23px 0 20px -23px rgba(0, 0, 0, .8),
+                                                23px 0 20px -23px rgba(0, 0, 0, .8),
+                                                0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.listProfileInfo{
+    grid-area: listProfileInfo;
+}
+.nameProfile{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

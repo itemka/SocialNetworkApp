@@ -1,0 +1,6 @@
+.Footer{
+    background-color: #343434;
+    grid-area: Footer;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}

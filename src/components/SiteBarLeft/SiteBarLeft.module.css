@@ -1,0 +1,23 @@
+.SiteBarLeft{
+    grid-area: SiteBarLeft;
+    height: 300px;
+    width: 200px;
+    border-radius: 3px;
+    background-color: rgba(66, 66, 66, 0.9);
+    margin: 10px 0 0 120px;
+                                            box-shadow:
+                                                    0 1px 4px rgba(0, 0, 0, .3),
+                                                    -23px 0 20px -23px rgba(0, 0, 0, .8),
+                                                    23px 0 20px -23px rgba(0, 0, 0, .8),
+                                                    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.item{
+    padding: 10px 0 10px 20px;
+}
+.item:hover {
+    background-color: rgba(7, 141, 205,0.5);
+    text-decoration: underline;
+}
+.item a.active{
+    background-color: orange;
+}

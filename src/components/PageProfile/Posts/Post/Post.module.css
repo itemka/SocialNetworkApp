@@ -1,0 +1,29 @@
+.Post{
+    background-color: rgba(66, 66, 66,0.8);
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 60px auto;
+        grid-template-areas:
+                "imgPost dataPost"
+                ". likePost";
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.Post img{
+    great-area: imgPost;
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+}
+.dataPost{
+    grid-area: dataPost;
+    float: left;
+    margin-left: 20px;
+}
+.likePost{
+    grid-area: likePost;
+    text-align: right;
+}

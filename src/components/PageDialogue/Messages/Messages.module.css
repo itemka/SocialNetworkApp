@@ -1,0 +1,7 @@
+.Messages{
+    grid-area: Messages;
+    overflow-y: scroll; /*for scroll*/
+    /*background-color: lightsalmon;*/
+    background: url("https://bankoboev.ru/storage/fon/bankoboev.ru-5441.jpg");
+    /*background-color: rgba(41, 41, 41,0.4);*/
+}
