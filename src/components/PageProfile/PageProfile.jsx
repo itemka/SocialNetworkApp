@@ -12,7 +12,8 @@ const PageProfile = (props) => {
 
             <CoverWithProfileInfo profiles={props.pageProfile.profiles}/>
             <SiteBarLeft siteBarLeft={props.siteBar.siteBarLeft}/>
-            <Posts posts={props.pageProfile.posts} profiles={props.pageProfile.profiles}/>
+            <Posts posts={props.pageProfile.posts} profiles={props.pageProfile.profiles}
+                   functionToProcessingState={props.functionToProcessingState}/>
             <SiteBarRight profiles={props.pageProfile.profiles}/>
 
         </div>

@@ -5,17 +5,14 @@ import Post from "./Post/Post";
 import PropTypes from 'prop-types';
 
 const Posts = (props) => {
-    let reversePosts = props.posts.reverse();
-    let post = reversePosts.map(item => <Post
-        id={item.id}
-        text={item.text}
-        like={item.like}
-        photoProfile={props.profiles[0].photoProfile}
+    // let reversePosts = props.posts.reverse();
+    let post = props.posts.map(item => <Post id={item.id} text={item.text} like={item.like}
+                                             photoProfile={props.profiles[0].photoProfile}
     />);
     return (
         <div className={css.Posts}>
 
-            <PublishPost/>
+            <PublishPost functionToProcessingState={props.functionToProcessingState}/>
 
             <div className={css.listPosts}>
                 <div className={css.nameListPosts}>My posts</div>
@@ -37,7 +34,7 @@ Posts.protoTypes = {
         }).isRequired,
     ).isRequired,
     profiles: PropTypes.arrayOf({
-            photoProfile: PropTypes.string.isRequired,
+        photoProfile: PropTypes.string.isRequired,
     }).isRequired,
 };
 

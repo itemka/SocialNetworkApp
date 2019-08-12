@@ -14,7 +14,8 @@ const App = (props) => {
                 <Header/>
                 <div className={'Content'}>
                     <Route path='/profile' render={() => <PageProfile pageProfile={props.state.pageProfile}
-                                                                      siteBar={props.state.siteBar}/>}/>
+                                                                      siteBar={props.state.siteBar}
+                                                                      functionToProcessingState={props.state.functionToProcessingState}/>}/>
                     <Route path='/messages' render={() => <PageDialogue pageProfile={props.state.pageProfile}
                                                                         pageDialogue={props.state.pageDialogue}
                                                                         siteBar={props.state.siteBar}/>}/>
@@ -26,7 +27,7 @@ const App = (props) => {
 };
 
 App.propTypes = {
-    pageProfile : PropTypes.shape({
+    pageProfile: PropTypes.shape({
         profiles: PropTypes.array.isRequired,
         posts: PropTypes.array.isRequired,
     }).isRequired,

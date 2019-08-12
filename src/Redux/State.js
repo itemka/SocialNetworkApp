@@ -92,27 +92,10 @@ const state = {
                 photoProfile: 'https://media.gettyimages.com/photos/beautiful-woman-with-natural-makeup-picture-id897056188?s=612x612',
             }
         ],
+        newPost: '',
         posts: [
-            {
-                id: 1,
-                text: 'It is new Application!',
-                like: '1001',
-            },
-            {
-                id: 2,
-                text: 'hi',
-                like: '354',
-            },
-            {
-                id: 3,
-                text: 'avfbsrsdafdgbvrtf',
-                like: '10',
-            },
-            {
-                id: 4,
-                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-                like: '123456',
-            }
+            { id: 2, text: 'It is new Application!', like: '2', },
+            { id: 1, text: 'hi', like: '1', },
         ],
     },
     pageDialogue: {
@@ -135,19 +118,36 @@ const state = {
             },
         ],
     },
-    siteBar:{
-        siteBarLeft:{
-            listPages:[
-                { id: 1, page: 'My Page', path: 'profile',},
-                { id: 2, page: 'Messages', path: 'messages', },
-                { id: 3, page: 'News', path: 'news', },
-                { id: 4, page: 'Music', path: 'music', },
-                { id: 5, page: 'Settings', path: 'settings', },
+    siteBar: {
+        siteBarLeft: {
+            listPages: [
+                {id: 1, page: 'My Page', path: 'profile',},
+                {id: 2, page: 'Messages', path: 'messages',},
+                {id: 3, page: 'News', path: 'news',},
+                {id: 4, page: 'Music', path: 'music',},
+                {id: 5, page: 'Settings', path: 'settings',},
             ],
         },
-        siteBarRight:{
+        siteBarRight: {}
+    },
+    functionToProcessingState: {
 
+        renderSocialNetwork: () => '',
+        renderAll: (item) => state.functionToProcessingState.renderSocialNetwork = item,
+
+        onChangeAddPost: item => {
+            state.pageProfile.newPost = item;
+            console.log(state.pageProfile.newPost);
+        },
+
+        onClickButtonAddPost: () => {
+            let newPost = {id: state.pageProfile.posts.length + 1, text: state.pageProfile.newPost, like: `${state.pageProfile.posts.length + 1}`};
+            let newPosts = [newPost, ...state.pageProfile.posts];
+            console.log(newPosts);
+            state.pageProfile.posts = newPosts;
+            state.functionToProcessingState.renderSocialNetwork(state);
         }
+
     },
 };
 
