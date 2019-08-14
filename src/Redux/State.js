@@ -96,8 +96,8 @@ const state = {
         ],
         newPost: '',
         posts: [
-            { id: 2, text: 'It is new Application!', like: '2', },
-            { id: 1, text: 'hi', like: '1', },
+            {id: 2, text: 'It is new Application!', like: '2',},
+            {id: 1, text: 'hi', like: '1',},
         ],
     },
     pageDialogue: {
@@ -123,47 +123,55 @@ const state = {
                 {id: 5, page: 'Settings', path: 'settings',},
             ],
         },
-        siteBarRight: {
-
-        }
+        siteBarRight: {}
     },
 };
 
 export const dataFunctions = {
 
-        renderSocialNetwork: () => '',
-        renderAll: (item) => dataFunctions.renderSocialNetwork = item,
+    renderSocialNetwork: () => '',
+    renderAll: (item) => dataFunctions.renderSocialNetwork = item,
 
 
-        onChangeAddPost: item => {
-            state.pageProfile.newPost = item;
-            console.log(state.pageProfile.newPost);
-            dataFunctions.renderSocialNetwork(state);
-        },
-        onClickButtonAddPost: () => {
-            let newPost = {id: state.pageProfile.posts.length + 1, text: state.pageProfile.newPost, like: `${state.pageProfile.posts.length + 1}`};
+    onChangeAddPost: item => {
+        state.pageProfile.newPost = item;
+        console.log(state.pageProfile.newPost);
+        dataFunctions.renderSocialNetwork(state);
+    },
+    onClickButtonAddPost: () => {
+        if (state.pageDialogue.newMessages !== '') {
+            let newPost = {
+                id: state.pageProfile.posts.length + 1,
+                text: state.pageProfile.newPost,
+                like: `${state.pageProfile.posts.length + 1}`
+            };
             let newPosts = [newPost, ...state.pageProfile.posts];
             console.log(newPosts);
             state.pageProfile.posts = newPosts;
+            state.pageProfile.newPost = '';
             dataFunctions.renderSocialNetwork(state);
-        },
+        }
+    },
 
 
-        onChangeAddMessage: item => {
-            state.pageDialogue.newMessages = item;
-            console.log(state.pageDialogue.newMessages);
-            dataFunctions.renderSocialNetwork(state);
-        },
-        onClickButtonAddMessages: () => {
-            let newMessage =  {
-                    id: state.pageDialogue.messages.length+1,
-                    message: state.pageDialogue.newMessages,
-                };
+    onChangeAddMessage: item => {
+        state.pageDialogue.newMessages = item;
+        console.log(state.pageDialogue.newMessages);
+        dataFunctions.renderSocialNetwork(state);
+    },
+    onClickButtonAddMessages: () => {
+        if (state.pageProfile.newPost !== '') {
+            let newMessage = {
+                id: state.pageDialogue.messages.length + 1,
+                message: state.pageDialogue.newMessages,
+            };
             let newMessages = [...state.pageDialogue.messages, newMessage];
             console.log(newMessages);
             state.pageDialogue.messages = newMessages;
+            state.pageDialogue.newMessages = '';
             dataFunctions.renderSocialNetwork(state);
-        },
+        }
+    },
 };
 
 export default state;

@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/Dialogues/Dialogues.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/Dialogues/Dialogues.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/Messages/Messages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/Messages/Messages.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/Messages/Message/Message.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/Messages/Message/Message.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/SiteBarRight.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/SiteBarRight.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +69,7 @@
       <workItem from="1565459883553" duration="307000" />
       <workItem from="1565460528071" duration="15181000" />
       <workItem from="1565629512415" duration="104000" />
-      <workItem from="1565814347232" duration="4760000" />
+      <workItem from="1565814347232" duration="7136000" />
     </task>
     <servers />
   </component>

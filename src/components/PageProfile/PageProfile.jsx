@@ -12,7 +12,7 @@ const PageProfile = (props) => {
 
             <CoverWithProfileInfo profiles={props.pageProfile.profiles}/>
             <SiteBarLeft siteBarLeft={props.siteBar.siteBarLeft}/>
-            <Posts posts={props.pageProfile.posts} profiles={props.pageProfile.profiles}
+            <Posts posts={props.pageProfile.posts} newPost={props.pageProfile.newPost} profiles={props.pageProfile.profiles}
                    dataFunctions={props.dataFunctions}/>
             <SiteBarRight profiles={props.pageProfile.profiles}/>
 
