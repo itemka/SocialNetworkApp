@@ -12,7 +12,7 @@ const Posts = (props) => {
     return (
         <div className={css.Posts}>
 
-            <PublishPost functionToProcessingState={props.functionToProcessingState}/>
+            <PublishPost dataFunctions={props.dataFunctions}/>
 
             <div className={css.listPosts}>
                 <div className={css.nameListPosts}>My posts</div>

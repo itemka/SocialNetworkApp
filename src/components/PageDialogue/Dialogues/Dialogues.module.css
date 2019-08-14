@@ -1,6 +1,6 @@
 .Dialogues{
     grid-area: Dialogues;
     overflow-y: scroll; /*for scroll*/
-    border-right: 1px solid rgb(41, 41, 41);
+    border-right: 1px solid #2bcabc;
     /*background-color: cadetblue;*/
 }

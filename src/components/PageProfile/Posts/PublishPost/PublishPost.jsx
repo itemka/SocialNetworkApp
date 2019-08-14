@@ -8,11 +8,11 @@ const PublishPost = (props) => {
 
     return (
         <div className={`${css.PublishPost} clearFix`}>
-            <textarea ref={ref} onChange={()=>props.functionToProcessingState.onChangeAddPost(ref.current.value)}
+            <textarea ref={ref} onChange={()=>props.dataFunctions.onChangeAddPost(ref.current.value)}
                       rows={3} className={css.inputPost}
                       placeholder={'your news!'}/>
             <button className={css.buttonSendPost}
-                    onClick={() => props.functionToProcessingState.onClickButtonAddPost()}>Send post
+                    onClick={() => props.dataFunctions.onClickButtonAddPost()}>Send post
             </button>
 
         </div>

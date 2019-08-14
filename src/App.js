@@ -15,12 +15,13 @@ const App = (props) => {
                 <div className={'Content'}>
                     <Route path='/profile' render={() => <PageProfile pageProfile={props.state.pageProfile}
                                                                       siteBar={props.state.siteBar}
-                                                                      functionToProcessingState={props.state.functionToProcessingState}/>}/>
+                                                                      dataFunctions={props.dataFunctions}/>}/>
                     <Route path='/messages' render={() => <PageDialogue pageProfile={props.state.pageProfile}
                                                                         pageDialogue={props.state.pageDialogue}
-                                                                        siteBar={props.state.siteBar}/>}/>
+                                                                        siteBar={props.state.siteBar}
+                                                                        dataFunctions={props.dataFunctions}/>}/>
                 </div>
-                <Footer/>
+                {/*<Footer/>*/}
             </div>
         </BrowserRouter>
     );

@@ -3,9 +3,9 @@ import css from './PageDialogue.module.css';
 import SiteBarLeft from "../SiteBarLeft/SiteBarLeft";
 import Dialogues from "./Dialogues/Dialogues";
 import Messages from "./Messages/Messages";
-import PublishPost from "../PageProfile/Posts/PublishPost/PublishPost";
 // import {Route} from "react-router-dom";
 import PropTypes from 'prop-types';
+import SendMessages from "./SendMessages/SendMessages";
 
 const PageDialogue = (props) => {
     return (
@@ -18,8 +18,9 @@ const PageDialogue = (props) => {
                 <div className={css.DialoguesWithMessages}>
 
                     <Dialogues profiles={props.pageProfile.profiles}/>
-                    <Messages messages={props.pageDialogue.messages} profiles={props.pageProfile.profiles}/>
-                    <PublishPost/>
+                    <Messages messages={props.pageDialogue.messages}
+                              profiles={props.pageProfile.profiles}/>
+                    <SendMessages pageDialogue={props.pageDialogue} dataFunctions={props.dataFunctions}/>
 
                 </div>
             </div>
