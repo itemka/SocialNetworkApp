@@ -16,12 +16,12 @@ const SendMessages = (props) => {
     return (
         <div className={`${css.SendMessages} clearFix`}>
             <textarea ref={refSendMessage}
-                      onChange={() => props.dataFunctions.onChangeAddMessage(refSendMessage.current.value)}
+                      onChange={props.dataFunctions.onChangeAddMessage(refSendMessage.current.value)}
                       rows={2} className={css.inputMessages}
                       placeholder={'Enter Messages Text...'} value={props.pageDialogue.newMessages}
                       onKeyPress={onKeyPress}/>
             <button className={css.buttonSendMessages}
-                    onClick={() => props.dataFunctions.onClickButtonAddMessages()}>
+                    onClick={props.dataFunctions.onClickButtonAddMessages()}>
                 Send
             </button>
 
