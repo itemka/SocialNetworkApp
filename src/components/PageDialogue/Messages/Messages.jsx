@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Messages.module.css';
 import Message from "./Message/Message";
 // import {Route} from "react-router-dom";
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Messages = (props) => {
 
@@ -15,24 +15,24 @@ const Messages = (props) => {
 
     return (
         <div className={css.Messages}>
-            {messages}
+                {messages}
         </div>
     );
 };
 
-// Messages.propTypes = {
-//     messages: PropTypes.arrayOf(
-//         PropTypes.shape({
-//             id: PropTypes.number.isRequired,
-//             message: PropTypes.string.isRequired,
-//         }).isRequired,
-//     ).isRequired,
-//
-//     profiles: PropTypes.arrayOf({
-//         idProfile: PropTypes.number.isRequired,
-//         nameProfile: PropTypes.string.isRequired,
-//         photoProfile: PropTypes.string.isRequired,
-//     }).isRequired,
-// };
+Messages.propTypes = {
+    messages: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            message: PropTypes.string.isRequired,
+        }).isRequired,
+    ).isRequired,
+
+    profiles: PropTypes.arrayOf({
+        idProfile: PropTypes.number.isRequired,
+        nameProfile: PropTypes.string.isRequired,
+        photoProfile: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
 export default Messages;
