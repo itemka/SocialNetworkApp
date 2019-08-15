@@ -4,24 +4,17 @@ import css from './SendMessages.module.css';
 
 const SendMessages = (props) => {
 
-    let refSendMessage = React.createRef();
-
-    let onKeyPress = e => {
-        if (e.key === "Enter") {
-            if (props.pageDialogue.newMessages !== '')
-                props.dataFunctions.onClickButtonAddMessages();
-        }
-    };
+    let link = React.createRef();
 
     return (
         <div className={`${css.SendMessages} clearFix`}>
-            <textarea ref={refSendMessage}
-                      onChange={props.dataFunctions.onChangeAddMessage(refSendMessage.current.value)}
+            <textarea ref={link}
+                      onChange={() => props.dataFunctions.onChangeAddMessage(link.current.value)}
                       rows={2} className={css.inputMessages}
-                      placeholder={'Enter Messages Text...'} value={props.pageDialogue.newMessages}
-                      onKeyPress={onKeyPress}/>
+                      placeholder={'Enter Messages Text...'}
+                      value={props.pageDialogue.newMessages}/>
             <button className={css.buttonSendMessages}
-                    onClick={props.dataFunctions.onClickButtonAddMessages()}>
+                    onClick={() => props.dataFunctions.onClickButtonAddMessages()}>
                 Send
             </button>
 

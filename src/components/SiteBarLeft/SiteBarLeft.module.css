@@ -5,7 +5,7 @@
     border-radius: 3px;
     background-color: rgba(66, 66, 66, 0.9);
     margin: 10px 0 0 120px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 .item{
     padding: 10px 0 10px 20px;

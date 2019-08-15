@@ -1,5 +1,3 @@
-import React from 'react';
-
 const state = {
     pageProfile: {
         profiles: [
@@ -19,7 +17,7 @@ const state = {
                 education: 'BNTU2',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://www.optix.su/blog/wp-content/uploads/2018/06/toni-stark-v-mstiteljah-jera-altrona.png',
+                photoProfile: 'https://www.beuwatches.com/wp-content/uploads/2019/06/1080x1080-solid6atm-lisa.jpg',
             },
             {
                 id: 3,
@@ -28,7 +26,7 @@ const state = {
                 education: 'BNTU3',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://www.filmjuice.com/wp-content/uploads/2013/06/BlingRingWatson1a.jpg',
+                photoProfile: 'https://i.pinimg.com/originals/0b/a9/e4/0ba9e4af9f7ac7439a9ccece4ac14474.jpg',
             },
             {
                 id: 4,
@@ -37,7 +35,7 @@ const state = {
                 education: 'BNTU4',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'http://i42-cdn.woman.ru/images/gallery/d/a/p_19547_da11d77fa795a547433d3a6805970f43_2_800x600.jpg?02',
+                photoProfile: 'http://sovetskaya-adygeya.ru/images/thumbnails/images/%D0%BF%D1%80%D0%B8%D1%8E%D1%82_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8_%D1%82%D0%B5%D1%80%D0%B5%D0%B7%D1%8B-fill-1080x1080.jpg',
             },
             {
                 id: 5,
@@ -46,7 +44,7 @@ const state = {
                 education: 'BNTU5',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://mediaassets.kxlf.com/cordillera-network/wp-content/uploads/sites/8/2019/07/31201827/Hoffman-Cluchey.jpeg',
+                photoProfile: 'https://www.wmj.ru/imgs/2019/07/28/11/3470077/3ef02c93cb0cb839ecef5d1ddb1ab6a44a05ddef.jpg',
             },
             {
                 id: 6,
@@ -55,7 +53,7 @@ const state = {
                 education: 'BNTU6',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'http://gazeta-smedvedkovo.ru/wp-content/uploads/2019/07/SMtreningRR.jpg',
+                photoProfile: 'https://wallpaperaccess.com/full/652551.jpg',
             },
             {
                 id: 7,
@@ -64,7 +62,7 @@ const state = {
                 education: 'BNTU7',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://media.gettyimages.com/photos/beautiful-woman-with-makeup-picture-id872604744?s=612x612',
+                photoProfile: 'https://www.jetmag.com/wp-content/uploads/2017/05/image.png',
             },
             {
                 id: 8,
@@ -73,7 +71,7 @@ const state = {
                 education: 'BNTU8',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://www.essence.com/wp-content/uploads/2012/06/images/2012/06/21/happy-woman-2.jpg',
+                photoProfile: 'http://inm-baobab-prod-eu-west-1.s3.amazonaws.com/public/inm/media/image/2017/06/14/41093604187219511286829777008754791246575164719104n.jpg',
             },
             {
                 id: 9,
@@ -82,7 +80,7 @@ const state = {
                 education: 'BNTU9',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://images.unsplash.com/photo-1524638431109-93d95c968f03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+                photoProfile: 'https://avatarfiles.alphacoders.com/115/thumb-115925.jpg',
             },
             {
                 id: 10,
@@ -91,7 +89,7 @@ const state = {
                 education: 'BNTU10',
                 city: 'Minsk',
                 webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
-                photoProfile: 'https://media.gettyimages.com/photos/beautiful-woman-with-natural-makeup-picture-id897056188?s=612x612',
+                photoProfile: 'https://wallpapercave.com/wp/wp2966843.jpg',
             }
         ],
         newPost: '',
@@ -125,52 +123,51 @@ const state = {
         },
         siteBarRight: {}
     },
-};
-
-export const dataFunctions = {
-
-    renderSocialNetwork: () => '',
-    renderAll: (item) => dataFunctions.renderSocialNetwork = item,
 
 
-    onChangeAddPost: item => {
-        state.pageProfile.newPost = item;
-        console.log(state.pageProfile.newPost);
-        dataFunctions.renderSocialNetwork(state);
-    },
-    onClickButtonAddPost: () => {
-        if (state.pageDialogue.newMessages !== '') {
-            let newPost = {
-                id: state.pageProfile.posts.length + 1,
-                text: state.pageProfile.newPost,
-                like: `${state.pageProfile.posts.length + 1}`
-            };
-            let newPosts = [newPost, ...state.pageProfile.posts];
-            console.log(newPosts);
-            state.pageProfile.posts = newPosts;
-            state.pageProfile.newPost = '';
-            dataFunctions.renderSocialNetwork(state);
-        }
-    },
+    dataFunctions: {
 
+        renderSocialNetwork: () => '',
+        renderAll: (item) => state.dataFunctions.renderSocialNetwork = item,
 
-    onChangeAddMessage: item => {
-        state.pageDialogue.newMessages = item;
-        console.log(state.pageDialogue.newMessages);
-        dataFunctions.renderSocialNetwork(state);
-    },
-    onClickButtonAddMessages: () => {
-        if (state.pageProfile.newPost !== '') {
-            let newMessage = {
-                id: state.pageDialogue.messages.length + 1,
-                message: state.pageDialogue.newMessages,
-            };
-            let newMessages = [...state.pageDialogue.messages, newMessage];
-            console.log(newMessages);
-            state.pageDialogue.messages = newMessages;
-            state.pageDialogue.newMessages = '';
-            dataFunctions.renderSocialNetwork(state);
-        }
+        onChangeAddPost: item => {
+            state.pageProfile.newPost = item;
+            console.log(state.pageProfile.newPost);
+            state.dataFunctions.renderSocialNetwork(state);
+        },
+        onClickButtonAddPost: () => {
+            if (state.pageProfile.newPost !== '') {
+                let newPost = {
+                    id: state.pageProfile.posts.length + 1,
+                    text: state.pageProfile.newPost,
+                    like: `${state.pageProfile.posts.length + 1}`
+                };
+                let newPosts = [newPost, ...state.pageProfile.posts];
+                console.log(newPosts);
+                state.pageProfile.posts = newPosts;
+                state.pageProfile.newPost = '';
+                state.dataFunctions.renderSocialNetwork(state);
+            }
+        },
+
+        onChangeAddMessage: item => {
+            state.pageDialogue.newMessages = item;
+            console.log(state.pageDialogue.newMessages);
+            state.dataFunctions.renderSocialNetwork(state);
+        },
+        onClickButtonAddMessages: () => {
+            if (state.pageDialogue.newMessages !== '') {
+                let newMessage = {
+                    id: state.pageDialogue.messages.length + 1,
+                    message: state.pageDialogue.newMessages,
+                };
+                let newMessages = [...state.pageDialogue.messages, newMessage];
+                console.log(newMessages);
+                state.pageDialogue.messages = newMessages;
+                state.pageDialogue.newMessages = '';
+                state.dataFunctions.renderSocialNetwork(state);
+            }
+        },
     },
 };
 
