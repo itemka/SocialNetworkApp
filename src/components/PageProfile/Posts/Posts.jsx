@@ -13,14 +13,11 @@ const Posts = (props) => {
         <div className={css.Posts}>
 
             <PublishPost newPost={props.newPost}
-                         onChangePost={props.onChangePost}
-                         onClickAddPost={props.onClickAddPost}/>
+                         dispatch={props.dispatch}/>
 
             <div className={css.listPosts}>
                 <div className={css.nameListPosts}>My posts</div>
-                <div>
-                    {post}
-                </div>
+                <div> {post} </div>
             </div>
 
         </div>

@@ -11,23 +11,28 @@ const SendMessages = (props) => {
         textNewMessage: props.pageDialogue.newMessages,
     };
 
-    let onChangeTextarea = () => {
-        props.onChangeMessage(link.current.value);
+    let onChangeAddPost = () => {
+        props.dispatch({
+            type: 'CHANGE-MESSAGE',
+            newMessages: link.current.value,
+        });
     };
-    let onClickAddMess = () => {
-        props.onClickAddMessage();
+    let onClickAddMessage = () => {
+        props.dispatch({
+            type: 'ADD-MESSAGE',
+        });
     };
 
     return (
         <div className={`${css.SendMessages} clearFix`}>
             <textarea ref={link}
-                      onChange={() => onChangeTextarea()}
+                      onChange={() => onChangeAddPost()}
                       rows={2}
                       className={`${css.inputMessages}`}
                       placeholder={'Enter Messages Text...'}
                       value={state.textNewMessage}/>
             <button className={css.buttonSendMessages}
-                    onClick={() => onClickAddMess()}>
+                    onClick={() => onClickAddMessage()}>
                 Send
             </button>
 

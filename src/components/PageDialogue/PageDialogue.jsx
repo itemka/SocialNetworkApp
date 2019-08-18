@@ -21,8 +21,7 @@ const PageDialogue = (props) => {
                     <Messages messages={props.pageDialogue.messages}
                               profiles={props.pageProfile.profiles}/>
                     <SendMessages pageDialogue={props.pageDialogue}
-                                  onChangeMessage={props.onChangeMessage}
-                                  onClickAddMessage={props.onClickAddMessage}/>
+                                  dispatch={props.dispatch}/>
 
                 </div>
             </div>

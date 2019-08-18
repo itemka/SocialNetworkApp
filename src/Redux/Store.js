@@ -135,45 +135,50 @@ const store = {
         return this._state;
     },
 
-    onChangeAddPost(item){
-        this._state.pageProfile.newPost = item;
-        console.log(this._state.pageProfile.newPost);
-        this._callback();
-    },
-    onClickButtonAddPost(){
-        if (this._state.pageProfile.newPost !== '') {
-            let newPost = {
-                id: this._state.pageProfile.posts.length + 1,
-                text: this._state.pageProfile.newPost,
-                like: `${this._state.pageProfile.posts.length + 1}`
-            };
-            let newPosts = [newPost, ...this._state.pageProfile.posts];
-            console.log(newPosts);
-            this._state.pageProfile.posts = newPosts;
-            this._state.pageProfile.newPost = '';
+
+    dispatch(action){
+        if (action.type === 'CHANGE-POST'){
+            this._state.pageProfile.newPost = action.newPost;
+            console.log(this._state.pageProfile.newPost);
             this._callback();
+
         }
-    },
+        else if (action.type === 'ADD-POST'){
+            if (this._state.pageProfile.newPost !== '') {
+                let newPost = {
+                    id: this._state.pageProfile.posts.length + 1,
+                    text: this._state.pageProfile.newPost,
+                    like: `${this._state.pageProfile.posts.length + 1}`
+                };
+                let newPosts = [newPost, ...this._state.pageProfile.posts];
+                console.log(newPosts);
+                this._state.pageProfile.posts = newPosts;
+                this._state.pageProfile.newPost = '';
+                this._callback();
+            }
 
-    onChangeAddMessage(item){
-        this._state.pageDialogue.newMessages = item;
-        console.log(this._state.pageDialogue.newMessages);
-        this._callback();
-    },
-    onClickButtonAddMessages(){
-        // if (this._state.pageDialogue.newMessages !== '') {
-            let newMessage = {
-                id: this._state.pageDialogue.messages.length + 1,
-                message: this._state.pageDialogue.newMessages,
-            };
-            let newMessages = [...this._state.pageDialogue.messages, newMessage];
-            console.log(newMessages);
-            this._state.pageDialogue.messages = newMessages;
-            this._state.pageDialogue.newMessages = '';
+        }
+        else if (action.type === 'CHANGE-MESSAGE'){
+            this._state.pageDialogue.newMessages = action.newMessages;
+            console.log(this._state.pageDialogue.newMessages);
             this._callback();
-        // }
-    },
 
+        }
+        else if(action.type === 'ADD-MESSAGE'){
+            if (this._state.pageDialogue.newMessages !== '') {
+                let newMessage = {
+                    id: this._state.pageDialogue.messages.length + 1,
+                    message: this._state.pageDialogue.newMessages,
+                };
+                let newMessages = [...this._state.pageDialogue.messages, newMessage];
+                console.log(newMessages);
+                this._state.pageDialogue.messages = newMessages;
+                this._state.pageDialogue.newMessages = '';
+                this._callback();
+            }
+
+        }
+    }
 };
 
 export default store;

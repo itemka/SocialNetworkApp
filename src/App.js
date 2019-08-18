@@ -14,16 +14,22 @@ const App = (props) => {
             <div className={'app_wrapper'}>
                 <Header/>
                 <div className={'Content'}>
-                    <Route path='/profile' render={() => <PageProfile pageProfile={props.state.pageProfile}
-                                                                      siteBar={props.state.siteBar}
-                                                                      onChangePost={props.store.onChangeAddPost.bind(props.store)}
-                                                                      onClickAddPost={props.store.onClickButtonAddPost.bind(props.store)}/>
+                    <Route path='/profile' render={() =>
+                        <PageProfile pageProfile={props.state.pageProfile}
+                                     siteBar={props.state.siteBar}
+                                     dispatch={props.store.dispatch.bind(props.store)}
+                            // onChangePost={props.store.onChangeAddPost.bind(props.store)}
+                            // onClickAddPost={props.store.onClickButtonAddPost.bind(props.store)}
+                        />
                     }/>
-                    <Route path='/messages' render={() => <PageDialogue pageProfile={props.state.pageProfile}
-                                                                        pageDialogue={props.state.pageDialogue}
-                                                                        siteBar={props.state.siteBar}
-                                                                        onChangeMessage={props.store.onChangeAddMessage.bind(props.store)}
-                                                                        onClickAddMessage={props.store.onClickButtonAddMessages.bind(props.store)}/>
+                    <Route path='/messages' render={() =>
+                        <PageDialogue pageProfile={props.state.pageProfile}
+                                      pageDialogue={props.state.pageDialogue}
+                                      siteBar={props.state.siteBar}
+                                      dispatch={props.store.dispatch.bind(props.store)}
+                            // onChangeMessage={props.store.onChangeAddMessage.bind(props.store)}
+                            // onClickAddMessage={props.store.onClickButtonAddMessages.bind(props.store)}
+                        />
                     }/>
                 </div>
                 {/*<Footer/>*/}

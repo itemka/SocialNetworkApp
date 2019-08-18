@@ -27,6 +27,14 @@
     /*background-color: darkkhaki;*/
     background-color: rgba(41, 41, 41, 0.8);
     padding: 10px 20px;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     border: 1px solid dimgray;
 }
+/*.triangleBottomright {*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-bottom: 10px solid red;*/
+/*    border-left: 10px solid transparent;*/
+/*}*/
