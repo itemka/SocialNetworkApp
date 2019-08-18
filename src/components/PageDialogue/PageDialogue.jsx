@@ -18,9 +18,11 @@ const PageDialogue = (props) => {
                 <div className={css.DialoguesWithMessages}>
 
                     <Dialogues profiles={props.pageProfile.profiles}/>
-                    <Messages  messages={props.pageDialogue.messages}
+                    <Messages messages={props.pageDialogue.messages}
                               profiles={props.pageProfile.profiles}/>
-                    <SendMessages pageDialogue={props.pageDialogue} dataFunctions={props.dataFunctions}/>
+                    <SendMessages pageDialogue={props.pageDialogue}
+                                  onChangeMessage={props.onChangeMessage}
+                                  onClickAddMessage={props.onClickAddMessage}/>
 
                 </div>
             </div>

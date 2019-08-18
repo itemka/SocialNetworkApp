@@ -12,7 +12,9 @@ const Posts = (props) => {
     return (
         <div className={css.Posts}>
 
-            <PublishPost newPost={props.newPost} dataFunctions={props.dataFunctions}/>
+            <PublishPost newPost={props.newPost}
+                         onChangePost={props.onChangePost}
+                         onClickAddPost={props.onClickAddPost}/>
 
             <div className={css.listPosts}>
                 <div className={css.nameListPosts}>My posts</div>

@@ -6,6 +6,7 @@ import PageDialogue from "./components/PageDialogue/PageDialogue";
 // import Footer from "./components/Footer/Footer";
 import {BrowserRouter, Route} from "react-router-dom";
 import PropTypes from 'prop-types';
+import store from "./Redux/Store";
 
 const App = (props) => {
     return (
@@ -15,11 +16,15 @@ const App = (props) => {
                 <div className={'Content'}>
                     <Route path='/profile' render={() => <PageProfile pageProfile={props.state.pageProfile}
                                                                       siteBar={props.state.siteBar}
-                                                                      dataFunctions={props.state.dataFunctions}/> }/>
+                                                                      onChangePost={props.store.onChangeAddPost.bind(props.store)}
+                                                                      onClickAddPost={props.store.onClickButtonAddPost.bind(props.store)}/>
+                    }/>
                     <Route path='/messages' render={() => <PageDialogue pageProfile={props.state.pageProfile}
                                                                         pageDialogue={props.state.pageDialogue}
                                                                         siteBar={props.state.siteBar}
-                                                                        dataFunctions={props.state.dataFunctions}/>}/>
+                                                                        onChangeMessage={props.store.onChangeAddMessage.bind(props.store)}
+                                                                        onClickAddMessage={props.store.onClickButtonAddMessages.bind(props.store)}/>
+                    }/>
                 </div>
                 {/*<Footer/>*/}
             </div>

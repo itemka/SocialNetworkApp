@@ -15,7 +15,8 @@ const PageProfile = (props) => {
             <Posts posts={props.pageProfile.posts}
                    profiles={props.pageProfile.profiles}
                    newPost={props.pageProfile.newPost}
-                   dataFunctions={props.dataFunctions}/>
+                   onChangePost={props.onChangePost}
+                   onClickAddPost={props.onClickAddPost}/>
             <SiteBarRight profiles={props.pageProfile.profiles}/>
 
         </div>

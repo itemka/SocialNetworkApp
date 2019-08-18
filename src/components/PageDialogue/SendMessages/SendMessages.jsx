@@ -6,15 +6,28 @@ const SendMessages = (props) => {
 
     let link = React.createRef();
 
+    let state = {
+        error: false,
+        textNewMessage: props.pageDialogue.newMessages,
+    };
+
+    let onChangeTextarea = () => {
+        props.onChangeMessage(link.current.value);
+    };
+    let onClickAddMess = () => {
+        props.onClickAddMessage();
+    };
+
     return (
         <div className={`${css.SendMessages} clearFix`}>
             <textarea ref={link}
-                      onChange={() => props.dataFunctions.onChangeAddMessage(link.current.value)}
-                      rows={2} className={css.inputMessages}
+                      onChange={() => onChangeTextarea()}
+                      rows={2}
+                      className={`${css.inputMessages}`}
                       placeholder={'Enter Messages Text...'}
-                      value={props.pageDialogue.newMessages}/>
+                      value={state.textNewMessage}/>
             <button className={css.buttonSendMessages}
-                    onClick={() => props.dataFunctions.onClickButtonAddMessages()}>
+                    onClick={() => onClickAddMess()}>
                 Send
             </button>
 
