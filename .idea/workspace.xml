@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/Messages/Messages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,10 @@
       <workItem from="1565460528071" duration="15181000" />
       <workItem from="1565629512415" duration="104000" />
       <workItem from="1565814347232" duration="9470000" />
-      <workItem from="1565887668306" duration="10722000" />
+      <workItem from="1565887668306" duration="11055000" />
+      <workItem from="1565900523563" duration="84000" />
+      <workItem from="1566142793245" duration="171000" />
+      <workItem from="1566143720240" duration="109000" />
     </task>
     <servers />
   </component>
