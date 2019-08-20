@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../App.css';
 import css from './SendMessages.module.css';
+import {onChangeAddPostActionCreator, onClickAddMessageActionCreator} from './../../../Redux/Store';
 
 const SendMessages = (props) => {
 
@@ -12,15 +13,10 @@ const SendMessages = (props) => {
     };
 
     let onChangeAddPost = () => {
-        props.dispatch({
-            type: 'CHANGE-MESSAGE',
-            newMessages: link.current.value,
-        });
+        props.dispatch(onChangeAddPostActionCreator(link.current.value));
     };
     let onClickAddMessage = () => {
-        props.dispatch({
-            type: 'ADD-MESSAGE',
-        });
+        props.dispatch(onClickAddMessageActionCreator());
     };
 
     return (

@@ -1,22 +1,20 @@
 import React from 'react';
 import '../../../../App.css';
 import css from './PublishPost.module.css';
+import {onChangePostActionCreator, onClickAddPostActionCreator} from './../../../../Redux/Store';
 
 const PublishPost = (props) => {
 
     let ref = React.createRef();
 
     let onChangePost = () => {
-        props.dispatch({
-            type: 'CHANGE-POST',
-            newPost: ref.current.value,
-        });
+        let action = onChangePostActionCreator(ref.current.value);
+        props.dispatch(action);
     };
 
     let onClickAddPost = () => {
-        props.dispatch({
-            type: 'ADD-POST',
-        })
+        let action = onClickAddPostActionCreator();
+        props.dispatch(action);
     };
 
     return (

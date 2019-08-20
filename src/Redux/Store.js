@@ -1,10 +1,10 @@
+const CHANGE_POST = 'CHANGE-POST';
+const ADD_POST = 'ADD-POST';
+const CHANGE_MESSAGE = 'CHANGE-MESSAGE';
+const ADD_MESSAGE = 'ADD-MESSAGE';
+
 const store = {
-    _callback() {
-        console.log('No changed')
-    },
-    subscribe(func) {
-        return this._callback = func;
-    },
+
     _state: {
         pageProfile: {
             profiles: [
@@ -131,19 +131,26 @@ const store = {
             siteBarRight: {}
         },
     },
+    _callback() {
+        console.log('No changed')
+    },
+
+
+    subscribe(func) {
+        return this._callback = func;
+    },
     getState() {
         return this._state;
     },
 
 
-    dispatch(action){
-        if (action.type === 'CHANGE-POST'){
+    dispatch(action) {
+        if (action.type === CHANGE_POST) {
             this._state.pageProfile.newPost = action.newPost;
             console.log(this._state.pageProfile.newPost);
             this._callback();
 
-        }
-        else if (action.type === 'ADD-POST'){
+        } else if (action.type === ADD_POST) {
             if (this._state.pageProfile.newPost !== '') {
                 let newPost = {
                     id: this._state.pageProfile.posts.length + 1,
@@ -157,14 +164,12 @@ const store = {
                 this._callback();
             }
 
-        }
-        else if (action.type === 'CHANGE-MESSAGE'){
+        } else if (action.type === CHANGE_MESSAGE) {
             this._state.pageDialogue.newMessages = action.newMessages;
             console.log(this._state.pageDialogue.newMessages);
             this._callback();
 
-        }
-        else if(action.type === 'ADD-MESSAGE'){
+        } else if (action.type === ADD_MESSAGE) {
             if (this._state.pageDialogue.newMessages !== '') {
                 let newMessage = {
                     id: this._state.pageDialogue.messages.length + 1,
@@ -180,5 +185,25 @@ const store = {
         }
     }
 };
+
+//For Posts
+export const onChangePostActionCreator = textNewPost => ({
+    type: CHANGE_POST,
+    newPost: textNewPost,
+});
+export const onClickAddPostActionCreator = () => ({
+    type: ADD_POST,
+});
+
+//For Messages
+export const onChangeAddPostActionCreator = textNewMessage => ({
+    type: CHANGE_MESSAGE,
+    newMessages: textNewMessage,
+});
+
+export const onClickAddMessageActionCreator = () => ({
+    type: ADD_MESSAGE,
+});
+
 
 export default store;
