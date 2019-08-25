@@ -1,7 +1,11 @@
 import React from 'react';
 import '../../../App.css';
 import css from './SendMessages.module.css';
-import {onChangeAddPostActionCreator, onClickAddMessageActionCreator} from './../../../Redux/Store';
+import {
+    onChangeAddMessageActionCreator,
+    onClickAddMessageActionCreator
+} from "../../../Redux/PageDialogueReducer/PageDialogueReducer";
+
 
 const SendMessages = (props) => {
 
@@ -9,15 +13,11 @@ const SendMessages = (props) => {
 
     let state = {
         error: false,
-        textNewMessage: props.pageDialogue.newMessages,
+        textNewMessage: props.pageDialogue.newMessage,
     };
 
-    let onChangeAddPost = () => {
-        props.dispatch(onChangeAddPostActionCreator(link.current.value));
-    };
-    let onClickAddMessage = () => {
-        props.dispatch(onClickAddMessageActionCreator());
-    };
+    let onChangeAddPost = () => props.dispatch(onChangeAddMessageActionCreator(link.current.value));
+    let onClickAddMessage = () => props.dispatch(onClickAddMessageActionCreator());
 
     return (
         <div className={`${css.SendMessages} clearFix`}>

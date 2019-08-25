@@ -11,7 +11,7 @@ const PageProfile = (props) => {
         <div className={css.PageProfile}>
 
             <CoverWithProfileInfo profiles={props.pageProfile.profiles}/>
-            <SiteBarLeft siteBarLeft={props.siteBar.siteBarLeft}/>
+            <SiteBarLeft siteBarLeft={props.siteBarLeft}/>
             <Posts posts={props.pageProfile.posts}
                    profiles={props.pageProfile.profiles}
                    newPost={props.pageProfile.newPost}

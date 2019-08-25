@@ -11,7 +11,7 @@ const PageDialogue = (props) => {
     return (
         <div className={css.PageDialogue}>
 
-            <SiteBarLeft siteBarLeft={props.siteBar.siteBarLeft}/>
+            <SiteBarLeft siteBarLeft={props.siteBarLeft}/>
 
             <div className={css.Chat}>
                 <div className={css.titleChat}>Chat</div>
