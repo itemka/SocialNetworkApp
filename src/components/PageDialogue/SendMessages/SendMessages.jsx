@@ -4,7 +4,7 @@ import css from './SendMessages.module.css';
 import {
     onChangeAddMessageActionCreator,
     onClickAddMessageActionCreator
-} from "../../../Redux/PageDialogueReducer/PageDialogueReducer";
+} from "../../../Redux/PageDialogueReducer";
 
 
 const SendMessages = (props) => {

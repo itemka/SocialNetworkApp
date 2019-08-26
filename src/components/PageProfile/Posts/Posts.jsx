@@ -13,7 +13,8 @@ const Posts = (props) => {
         <div className={css.Posts}>
 
             <PublishPost newPost={props.newPost}
-                         dispatch={props.dispatch}/>
+                         dispatch={props.dispatch}
+                         typing={props.typing}/>
 
             <div className={css.listPosts}>
                 <div className={css.nameListPosts}>My posts</div>

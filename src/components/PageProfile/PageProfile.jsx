@@ -15,6 +15,7 @@ const PageProfile = (props) => {
             <Posts posts={props.pageProfile.posts}
                    profiles={props.pageProfile.profiles}
                    newPost={props.pageProfile.newPost}
+                   typing={props.pageProfile.typing}
                    dispatch={props.dispatch}/>
             <SiteBarRight profiles={props.pageProfile.profiles}/>
 

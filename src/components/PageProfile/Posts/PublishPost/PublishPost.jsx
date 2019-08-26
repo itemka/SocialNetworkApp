@@ -4,9 +4,14 @@ import css from './PublishPost.module.css';
 import {
     onChangePostActionCreator,
     onClickAddPostActionCreator
-} from "../../../../Redux/PageProfileReducer/PageProfileReducer";
+} from "../../../../Redux/PageProfileReducer";
 
 const PublishPost = (props) => {
+
+    let state = {
+        newPost: props.newPost,
+        typing: props.typing,
+    };
 
     let ref = React.createRef();
 
@@ -19,10 +24,10 @@ const PublishPost = (props) => {
             <textarea rows={2}
                       className={css.inputPost}
                       placeholder={'your news!'}
-                      value={props.newPost}
+                      value={state.newPost}
                       ref={ref}
                       onChange={() => onChangePost()}/>
-
+            <div>{state.typing}</div>
             <button className={css.buttonSendPost}
                     onClick={() => onClickAddPost()}>
                 Send post

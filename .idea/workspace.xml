@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/PageDialogueReducer/PageDialogueReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/PageProfileReducer/PageProfileReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer/SiteBarLeftReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/PageDialogueReducer/PageDialogueReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageDialogueReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/PageProfileReducer/PageProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer/SiteBarLeftReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -44,13 +44,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Redux" />
+      <recent name="$PROJECT_DIR$/src/components/PageDialogue" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Redux" />
       <recent name="$PROJECT_DIR$/src/components/PageDialogue/SendMessages" />
       <recent name="$PROJECT_DIR$/src/components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/PageDialogue" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,7 +89,8 @@
       <workItem from="1566143720240" duration="109000" />
       <workItem from="1566144390412" duration="14513000" />
       <workItem from="1566338402871" duration="3693000" />
-      <workItem from="1566761518945" duration="10769000" />
+      <workItem from="1566761518945" duration="14204000" />
+      <workItem from="1566848132153" duration="2352000" />
     </task>
     <servers />
   </component>

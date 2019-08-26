@@ -95,6 +95,7 @@ let initialState = {
         }
     ],
     newPost: '',
+    typing: '',
     posts: [
         {id: 2, text: 'It is new Application!', like: '2',},
         {id: 1, text: 'hi', like: '1',},
@@ -105,6 +106,7 @@ const PageProfileReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_POST: {
             state.newPost = action.newPost;
+            state.typing = 'typing...';
             console.log(state.newPost);
             // this._callback();
             return state;
@@ -120,6 +122,7 @@ const PageProfileReducer = (state = initialState, action) => {
                 console.log(newPosts);
                 state.posts = newPosts;
                 state.newPost = '';
+                state.typing = '';
                 // this._callback();
             }
             return state;

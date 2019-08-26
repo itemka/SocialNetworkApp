@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import store from './Redux/Store';
+
+import {BrowserRouter} from "react-router-dom";
 import {combineReducers, createStore} from "redux";
-import PageDialogueReducer from "./Redux/PageDialogueReducer/PageDialogueReducer";
-import PageProfileReducer from "./Redux/PageProfileReducer/PageProfileReducer";
-import SiteBarLeftReducer from "./Redux/SiteBarLeftReducer/SiteBarLeftReducer";
+import PageDialogueReducer from "./Redux/PageDialogueReducer";
+import PageProfileReducer from "./Redux/PageProfileReducer";
+import SiteBarLeftReducer from "./Redux/SiteBarLeftReducer";
+import {Provider} from "react-redux";
 
 //Склеиваем все страницы в state
 let combinedReducers = combineReducers({
@@ -15,20 +18,24 @@ let combinedReducers = combineReducers({
     pageProfile: PageProfileReducer,
     siteBarLeft: SiteBarLeftReducer,
 });
-
 //Создаем Store из склеянных страниц
 let store = createStore(combinedReducers);
-
 //Добавляем subscribe(перерисовку всего) в store. Было: // store.subscribe(() => renderAll());
-store.subscribe(()=>{
+store.subscribe(() => {
     let state = store.getState();
     renderAll(state);
 });
 
-let renderAll = (state) => {
-    ReactDOM.render(<App store={store} state={state}/>, document.getElementById('root'));
-};
 
+let renderAll = (state) => {
+    ReactDOM.render(
+        <Provider store={store}>
+            <BrowserRouter>
+                <App store={store} state={state}/>
+            </BrowserRouter>
+        </Provider>
+        , document.getElementById('root'));
+};
 renderAll(store.getState());
 
 // If you want your app to work offline and load faster, you can change
