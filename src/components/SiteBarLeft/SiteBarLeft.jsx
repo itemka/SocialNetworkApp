@@ -2,12 +2,14 @@ import React from 'react';
 import css from './SiteBarLeft.module.css';
 import {NavLink} from "react-router-dom";
 import PropTypes from 'prop-types';
+import {connect} from "react-redux";
 
 const SiteBarLeft = (props) => {
-    let listPages = props.siteBarLeft.listPages.map(
-        item => <NavLink to={`/${item.path}`} activeClassName={css.active}>
-                    <div className={css.item}> {`${item.page} (idPage=${item.id})`} </div>
-                </NavLink>);
+    let listPages = props.siteBarLeft.listPages.map(item =>
+        <NavLink to={`/${item.path}`} activeClassName={css.active}>
+            <div className={css.item}> {`(idPage=${item.id}) ${item.page}`} </div>
+        </NavLink>
+    );
     return (
         <div className={css.SiteBarLeft}>
             <nav>
@@ -27,4 +29,13 @@ SiteBarLeft.propTypes = {
     ).isRequired,
 };
 
-export default SiteBarLeft;
+const mapStateToProps = state => {
+    return {
+        siteBarLeft: state.siteBarLeft,
+    }
+};
+const mapDispatchToProps = () => {
+    return {}
+};
+const ConnectedSiteBarLeft = connect(mapStateToProps, mapDispatchToProps)(SiteBarLeft);
+export default ConnectedSiteBarLeft;

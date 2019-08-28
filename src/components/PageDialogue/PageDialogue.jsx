@@ -7,21 +7,18 @@ import Messages from "./Messages/Messages";
 import PropTypes from 'prop-types';
 import SendMessages from "./SendMessages/SendMessages";
 
-const PageDialogue = (props) => {
+const PageDialogue = () => {
     return (
         <div className={css.PageDialogue}>
 
-            <SiteBarLeft siteBarLeft={props.siteBarLeft}/>
+            <SiteBarLeft />
 
             <div className={css.Chat}>
                 <div className={css.titleChat}>Chat</div>
                 <div className={css.DialoguesWithMessages}>
 
-                    <Dialogues profiles={props.pageProfile.profiles}/>
-                    <Messages messages={props.pageDialogue.messages}
-                              profiles={props.pageProfile.profiles}/>
-                    <SendMessages pageDialogue={props.pageDialogue}
-                                  dispatch={props.dispatch}/>
+                    <Dialogues />   <Messages />
+                                    <SendMessages />
 
                 </div>
             </div>

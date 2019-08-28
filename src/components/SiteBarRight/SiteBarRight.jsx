@@ -3,10 +3,10 @@ import css from './SiteBarRight.module.css';
 import WindowFriends from "./WindowFriends/WindowFriends";
 import PropTypes from 'prop-types';
 
-const SiteBarRight = (props) => {
+const SiteBarRight = () => {
     return (
         <div className={css.SiteBarRight}>
-            <WindowFriends profiles={props.profiles} />
+            <WindowFriends />
         </div>
     );
 };

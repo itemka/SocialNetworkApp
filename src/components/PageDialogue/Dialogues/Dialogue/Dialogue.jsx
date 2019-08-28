@@ -10,7 +10,7 @@ const Dialogue = (props) => {
             <NavLink to={`/messages/${props.idProfile}`}>
                 <div className={`${css.oneDialogue} clearFix`}>
                     <div><img src={props.photoProfile} alt=""/></div>
-                    <div className={css.nameFriends}>{`${props.nameProfile} (idProf=${props.idProfile})`}</div>
+                    <div className={css.nameFriends}>{`(idProf=${props.idProfile}) ${props.nameProfile}`}</div>
                 </div>
             </NavLink>
         </div>

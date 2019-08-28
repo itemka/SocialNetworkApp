@@ -2,6 +2,7 @@ import React from 'react';
 import css from './Dialogues.module.css';
 import Dialogue from './Dialogue/Dialogue';
 import PropTypes from 'prop-types';
+import {connect} from "react-redux";
 
 const Dialogues = (props) => {
     let profiles = props.profiles.map(item => <Dialogue idProfile={item.id} nameProfile={item.name}
@@ -21,4 +22,14 @@ Dialogues.propTypes = {
     }).isRequired,
 };
 
-export default Dialogues;
+const mapStateToProps = state => {
+    return {
+        profiles: state.pageProfile.profiles,
+    }
+};
+const mapDispatchToProps = () => {
+    return {}
+};
+const ConnectedDialogues = connect(mapStateToProps,mapDispatchToProps)(Dialogues);
+
+export default ConnectedDialogues;

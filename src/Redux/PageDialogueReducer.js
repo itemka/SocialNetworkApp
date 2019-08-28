@@ -1,3 +1,36 @@
+const cloneObject = obj => {
+    let copy;
+
+    // Handle the 3 simple types, and null or undefined
+    if (null == obj || "object" != typeof obj) return obj;
+
+    // Handle Date
+    if (obj instanceof Date) {
+        copy = new Date();
+        copy.setTime(obj.getTime());
+        return copy;
+    }
+    // Handle Array
+    if (obj instanceof Array) {
+        copy = [];
+        for (let i = 0, len = obj.length; i < len; i++) {
+            copy[i] = cloneObject(obj[i]);
+        }
+        return copy;
+    }
+    // Handle Object
+    if (obj instanceof Object) {
+        copy = {};
+        for (let item in obj) {
+            if (obj.hasOwnProperty(item))
+                copy[item] = cloneObject(obj[item]);
+        }
+        return copy;
+    }
+
+    throw new Error("Unable to copy obj! Its type isn't supported.");
+};
+
 const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
 const ADD_MESSAGE = 'ADD_MESSAGE';
 
@@ -18,24 +51,26 @@ let initialState = {
 const PageDialogueReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_MESSAGE: {
-            state.newMessage = action.newMessage;
-            console.log(state.newMessage);
+            let stateCopy = cloneObject(state);
+            stateCopy.newMessage = action.newMessage;
+            console.log(stateCopy.newMessage);
             // this._callback();
-            return state;
+            return stateCopy;
         }
         case ADD_MESSAGE: {
-            if (state.newMessage !== '') {
+            let stateCopy = cloneObject(state);
+            if (stateCopy.newMessage !== '') {
                 let newMessage = {
-                    id: state.messages.length + 1,
-                    message: state.newMessage,
+                    id: stateCopy.messages.length + 1,
+                    message: stateCopy.newMessage,
                 };
-                let newMessages = [...state.messages, newMessage];
+                let newMessages = [...stateCopy.messages, newMessage];
                 console.log(newMessages);
-                state.messages = newMessages;
-                state.newMessage = '';
+                stateCopy.messages = newMessages;
+                stateCopy.newMessage = '';
                 // this._callback();
             }
-            return state;
+            return stateCopy;
         }
         default: {
             return state;

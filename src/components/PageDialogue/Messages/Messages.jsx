@@ -3,6 +3,7 @@ import css from './Messages.module.css';
 import Message from "./Message/Message";
 // import {Route} from "react-router-dom";
 import PropTypes from 'prop-types';
+import {connect} from "react-redux";
 
 const Messages = (props) => {
 
@@ -35,4 +36,15 @@ Messages.propTypes = {
     }).isRequired,
 };
 
-export default Messages;
+const mapStateToProps = state => {
+    return {
+        messages: state.pageDialogue.messages,
+        profiles: state.pageProfile.profiles,
+    }
+};
+const mapDispatchToProps = () => {
+    return {}
+};
+const ConnectedMessages = connect(mapStateToProps,mapDispatchToProps)(Messages);
+
+export default ConnectedMessages;

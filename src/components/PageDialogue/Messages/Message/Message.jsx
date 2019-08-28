@@ -10,8 +10,8 @@ const Message = (props) => {
             <div> <img src={props.photoProfile} alt=""/> </div>
             <div className={css.dataMessage}>
 
-                <div className={css.nameMenMessage}> {`${props.nameProfile} (idProf=${props.idProfile})`} </div>
-                <div className={css.textMessage}> {`${props.message} (idMess=${props.id})`} </div>
+                <div className={css.nameMenMessage}> {`(idProf=${props.idProfile}) ${props.nameProfile}`} </div>
+                <div className={css.textMessage}> {`(idMess=${props.id}) ${props.message}`} </div>
 
             </div>
 

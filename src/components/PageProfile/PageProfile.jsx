@@ -6,18 +6,14 @@ import SiteBarRight from "../SiteBarRight/SiteBarRight";
 import CoverWithProfileInfo from "./CoverWithProfileInfo/CoverWithProfileInfo";
 import PropTypes from 'prop-types';
 
-const PageProfile = (props) => {
+const PageProfile = () => {
     return (
         <div className={css.PageProfile}>
 
-            <CoverWithProfileInfo profiles={props.pageProfile.profiles}/>
-            <SiteBarLeft siteBarLeft={props.siteBarLeft}/>
-            <Posts posts={props.pageProfile.posts}
-                   profiles={props.pageProfile.profiles}
-                   newPost={props.pageProfile.newPost}
-                   typing={props.pageProfile.typing}
-                   dispatch={props.dispatch}/>
-            <SiteBarRight profiles={props.pageProfile.profiles}/>
+            <CoverWithProfileInfo />
+            <SiteBarLeft />
+            <Posts />
+            <SiteBarRight />
 
         </div>
     );

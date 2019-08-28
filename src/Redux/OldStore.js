@@ -3,7 +3,7 @@ const ADD_POST = 'ADD-POST';
 const CHANGE_MESSAGE = 'CHANGE-MESSAGE';
 const ADD_MESSAGE = 'ADD-MESSAGE';
 
-const store = {
+const oldStore = {
 
     _state: {
         pageProfile: {
@@ -206,4 +206,4 @@ export const onClickAddMessageActionCreator = () => ({
 });
 
 
-export default store;
+export default oldStore;

@@ -1,3 +1,36 @@
+const cloneObject = obj => {
+    let copy;
+
+    // Handle the 3 simple types, and null or undefined
+    if (null == obj || "object" != typeof obj) return obj;
+
+    // Handle Date
+    if (obj instanceof Date) {
+        copy = new Date();
+        copy.setTime(obj.getTime());
+        return copy;
+    }
+    // Handle Array
+    if (obj instanceof Array) {
+        copy = [];
+        for (let i = 0, len = obj.length; i < len; i++) {
+            copy[i] = cloneObject(obj[i]);
+        }
+        return copy;
+    }
+    // Handle Object
+    if (obj instanceof Object) {
+        copy = {};
+        for (let item in obj) {
+            if (obj.hasOwnProperty(item))
+                copy[item] = cloneObject(obj[item]);
+        }
+        return copy;
+    }
+
+    throw new Error("Unable to copy obj! Its type isn't supported.");
+};
+
 const CHANGE_POST = 'CHANGE_POST';
 const ADD_POST = 'ADD_POST';
 
@@ -105,27 +138,34 @@ let initialState = {
 const PageProfileReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_POST: {
-            state.newPost = action.newPost;
-            state.typing = 'typing...';
-            console.log(state.newPost);
-            // this._callback();
-            return state;
+            let stateCopy = cloneObject(state);
+            stateCopy.newPost = action.newPost;
+            stateCopy.typing = 'typing...';
+            console.log(stateCopy.newPost);
+            return stateCopy;
         }
         case ADD_POST: {
-            if (state.newPost !== '') {
+            let stateCopy = cloneObject(state);
+            // debugger
+            //console.log(stateCopy);
+            if (stateCopy.newPost !== '') {
                 let newPost = {
-                    id: state.posts.length + 1,
-                    text: state.newPost,
-                    like: `${state.posts.length + 1}`
+                    id: stateCopy.posts.length + 1,
+                    text: stateCopy.newPost,
+                    like: `${stateCopy.posts.length + 1}`
                 };
-                let newPosts = [newPost, ...state.posts];
-                console.log(newPosts);
-                state.posts = newPosts;
-                state.newPost = '';
-                state.typing = '';
-                // this._callback();
+                let newPosts = [newPost, ...stateCopy.posts];
+                // console.log(newPosts);
+                stateCopy.posts = newPosts;
+                console.log(stateCopy);
+                stateCopy.newPost = '';
+                stateCopy.typing = '';
+                console.log('stateCopy is');
+                console.log(stateCopy);
+                console.log('state is');
+                console.log(state);
             }
-            return state;
+            return stateCopy;
         }
         default: {
             return state;
