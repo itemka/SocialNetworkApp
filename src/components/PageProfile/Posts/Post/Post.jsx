@@ -12,7 +12,7 @@ const Post = (props) => {
             </div>
 
             <div className={css.dataPost}>
-                <div>{`${props.text} (idPost=${props.id})`}</div>
+                <div>{`(idPost=${props.id}) ${props.text}`}</div>
             </div>
 
             <br/>
