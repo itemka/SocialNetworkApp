@@ -18,6 +18,13 @@
     float: left;
     border-radius: 50%;
 }
+.Post img:hover{
+    great-area: imgPost;
+    width: 48px;
+    border: 1px solid greenyellow;
+    float: left;
+    border-radius: 50%;
+}
 .dataPost{
     grid-area: dataPost;
     float: left;

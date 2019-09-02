@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/05d57258ae4dac98ecafd7a3030333b3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/PageDialogueReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageDialogueReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/SiteBarRight.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/SiteBarRight.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friends/Friend/Friend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friends/Friend/Friend.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friends/Friend/Friend.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friends/Friend/Friend.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friends/Friends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friends/Friends.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/WindowFriends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/WindowFriends.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,7 +96,13 @@
       <workItem from="1566338402871" duration="3693000" />
       <workItem from="1566761518945" duration="14204000" />
       <workItem from="1566848132153" duration="3816000" />
-      <workItem from="1566852487602" duration="19013000" />
+      <workItem from="1566852487602" duration="19324000" />
+      <workItem from="1566952357169" duration="155000" />
+      <workItem from="1567006981399" duration="44000" />
+      <workItem from="1567281469651" duration="1400000" />
+      <workItem from="1567293768754" duration="1271000" />
+      <workItem from="1567346635128" duration="626000" />
+      <workItem from="1567365189202" duration="8500000" />
     </task>
     <servers />
   </component>

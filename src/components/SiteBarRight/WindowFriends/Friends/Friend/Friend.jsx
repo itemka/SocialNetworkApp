@@ -11,7 +11,6 @@ const Friend = (props) => {
             <div><img src={item.photoProfile} alt=""/></div>
             <div className={css.friendName}>{item.name}</div>
         </div>
-        
     );
     return (
         <div className={`clearFix`}>

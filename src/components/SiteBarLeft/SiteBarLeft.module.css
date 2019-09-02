@@ -1,19 +1,19 @@
-.SiteBarLeft{
+.SiteBarLeft {
     grid-area: SiteBarLeft;
     height: 300px;
     width: 200px;
     border-radius: 3px;
     background-color: rgba(66, 66, 66, 0.9);
     margin: 10px 0 0 120px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
-.item{
+.item {
     padding: 10px 0 10px 20px;
 }
 .item:hover {
-    background-color: rgba(7, 141, 205,0.5);
+    background-color: rgba(7, 141, 205, 0.5);
     text-decoration: underline;
 }
-.item a.active{
+.item a.active {
     background-color: orange;
 }

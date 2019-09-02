@@ -51,7 +51,11 @@ let initialState = {
 const PageDialogueReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_MESSAGE: {
-            let stateCopy = cloneObject(state);
+            let stateCopy = { //let z =  cloneObject(state)
+                ...state,
+                messages: state.messages.map(item=>({...item}))
+            };
+
             stateCopy.newMessage = action.newMessage;
             console.log(stateCopy.newMessage);
             // this._callback();
@@ -59,6 +63,7 @@ const PageDialogueReducer = (state = initialState, action) => {
         }
         case ADD_MESSAGE: {
             let stateCopy = cloneObject(state);
+
             if (stateCopy.newMessage !== '') {
                 let newMessage = {
                     id: stateCopy.messages.length + 1,

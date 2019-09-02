@@ -138,7 +138,12 @@ let initialState = {
 const PageProfileReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_POST: {
-            let stateCopy = cloneObject(state);
+            let stateCopy = {   //let stateCopy = cloneObject(state);
+                ...state,
+                profiles: state.profiles.map(item=> ({...item})),
+                posts: state.posts.map(item=>({...item}))
+            };
+
             stateCopy.newPost = action.newPost;
             stateCopy.typing = 'typing...';
             console.log(stateCopy.newPost);
@@ -146,7 +151,7 @@ const PageProfileReducer = (state = initialState, action) => {
         }
         case ADD_POST: {
             let stateCopy = cloneObject(state);
-            // debugger
+
             //console.log(stateCopy);
             if (stateCopy.newPost !== '') {
                 let newPost = {

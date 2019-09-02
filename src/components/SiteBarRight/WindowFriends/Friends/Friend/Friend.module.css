@@ -10,6 +10,12 @@
     height: 50px;
     border-radius: 50%;
 }
+.Friend img:hover{
+    border: 1px solid greenyellow;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
 .friendName{
     font-size: 0.8em;
 }

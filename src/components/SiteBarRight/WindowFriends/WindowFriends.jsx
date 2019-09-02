@@ -29,9 +29,8 @@ const mapStateToProps = state => {
         profiles: state.pageProfile.profiles,
     }
 };
-const mapDispatchToProps = () => {
-    return {}
-};
+const mapDispatchToProps = () => { return {} };
+
 const ConnectedWindowFriends = connect(mapStateToProps, mapDispatchToProps)(WindowFriends);
 
 export default ConnectedWindowFriends;

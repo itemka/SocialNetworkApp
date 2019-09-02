@@ -1,20 +1,15 @@
 import React from 'react';
 import '../../../App.css';
 import css from './SendMessages.module.css';
-import {
-    onChangeAddMessageActionCreator,
-    onClickAddMessageActionCreator
-} from "../../../Redux/PageDialogueReducer";
+import {onChangeAddMessageActionCreator, onClickAddMessageActionCreator} from "../../../Redux/PageDialogueReducer";
 import {connect} from "react-redux";
 
 const SendMessages = (props) => {
-
     let link = React.createRef();
     let state = {
         error: false,
         textNewMessage: props.newMessage,
     };
-
     return (
         <div className={`${css.SendMessages} clearFix`}>
             <textarea ref={link}
@@ -31,7 +26,6 @@ const SendMessages = (props) => {
         </div>
     );
 };
-
 const mapStateToProps = state => {
     return {
         newMessage: state.pageDialogue.newMessages,
@@ -44,5 +38,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 const ConnectedSendMessages = connect(mapStateToProps, mapDispatchToProps)(SendMessages);
-
 export default ConnectedSendMessages;

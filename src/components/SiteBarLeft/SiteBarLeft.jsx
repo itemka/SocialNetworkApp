@@ -38,4 +38,5 @@ const mapDispatchToProps = () => {
     return {}
 };
 const ConnectedSiteBarLeft = connect(mapStateToProps, mapDispatchToProps)(SiteBarLeft);
+
 export default ConnectedSiteBarLeft;
