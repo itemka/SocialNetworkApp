@@ -1,11 +1,11 @@
 import React from 'react';
 import css from './CoverWithProfileInfo.module.css';
-import ProfileInfo from "../ProfileInfo/ProfileInfo";
+import ProfileInfoContainer from "../ProfileInfo/ProfileInfoContainer";
 
 const CoverWithProfileInfo = () => {
     return (
         <div className={css.CoverWithProfileInfo}>
-                <ProfileInfo />
+            <ProfileInfoContainer />
         </div>
     );
 };

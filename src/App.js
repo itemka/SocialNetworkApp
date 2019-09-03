@@ -12,8 +12,8 @@ const App = () => {
             <Header/>
             <div className={'Content'}>
 
-                <Route path='/profile' render={() => <PageProfile /> }/>
-                <Route path='/messages' render={() => <PageDialogue /> }/>
+                <Route path='/profile' render={() => <PageProfile/>}/>
+                <Route path='/messages' render={() => <PageDialogue/>}/>
 
             </div>
 

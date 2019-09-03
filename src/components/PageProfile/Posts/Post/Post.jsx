@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../../App.css';
 import css from './Post.module.css';
-import {connect} from "react-redux";
+// import {connect} from "react-redux";
 
 const Post = (props) => {
     return (

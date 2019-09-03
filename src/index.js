@@ -27,16 +27,13 @@ let store = createStore(combinedReducers);
 //     // renderAll(store.getState());
 // });
 
-// let renderAll = () => {
-    ReactDOM.render(
-        <Provider store={store}>
-            <BrowserRouter>
-                <App store={store} state={store.getState()}/>
-            </BrowserRouter>
-        </Provider>
-        , document.getElementById('root'));
-// };
-// renderAll();
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </Provider>
+    , document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change

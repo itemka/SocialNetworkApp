@@ -141,18 +141,19 @@ const PageProfileReducer = (state = initialState, action) => {
             let stateCopy = {   //let stateCopy = cloneObject(state);
                 ...state,
                 profiles: state.profiles.map(item=> ({...item})),
+                newPost: action.newPost,
+                typing: 'typing...',
                 posts: state.posts.map(item=>({...item}))
             };
-
-            stateCopy.newPost = action.newPost;
-            stateCopy.typing = 'typing...';
             console.log(stateCopy.newPost);
             return stateCopy;
         }
         case ADD_POST: {
-            let stateCopy = cloneObject(state);
+            let stateCopy = { // let stateCopy = cloneObject(state);
+                ...state,
+                posts: state.posts.map(item=>({...item})),
+            };
 
-            //console.log(stateCopy);
             if (stateCopy.newPost !== '') {
                 let newPost = {
                     id: stateCopy.posts.length + 1,
@@ -160,15 +161,10 @@ const PageProfileReducer = (state = initialState, action) => {
                     like: `${stateCopy.posts.length + 1}`
                 };
                 let newPosts = [newPost, ...stateCopy.posts];
-                // console.log(newPosts);
+                console.log(newPosts);
                 stateCopy.posts = newPosts;
-                console.log(stateCopy);
                 stateCopy.newPost = '';
                 stateCopy.typing = '';
-                console.log('stateCopy is');
-                console.log(stateCopy);
-                console.log('state is');
-                console.log(state);
             }
             return stateCopy;
         }

@@ -1,11 +1,6 @@
 import React from 'react';
 import '../../../../App.css';
 import css from './PublishPost.module.css';
-import {
-    onChangePostActionCreator,
-    onClickAddPostActionCreator
-} from "../../../../Redux/PageProfileReducer";
-import {connect} from "react-redux";
 
 const PublishPost = (props) => {
 
@@ -34,18 +29,4 @@ const PublishPost = (props) => {
     );
 };
 
-const mapStateToProps = state => {
-    return {
-        newPost: state.newPost,
-        typing: state.typing,
-    }
-};
-const mapDispatchToProps = dispatch => {
-    return {
-        onChangePost: message => dispatch(onChangePostActionCreator(message)),
-        onClickAddPost: () => dispatch(onClickAddPostActionCreator()),
-    }
-};
-const ConnectedPublishPost = connect(mapStateToProps, mapDispatchToProps)(PublishPost);
-
-export default ConnectedPublishPost;
+export default PublishPost;

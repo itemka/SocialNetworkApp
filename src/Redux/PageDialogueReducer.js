@@ -53,17 +53,18 @@ const PageDialogueReducer = (state = initialState, action) => {
         case CHANGE_MESSAGE: {
             let stateCopy = { //let z =  cloneObject(state)
                 ...state,
-                messages: state.messages.map(item=>({...item}))
+                newMessage: action.newMessage,
+                messages: state.messages.map(item => ({...item})),
             };
-
-            stateCopy.newMessage = action.newMessage;
             console.log(stateCopy.newMessage);
             // this._callback();
             return stateCopy;
         }
         case ADD_MESSAGE: {
-            let stateCopy = cloneObject(state);
-
+            let stateCopy = { //let z =  cloneObject(state)
+                ...state,
+                messages: state.messages.map(item => ({...item})),
+            };
             if (stateCopy.newMessage !== '') {
                 let newMessage = {
                     id: stateCopy.messages.length + 1,

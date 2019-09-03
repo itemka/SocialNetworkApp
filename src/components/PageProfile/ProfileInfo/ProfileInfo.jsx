@@ -1,6 +1,5 @@
 import React from 'react';
 import css from './ProfileInfo.module.css';
-import {connect} from "react-redux";
 
 const ProfileInfo = (props) => {
     return (
@@ -25,20 +24,4 @@ const ProfileInfo = (props) => {
     );
 };
 
-const mapStateToProps = state => {
-    return {
-        photoProfile: state.pageProfile.profiles[0].photoProfile,
-        name: state.pageProfile.profiles[0].name,
-        dataOfBirth: state.pageProfile.profiles[0].dataOfBirth,
-        city: state.pageProfile.profiles[0].city,
-        education: state.pageProfile.profiles[0].education,
-        webSite: state.pageProfile.profiles[0].webSite,
-    }
-};
-const mapDispatchToProps = () => {
-    return {}
-};
-
-const ConnectedProfileInfo = connect(mapStateToProps, mapDispatchToProps)(ProfileInfo);
-
-export default ConnectedProfileInfo;
+export default ProfileInfo;

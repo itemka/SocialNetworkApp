@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../../App.css';
 import css from './SendMessages.module.css';
-import {onChangeAddMessageActionCreator, onClickAddMessageActionCreator} from "../../../Redux/PageDialogueReducer";
-import {connect} from "react-redux";
 
 const SendMessages = (props) => {
     let link = React.createRef();
@@ -26,16 +24,5 @@ const SendMessages = (props) => {
         </div>
     );
 };
-const mapStateToProps = state => {
-    return {
-        newMessage: state.pageDialogue.newMessages,
-    }
-};
-const mapDispatchToProps = dispatch => {
-    return {
-        onChangeAddPost: newMessage => dispatch(onChangeAddMessageActionCreator(newMessage)),
-        onClickAddMessage: () => dispatch(onClickAddMessageActionCreator()),
-    }
-};
-const ConnectedSendMessages = connect(mapStateToProps, mapDispatchToProps)(SendMessages);
-export default ConnectedSendMessages;
+
+export default SendMessages;

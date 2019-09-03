@@ -1,9 +1,9 @@
 import React from 'react';
-import Friend from "./Friend/Friend";
+import FriendContainer from "./Friend/FriendContainer";
 
 const Friends = () => {
     return (
-        <Friend/>
+        <FriendContainer/>
     );
 };
 

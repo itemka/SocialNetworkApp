@@ -9,9 +9,13 @@ let initialState = {
 };
 
 const SiteBarLeftReducer = (state = initialState, action) => {
+    let stateCopy = {
+        ...state,
+        listPage: state.listPages.map(item => ({...item})),
+    };
     switch (action.type) {
-        default:{
-            return state;
+        default: {
+            return stateCopy;
         }
     }
 };

@@ -7,7 +7,7 @@ const Message = (props) => {
     return (
         <div className={`${css.Message} clearFix`}>
 
-            <div> <img src={props.photoProfile} alt=""/> </div>
+            <div><img src={props.photoProfile} alt=""/></div>
             <div className={css.dataMessage}>
 
                 <div className={css.nameMenMessage}> {`(idProf=${props.idProfile}) ${props.nameProfile}`} </div>
