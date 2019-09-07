@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../../App.css';
+import '../../../../App.css';
 import css from './Friend.module.css';
 import PropTypes from 'prop-types';
 

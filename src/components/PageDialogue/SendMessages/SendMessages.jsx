@@ -3,15 +3,13 @@ import '../../../App.css';
 import css from './SendMessages.module.css';
 
 const SendMessages = (props) => {
-    let link = React.createRef();
     let state = {
         error: false,
         textNewMessage: props.newMessage,
     };
     return (
         <div className={`${css.SendMessages} clearFix`}>
-            <textarea ref={link}
-                      onChange={() => props.onChangeAddPost(link.current.value)}
+            <textarea onChange={event => props.onChangeAddPost(event.currentTarget.value)}
                       rows={2}
                       className={`${css.inputMessages}`}
                       placeholder={'Enter Messages Text...'}

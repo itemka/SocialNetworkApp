@@ -1,6 +1,5 @@
 import React from 'react';
 import css from './Posts.module.css';
-
 import Post from "./Post/Post";
 import PropTypes from 'prop-types';
 import PublishPostContainer from "./PublishPost/PublishPostContainer";
@@ -18,7 +17,9 @@ const Posts = (props) => {
 
             <div className={css.listPosts}>
                 <div className={css.nameListPosts}>My posts</div>
-                <div> {post} </div>
+                <div>
+                    {post}
+                </div>
             </div>
 
         </div>

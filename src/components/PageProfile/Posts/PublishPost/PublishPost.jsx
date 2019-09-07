@@ -4,7 +4,6 @@ import css from './PublishPost.module.css';
 
 const PublishPost = (props) => {
 
-    let ref = React.createRef();
     let state = {
         newPost: props.newPost,
         typing: props.typing,
@@ -17,8 +16,7 @@ const PublishPost = (props) => {
                       className={css.inputPost}
                       placeholder={'your news!'}
                       value={state.newPost}
-                      ref={ref}
-                      onChange={() => props.onChangePost(ref.current.value)}/>
+                      onChange={event => props.onChangePost(event.currentTarget.value)}/>
             <div>{state.typing}</div>
             <button className={css.buttonSendPost}
                     onClick={() => props.onClickAddPost()}>
