@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import Users from "./Users";
-import {setStatus, setUsers} from "../../Redux/PageUsersReducer";
+import {setStatus, setUsers} from "../../../Redux/PageUsersReducer";
 
 const mapStateToProps = state => {
     return {

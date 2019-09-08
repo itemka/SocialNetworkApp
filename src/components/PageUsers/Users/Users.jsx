@@ -1,13 +1,13 @@
 import React from 'react';
-import {statuses} from "../../Redux/PageUsersReducer";
+import {statuses} from "../../../Redux/PageUsersReducer";
 import axios from "axios";
 
-wi
 const Users = (props) => {
+
     if (props.status === statuses.NOT_INITIALIZED) {
         props.setStatus(statuses.INPROGRESS);
         axios
-            .get(`https://social-network.samuraijs.com/api/1.0/users?count=100`)
+            .get(`https://social-network.samuraijs.com/api/1.0/users?count=30`)
             .then(response => {
                 props.setStatus(statuses.SUCCESS);
                 props.setUsers(response.data.items);
@@ -20,9 +20,14 @@ const Users = (props) => {
 
     let users = props.users.map(user =>
         <>
-            <img src={user.photos.small === null ? `https://via.placeholder.com/150` : user.photos.small} alt=""/>
+            <div>followed: {user.followed}</div>
+            <div>id: {user.id}</div>
+            <div>name: {user.name}</div>
             <div>{user.status ? user.status : `no status`}</div>
-            <div>{user.name}</div>
+            <div>
+                <img src={user.photos.small === null ? `https://via.placeholder.com/150` : user.photos.small} alt=""/>
+            </div>
+            <br/><br/>
         </>
     );
     return (

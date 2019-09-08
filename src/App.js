@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import PageProfile from "./components/PageProfile/PageProfile";
 import PageDialogue from "./components/PageDialogue/PageDialogue";
 import {Route} from "react-router-dom";
-import UsersContainer from "./components/Users/UsersContainer";
+import PageUsers from "./components/PageUsers/PageUsers";
 
 const App = () => {
     return (
@@ -15,7 +15,7 @@ const App = () => {
 
                 <Route path='/profile' render={() => <PageProfile/>}/>
                 <Route path='/messages' render={() => <PageDialogue/>}/>
-                <Route path='/users' render={() => <UsersContainer/> }/>
+                <Route path='/users' render={() => <PageUsers/> }/>
 
             </div>
 

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageDialogueReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageDialogueReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageUsers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -43,17 +41,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/PageUsers" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends" />
       <recent name="$PROJECT_DIR$/src/Redux" />
       <recent name="$PROJECT_DIR$/src/components/PageDialogue" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/PageUsers" />
       <recent name="$PROJECT_DIR$/src/Redux" />
       <recent name="$PROJECT_DIR$/src/components/Users" />
       <recent name="$PROJECT_DIR$/src/components/PageDialogue/SendMessages" />
       <recent name="$PROJECT_DIR$/src/components/PageDialogue/Messages" />
-      <recent name="$PROJECT_DIR$/src/components/PageDialogue/Dialogues" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +103,7 @@
       <workItem from="1567620723865" duration="207000" />
       <workItem from="1567861895744" duration="2614000" />
       <workItem from="1567879331668" duration="939000" />
-      <workItem from="1567972237089" duration="8332000" />
+      <workItem from="1567972237089" duration="9672000" />
     </task>
     <servers />
   </component>
