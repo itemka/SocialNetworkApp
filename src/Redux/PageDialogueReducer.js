@@ -1,5 +1,5 @@
-const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
-const ADD_MESSAGE = 'ADD_MESSAGE';
+const CHANGE_MESSAGE = 'SN/DIALOGUES/CHANGE_MESSAGE';
+const ADD_MESSAGE = 'SN/DIALOGUES/ADD_MESSAGE';
 
 let initialState = {
     newMessage: '',

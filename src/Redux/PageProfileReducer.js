@@ -1,5 +1,5 @@
-const CHANGE_POST = 'CHANGE_POST';
-const ADD_POST = 'ADD_POST';
+const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
+const ADD_POST = 'SN/PROFILE/ADD_POST';
 
 let initialState = {
     profiles: [

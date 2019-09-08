@@ -11,12 +11,14 @@ import PageDialogueReducer from "./Redux/PageDialogueReducer";
 import PageProfileReducer from "./Redux/PageProfileReducer";
 import SiteBarLeftReducer from "./Redux/SiteBarLeftReducer";
 import {Provider} from "react-redux";
+import PageUsersReducer from "./Redux/PageUsersReducer";
 
 //Склеиваем все страницы в state
 let combinedReducers = combineReducers({
     pageDialogue: PageDialogueReducer,
     pageProfile: PageProfileReducer,
     siteBarLeft: SiteBarLeftReducer,
+    pageUsers: PageUsersReducer
 });
 //Создаем Store из склеянных страниц
 let store = createStore(combinedReducers);
