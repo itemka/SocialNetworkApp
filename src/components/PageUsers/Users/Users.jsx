@@ -5,16 +5,20 @@ import axios from "axios";
 import emptyFotoUser from './../../../Files/Images/user.png';
 
 const Users = (props) => {
-    if (props.status === statuses.NOT_INITIALIZED) {
-        props.setStatus(statuses.INPROGRESS);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=30`).then(response => {
-            props.setStatus(statuses.SUCCESS);
-            props.setUsers(response.data.items);
-        })
-    }
-    if (!props.users.length) {
-        return <div>Users note found</div>
-    }
+    let getUsersOnButton = ()=>{
+
+        if (props.status === statuses.NOT_INITIALIZED) {
+            props.setStatus(statuses.INPROGRESS);
+            axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=30`).then(response => {
+                props.setStatus(statuses.SUCCESS);
+                props.setUsers(response.data.items);
+            })
+        }
+        if (!props.users.length) {
+            return <div>Users note found</div>
+        }
+
+    };
 
     let users = props.users.map(user =>
         <div key={user.id} className={css.User}>
@@ -37,6 +41,7 @@ const Users = (props) => {
     );
     return (
         <div>
+            <button className={css.buttonUserFollowed} onClick={()=>getUsersOnButton()}>GET USERS</button>
             {users}
         </div>
     )

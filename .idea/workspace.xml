@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friend/Friend.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friend/Friend.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +100,8 @@
       <workItem from="1567861895744" duration="2614000" />
       <workItem from="1567879331668" duration="939000" />
       <workItem from="1567972237089" duration="10401000" />
-      <workItem from="1568057639871" duration="12126000" />
+      <workItem from="1568057639871" duration="12344000" />
+      <workItem from="1568142633248" duration="935000" />
     </task>
     <servers />
   </component>
