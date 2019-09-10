@@ -21,7 +21,7 @@
 .Post img:hover{
     great-area: imgPost;
     width: 48px;
-    border: 1px solid greenyellow;
+    border: 1px solid #2bcabc;
     float: left;
     border-radius: 50%;
 }

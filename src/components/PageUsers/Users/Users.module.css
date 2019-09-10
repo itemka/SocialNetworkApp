@@ -1,0 +1,47 @@
+.User {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
+    /*background-color: rgba(66, 66, 66,0.8);*/
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.User:hover {
+    background-color: rgba(66, 66, 66, 0.8);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+.User img {
+    border-radius: 10px;
+    width: 200px;
+}
+.User img:hover {
+    border-radius: 10px;
+    width: 194px;
+    border: 3px solid #2bcabc;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+.UserInfo {
+    margin: 20px 0 0 20px;
+}
+.buttonUserFollowed {
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(7, 141, 205, 0.5);
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+.buttonUserFollowed:hover {
+    background-color: rgba(66, 66, 66, 0.8);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+.nameUser {
+    font-size: 1.5em;
+    font-weight: bold;
+}
