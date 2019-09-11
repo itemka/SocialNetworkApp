@@ -1,29 +1,17 @@
 import React from 'react';
-import {statuses} from "../../../Redux/PageUsersReducer";
 import css from './Users.module.css';
-import axios from "axios";
-import emptyFotoUser from './../../../Files/Images/user.png';
+import manWithBeard from './../../../Files/Images/manBeard.png';
 
-const Users = (props) => {
-    let getUsersOnButton = ()=>{
-
-        if (props.status === statuses.NOT_INITIALIZED) {
-            props.setStatus(statuses.INPROGRESS);
-            axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=30`).then(response => {
-                props.setStatus(statuses.SUCCESS);
-                props.setUsers(response.data.items);
-            })
-        }
-        if (!props.users.length) {
-            return <div>Users note found</div>
-        }
-
-    };
-
+let Users = (props) => {
+    let pagesCounter = Math.ceil(props.totalUsersCount / props.pageSize);
+    let arrayPagesCounter = [];
+    for (let i = 1; i <= pagesCounter; i++) {
+        arrayPagesCounter.push(i);
+    }
     let users = props.users.map(user =>
         <div key={user.id} className={css.User}>
             {/*заглушка для фото `https://via.placeholder.com/150/`*/}
-            <img src={user.photos.small === null ? emptyFotoUser : user.photos.small} alt=""/>
+            <img src={user.photos.small === null ? manWithBeard : user.photos.small} alt=""/>
 
             <div className={css.UserInfo}>
                 <div className={css.nameUser}>name: {user.name}</div>
@@ -40,8 +28,19 @@ const Users = (props) => {
         </div>
     );
     return (
-        <div>
-            <button className={css.buttonUserFollowed} onClick={()=>getUsersOnButton()}>GET USERS</button>
+        <div className={css.BlockUsers}>
+            {!props.users.length ? <div>Users note found</div> : null}
+
+            {arrayPagesCounter.map(pageNumber =>
+                <span className={`${css.buttons}`}>
+                        <button onClick={() => props.setCurrentPageMethod(pageNumber)}
+                                className={props.currentPage === pageNumber ? css.buttonUserFollowed : `${css.buttonNoActive}`}>
+                            {pageNumber}
+                        </button>
+                </span>
+            )}
+            <br/><br/>
+
             {users}
         </div>
     )
