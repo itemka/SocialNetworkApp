@@ -30,15 +30,21 @@ let Users = (props) => {
     return (
         <div className={css.BlockUsers}>
             {!props.users.length ? <div>Users note found</div> : null}
-
-            {arrayPagesCounter.map(pageNumber =>
-                <span className={`${css.buttons}`}>
-                        <button onClick={() => props.setCurrentPageMethod(pageNumber)}
-                                className={props.currentPage === pageNumber ? css.buttonUserFollowed : `${css.buttonNoActive}`}>
-                            {pageNumber}
-                        </button>
-                </span>
-            )}
+            <div className={css.center}>
+                {arrayPagesCounter.map(pageNumber => {
+                        if (((pageNumber >= props.currentPage - 1) && (pageNumber <= props.currentPage + 1)) || (pageNumber === props.currentPage)) {
+                            return (
+                                <span className={`${css.buttons}`}>
+                                 <button onClick={() => props.setCurrentPageMethod(pageNumber)}
+                                         className={props.currentPage === pageNumber ? css.buttonUserFollowed : `${css.buttonNoActive}`}>
+                                {pageNumber}
+                                </button>
+                            </span>
+                            )
+                        }
+                    }
+                )}
+            </div>
             <br/><br/>
 
             {users}

@@ -2,174 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/016c6acaa708d9e541594b86dca0596b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/027e0ad800caa1235e57ae73b0b05703.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/05543f6e6e5345f1e74956f095a82d04.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/055757151e890467b86d00eeeaef79b5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/06624b26d4534b2185ff6a308a806508.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/06e0e2ea1d18fad94fab9d0e1c53d112.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/08c6a7159e4b2054613fb109e55afaf5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/098f868e8dba308fde4b3e8d1745c41c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0a8c3d72ec47fc79d2aeeabe1c8335e2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0a8d13cd7b2816bcd9e41b411716a645.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0b0820714f90c240c179bcd8c9e9b96b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0e7dc646ad33ae09b79296fb2d4035cd.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0e875175c6548ee09defa2e463b31268.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0ff60f0bd372c4491710745b198b6d5b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/126233b3b8dcae83d733c0fb876744c5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/13cea00e9da1968b037b24f5596c09ca.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/13f75e267bccd8926cef4d5ecc9df210.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/16b3cd6a72a3674d6c4cb7166e24b37c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1851e5eca64c0217638c2d4afd1d832e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/19386673b05de5cb5f009583b94dea2c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1ba9afecf75db797b185914c538ba31e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1d984c3daf980ace857e52029512ddfb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1e41bfc9f065622a01e29fc3d1d3dea2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1f6d616d26b3a18e4138853bab94ccea.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/23b92c9a0fad960f8deffbd7bbf47352.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/24037b78724c0e3b934721a9ff2639fe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/240dd5f2c3f0fdb4f8abb17a99620304.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/24f0924817539fb4cc094950babb70fa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/252fff615c261ea320eca589371e4398.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2692b8b9fea264f4c736ebda336eb668.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2698809ded827b2a0f5fa2a6c1737a57.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/293b67552f5052718e6afe698d464231.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2eec15366bb51c7034a3b807d047f0d8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/300a499ff7fc21c21301618e687501c3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3276aef68a7fe8e9b6bb31a60c166e9e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/33054c6f81ba48a50f18f29484fbd51c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/33757ce9d03736cd0032cb077f847fcd.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/390e3d7e64442faed5c48036e3572fad.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3a8c9a6ff76def306ba3d98f3d960e4c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b81655fc4e4ae554a85135231530cf1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3c2d48629b5c19adb8866e575dc08101.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3e37976ad98edd85f0401f3c45b3235b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/41d58f29f09f88733bdf62146999e432.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/45e67ff5a65db68caa25471ae45edec1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4668d4a9ed96fd22d5498591f5f90fa8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/471eff6c4080e34e38fbdd18a6a8f752.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4907f759f5dfad1c22efa3a70849400c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/49e377d004c7325ee02db69329f696eb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4cbd41280763dc7a6f69ff81512984e2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4e6d2568aee61cede8f24384da8a892c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4f138ac0f25df749d74f2bf69c933bda.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4fa0ac62efe2b561c70883ca41b93849.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/50f259614fb48c777d77e3443c168b88.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/51902cb9f883c05a96964e4362896eeb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/52064e7110e21880ef4da54cf053c378.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/55e7aa02511a3e30bdb735ffd78f98ce.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5613fd627e78b41978b2b394857f25a9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/565f7d1f481b21c40144b025fe910c9c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/57d2bdc086df37ec5214cabf08d11db4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/59968973be28b85ea84e1da36b728cd9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5a8f872efe7dc18c47591ed1427dad6d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5adca6cdd795a307cb6a89247e6f741e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5aecbcd76c197bbe2cb174cd69259a1d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5fe708804f05a57e9b07504819421b39.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/62a41647fdc29984f62520f9f871a3b3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/64aac55e2b47dab023a791c71afe99ed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/655c0e4074551d4b88219f5f243bc136.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/67464f67f2e57ed9bfc7fa681772a121.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6768d6584299a7eecd97a73d33344e28.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6ad23bd0269187a6e494d688c04813ca.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6ad4f9dc93f0b771dc6871c6d6f134c0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6bbec0df703476f44cd00492a50836f8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6f868788796f359f7975a15dd04e945a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/71f45a10577a045aade7e4b78ad30145.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/72966965eb3c9138d47c241722811a1d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7449af4337c6a6ae7d7b887c66e84bf9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/79420fda9558718aadee822a50ab38ad.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/79604d2be1a9a7dfc7887485cde5a7ce.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7df1cd170881c7de77041529e1521362.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f14f2ecfee14ca53523c9137b71b024.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f5fd928ca2578a2ef0309e08739e5c9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8180ebeb8a2b9e4cfc649fb1065ed479.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8205db89d2972bed89c5dca9b51c6137.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/844717af042be1886780f0df5e0e0b00.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/87e6403bca0c07c8281c1c1c42175117.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8830f61dd23fbfc72c3e9b5941545722.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/893fbf1540fe54ed96d25fab3ddc3b3d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/89fa370494d568c23def3daacc22bde6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8bba7c66082c160cf668acd2aab87bf2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8eca03858371535498fec7bb2aa61a42.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8f62b53c9975dd4d704af6f17169d854.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/90e978bc79244dd63f79d368afc32124.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/91d539f8707fc39629b4df27f8f68e49.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/94cbbe79e461de840afef938abf0df4b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/979f4c85b7951821f3770419ab5e6cf8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/983c9f58a5999aeb595796f9d26c2bfc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9a74bd1f75c183627a8b76ef07b7838f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9ab64509e0d1df54aeb38b4768178a76.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9e059adc44a7b3711fc25822b954e3de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a05e8803f00fc79de9bd2a9092e8819c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a24ad1f04201e7bb0003b02584d9add6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a37bc703892b095efedc43e183f76a1b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a6d525adcc9d5f18e5a090cb67c9a33f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a79521994806fe09107f8a5fbf50b2f9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a9112a854c5ad1cbe6d200dbe9ddc11c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a984940cea6be6ecb79cf61f34b0f810.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a9e2ab17b860888a2ef0380b8bf49086.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/aa55424b1c4173be8a6b9e2d06e3efbf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/aaff31d31cb1accffc08a28528a27276.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/adb0ee959e235f9516fa49328d8b24a5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/add2c851fd83cc8331516b2cf8fc1a47.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ae0e3af731ee6460303e38040b8ed725.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/af5eb32a7dd0809f9186c17cb6473749.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b215e925bb27bc8a30d7095fd39899a6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b432948ab44b9d5125b2802118d4bfa2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b626cdf05a57f2dcba928d4fac512019.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b6ac091d2addbbcd1fe3bfc6af820b92.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bae13cfaed02e873841b0d6c99143b29.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bce19d20881067adbfa9b49ab91e78bb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bea1a8a9b399cbf1f3835958b5dab944.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/becc86a7369614c34b8fa7647068bdb5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c63b52d18b11be347df6a7402605aa66.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c65d12da5bdb7ac62fc7231a89a1c0d0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c7dde20b0c1a2f601f975ccf6f9f776b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c97412379e97a0dcea70a411e897ec5d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c98df88ab89eeade420e3ab91b1bd9b5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/caa797181923cc2ad430cb67b99a1418.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cae6aaf5dc5eec55f0345f8efa8932ca.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cdbbb6a7997e22bcec68068c3e149548.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cf1fc4963218683984d58eb28bd60496.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d015efe1effa1fdad64c8a951768f510.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d06cebbf3f168dc09057b77365d5e70f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d06edbf7425e7e391d9829b6e6e0722e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d108e5a06cad3d00f5fa089993d8e777.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d27c9b163fd5970475f0f2bf14f7a4da.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d2878a45b07873b83166a7430029f1bd.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d93185af74f88de190658d4a0544e5a9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/da6aed8d417fbaf19d3fa2ae334a114e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/df91693a0d51c7df9fada73534d71f9e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e0d89b9c9cdd7bca375c00e7d4840183.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e1bfc356f73c9c5d6634bcd40d8c9922.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e745263a1ec2a9fd2e37e902959cc44c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eaf105c6acc8f9a71a4ce9f7f772b1cb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eb3bb7cd02dc21dc2ef43c50f093aade.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eb49317257121a28046f503cbe2b94b2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ecbefa9b75e8104361542b886d063ed3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/edd6e32628402c847b9c10ce558e355d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eeb2ec8e4ebce586b28daf81d9e1a999.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eedad17329745b7d8c0fade0d221c37b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/efcb870da718207aa26c0395b5b690eb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f01b2ab0ba400bb1e11f9c7aaad94359.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f0e3a2ac0486900b556c26c90874d4ee.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f3cf38e5443025117a70ef16eca359ca.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f623073d9e2fce937429ad0d15469873.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f94edbd88245d5d9adf547d985bdd503.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fb7918a469e44df07894596480ea44f2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fe283ab989d0dd825b25ae8a567fa10e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ff2cf67714963799563d4771a3659ec7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Files/Images/manBeard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Files/Images/manBeard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Files/Images/manWithBeard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Files/Images/unnamed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Files/Images/userBlack.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageUsers/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -267,7 +105,9 @@
       <workItem from="1567972237089" duration="10401000" />
       <workItem from="1568057639871" duration="12344000" />
       <workItem from="1568142633248" duration="6522000" />
-      <workItem from="1568227572448" duration="13903000" />
+      <workItem from="1568227572448" duration="14244000" />
+      <workItem from="1568305748739" duration="121000" />
+      <workItem from="1568485463221" duration="6933000" />
     </task>
     <servers />
   </component>

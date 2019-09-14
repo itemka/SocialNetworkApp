@@ -8,14 +8,15 @@ const PageUsers = () => {
     return (
         <div className={css.PageUsers}>
 
-            <SiteBarLeftContainer/>
-
+            <div>
+                <SiteBarLeftContainer/>
+            </div>
             <div className={css.UsersContainer}>
                 <UsersContainer/>
             </div>
-
-            <SiteBarRight/>
-
+            <div className={css.SiteBarRight}>
+                <SiteBarRight/>
+            </div>
         </div>
     );
 };
