@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Common/Preloader" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -39,19 +38,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users" />
-      <recent name="$PROJECT_DIR$/src/components/PageUsers" />
-      <recent name="$PROJECT_DIR$/src/Redux" />
-      <recent name="$PROJECT_DIR$/src/components/Users" />
-      <recent name="$PROJECT_DIR$/src/components/PageDialogue/SendMessages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends" />
       <recent name="$PROJECT_DIR$/src/Redux" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Common/Preloader" />
+      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users" />
+      <recent name="$PROJECT_DIR$/src/components/PageUsers" />
+      <recent name="$PROJECT_DIR$/src/Redux" />
+      <recent name="$PROJECT_DIR$/src/components/Users" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -107,7 +106,13 @@
       <workItem from="1568142633248" duration="6522000" />
       <workItem from="1568227572448" duration="14244000" />
       <workItem from="1568305748739" duration="121000" />
-      <workItem from="1568485463221" duration="6933000" />
+      <workItem from="1568485463221" duration="7096000" />
+      <workItem from="1568545223971" duration="717000" />
+      <workItem from="1568554828546" duration="671000" />
+      <workItem from="1568842819764" duration="17000" />
+      <workItem from="1569157106825" duration="2624000" />
+      <workItem from="1569344700033" duration="4525000" />
+      <workItem from="1569426525312" duration="8171000" />
     </task>
     <servers />
   </component>

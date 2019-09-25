@@ -4,26 +4,35 @@ const SET_CURRENT_PAGE = 'SN/USERS/SET_CURRENT_PAGE';
 const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT';
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
+const SET_FETCHING = 'SET_FETCHING';
+
 
 export const setUsersActionCreator = users => ({type: SET_USERS, users: users});
 export const setStatusActionCreator = status => ({type: SET_STATUS, status: status});
 export const setFollowActionCreator = userId => ({type: FOLLOW, userId: userId});
 export const unFollowActionCreator = userId => ({type: UNFOLLOW, userId: userId});
 export const setCurrentPageActionCreator = currentPage => ({type: SET_CURRENT_PAGE, currentPage: currentPage});
-export const setTotalUsersCountActionCreator = totalUsersCount => ({type: SET_TOTAL_USERS_COUNT, totalUsersCount: totalUsersCount});
+export const setTotalUsersCountActionCreator = totalUsersCount => ({
+    type: SET_TOTAL_USERS_COUNT,
+    totalUsersCount: totalUsersCount
+});
 export const statuses = {
-    NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS', CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
+    NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS',
+    CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
 };
+export const setFetching = loading => ({type: SET_FETCHING, loading: loading});
+
 
 let initialState = {
     status: statuses.NOT_INITIALIZED,
     users: [],
     totalUsersCount: 0,
     pageSize: 10,
-    currentPage: 1
+    currentPage: 1,
+    isFetching: true
 };
 
-const PageUsersReducer = (state = initialState, action) => {
+const PageUsersReducer = (state = initialState, action) => {//debugger
     switch (action.type) {
         case SET_STATUS: {
             return {
@@ -33,13 +42,13 @@ const PageUsersReducer = (state = initialState, action) => {
             }
         }
         case SET_USERS: {
-            return { ...state, users: action.users }
+            return {...state, users: action.users}
         }
         case SET_CURRENT_PAGE: {
-            return { ...state, currentPage: action.currentPage }
+            return {...state, currentPage: action.currentPage}
         }
         case SET_TOTAL_USERS_COUNT: {
-            return { ...state, totalUsersCount: action.totalUsersCount }
+            return {...state, totalUsersCount: action.totalUsersCount}
         }
         case FOLLOW: {
             return {
@@ -63,6 +72,12 @@ const PageUsersReducer = (state = initialState, action) => {
                         return user;
                     }
                 }),
+            }
+        }
+        case SET_FETCHING: {
+            return {
+                ...state,
+                isFetching: action.loading
             }
         }
         default: {
