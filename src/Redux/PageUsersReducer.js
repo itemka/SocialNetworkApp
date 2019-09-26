@@ -7,19 +7,15 @@ const UNFOLLOW = 'UNFOLLOW';
 const SET_FETCHING = 'SET_FETCHING';
 
 
-export const setUsersActionCreator = users => ({type: SET_USERS, users: users});
-export const setStatusActionCreator = status => ({type: SET_STATUS, status: status});
-export const setFollowActionCreator = userId => ({type: FOLLOW, userId: userId});
-export const unFollowActionCreator = userId => ({type: UNFOLLOW, userId: userId});
-export const setCurrentPageActionCreator = currentPage => ({type: SET_CURRENT_PAGE, currentPage: currentPage});
-export const setTotalUsersCountActionCreator = totalUsersCount => ({
-    type: SET_TOTAL_USERS_COUNT,
-    totalUsersCount: totalUsersCount
-});
-export const statuses = {
-    NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS',
-    CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
-};
+export const setUsers = users => ({type: SET_USERS, users: users});
+export const setStatus = status => ({type: SET_STATUS, status: status});
+export const setFollow = userId => ({type: FOLLOW, userId: userId});
+export const setUnFollow = userId => ({type: UNFOLLOW, userId: userId});
+export const setCurrentPage = currentPage => ({type: SET_CURRENT_PAGE, currentPage: currentPage});
+export const setTotalUsersCount = totalUsersCount => ({ type: SET_TOTAL_USERS_COUNT,
+                                                        totalUsersCount: totalUsersCount});
+export const statuses = {   NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS',
+                            CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'};
 export const setFetching = loading => ({type: SET_FETCHING, loading: loading});
 
 

@@ -28,6 +28,7 @@ let store = createStore(combinedReducers);
 //     // console.log('state changed');
 //     // renderAll(store.getState());
 // });
+window.store = store;
 
 ReactDOM.render(
     <Provider store={store}>

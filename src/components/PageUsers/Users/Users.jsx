@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './Users.module.css';
 import manWithBeard from './../../../Files/Images/manBeard.png';
+import {NavLink} from "react-router-dom";
 
 let Users = (props) => {
     let pagesCounter = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -11,7 +12,9 @@ let Users = (props) => {
     let users = props.users.map(user =>
         <div key={user.id} className={css.User}>
             {/*заглушка для фото `https://via.placeholder.com/150/`*/}
-            <img src={user.photos.small === null ? manWithBeard : user.photos.small} alt=""/>
+            <NavLink to={'/profile/' + user.id}>
+                <img src={user.photos.small === null ? manWithBeard : user.photos.small} alt=""/>
+            </NavLink>
 
             <div className={css.UserInfo}>
                 <div className={css.nameUser}>name: {user.name}</div>
@@ -35,11 +38,12 @@ let Users = (props) => {
                         if (((pageNumber >= props.currentPage - 1) && (pageNumber <= props.currentPage + 1)) || (pageNumber === props.currentPage)) {
                             return (
                                 <span className={`${css.buttons}`}>
-                                 <button onClick={() => props.setCurrentPageMethod(pageNumber)}
-                                         className={props.currentPage === pageNumber ? css.buttonUserFollowed : `${css.buttonNoActive}`}>
-                                {pageNumber}
-                                </button>
-                            </span>
+                                    <button onClick={() => props.setCurrentPageMethod(pageNumber)}
+                                            className={props.currentPage === pageNumber ? css.buttonUserFollowed : `${css.buttonNoActive}`}>
+
+                                        {pageNumber}
+                                    </button>
+                                </span>
                             )
                         }
                     }

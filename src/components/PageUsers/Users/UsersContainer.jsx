@@ -2,15 +2,15 @@ import React from 'react';
 import {connect} from "react-redux";
 import Users from "./Users";
 import axios from "axios";
-import {
-    setCurrentPageActionCreator,
-    setFollowActionCreator,
-    setStatusActionCreator,
-    setTotalUsersCountActionCreator,
-    setUsersActionCreator, setFetching, statuses,
-    unFollowActionCreator
-} from "../../../Redux/PageUsersReducer";
 import Preloader from "../../Common/Preloader/Preloader";
+import {
+    setCurrentPage, setFetching,
+    setFollow,
+    setStatus,
+    setTotalUsersCount,
+    setUnFollow,
+    setUsers, statuses
+} from "../../../Redux/PageUsersReducer";
 
 
 class UsersAPIContainer extends React.Component {
@@ -47,7 +47,7 @@ class UsersAPIContainer extends React.Component {
             <Users totalUsersCount={this.props.totalUsersCount}
                    pageSize={this.props.pageSize}
                    users={this.props.users}
-                   unFollow={this.props.unFollow}
+                   unFollow={this.props.setUnFollow}
                    setFollow={this.props.setFollow}
                    setCurrentPageMethod={this.setCurrentPageMethod}
                    currentPage={this.props.currentPage}/>
@@ -66,16 +66,14 @@ const mapStateToProps = state => {
         isFetching: state.pageUsers.isFetching
     }
 };
-const mapDispatchToProps = dispatch => {
-    return {
-        setUsers: users => dispatch(setUsersActionCreator(users)),
-        setStatus: status => dispatch(setStatusActionCreator(status)),
-        setFollow: userId => dispatch(setFollowActionCreator(userId)),
-        unFollow: userId => dispatch(unFollowActionCreator(userId)),
-        setCurrentPage: currentPage => dispatch(setCurrentPageActionCreator(currentPage)),
-        setTotalUsersCount: totalUsersCount => dispatch(setTotalUsersCountActionCreator(totalUsersCount)),
-        setFetching: loading => dispatch(setFetching(loading)),
-    }
-};
-const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(UsersAPIContainer);
+
+const UsersContainer = connect(mapStateToProps, {
+    setUsers,
+    setStatus,
+    setFollow,
+    setUnFollow,
+    setCurrentPage,
+    setTotalUsersCount,
+    setFetching
+})(UsersAPIContainer);
 export default UsersContainer;

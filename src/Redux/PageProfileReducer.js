@@ -1,5 +1,10 @@
 const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
 const ADD_POST = 'SN/PROFILE/ADD_POST';
+const SET_USER_PROFILE = 'SET_USER_PROFILE';
+
+export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
+export const onClickAddPostActionCreator = () => ({type: ADD_POST,});
+export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: profile});
 
 let initialState = {
     profiles: [
@@ -100,6 +105,7 @@ let initialState = {
         {id: 2, text: 'It is new Application!', like: '2',},
         {id: 1, text: 'hi', like: '1',},
     ],
+    profile: null
 };
 
 const PageProfileReducer = (state = initialState, action) => {
@@ -107,10 +113,10 @@ const PageProfileReducer = (state = initialState, action) => {
         case CHANGE_POST: {
             let stateCopy = {   //let stateCopy = cloneObject(state);
                 ...state,
-                profiles: state.profiles.map(item=> ({...item})),
+                profiles: state.profiles.map(item => ({...item})),
                 newPost: action.newPost,
                 typing: 'typing...',
-                posts: state.posts.map(item=>({...item}))
+                posts: state.posts.map(item => ({...item}))
             };
             console.log(stateCopy.newPost);
             return stateCopy;
@@ -118,7 +124,7 @@ const PageProfileReducer = (state = initialState, action) => {
         case ADD_POST: {
             let stateCopy = { // let stateCopy = cloneObject(state);
                 ...state,
-                posts: state.posts.map(item=>({...item})),
+                posts: state.posts.map(item => ({...item})),
             };
 
             if (stateCopy.newPost !== '') {
@@ -135,18 +141,13 @@ const PageProfileReducer = (state = initialState, action) => {
             }
             return stateCopy;
         }
+        case SET_USER_PROFILE: {
+            return {...state, profile: action.profile,}
+        }
         default: {
             return state;
         }
     }
 };
-
-export const onChangePostActionCreator = textNewPost => ({
-    type: CHANGE_POST,
-    newPost: textNewPost,
-});
-export const onClickAddPostActionCreator = () => ({
-    type: ADD_POST,
-});
 
 export default PageProfileReducer;

@@ -6,7 +6,7 @@
     grid-template-areas:
             "ProfileInfo_img listProfileInfo";
     grid-gap: 10px;
-    width: 40%;
+    width: 50%;
 }
 .ProfileInfo img{
     width: 100%;
@@ -16,6 +16,9 @@
 }
 .listProfileInfo{
     grid-area: listProfileInfo;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .nameProfile{
     font-size: 2.5em;
