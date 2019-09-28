@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageProfileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageUsersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageProfile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -120,7 +108,8 @@
       <workItem from="1568842819764" duration="17000" />
       <workItem from="1569157106825" duration="2624000" />
       <workItem from="1569344700033" duration="4525000" />
-      <workItem from="1569426525312" duration="20808000" />
+      <workItem from="1569426525312" duration="21010000" />
+      <workItem from="1569683857253" duration="83000" />
     </task>
     <servers />
   </component>
