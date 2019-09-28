@@ -30,7 +30,7 @@ let initialState = {
             id: 3,
             name: 'man3',
             dataOfBirth: '3 March',
-            education: 'BNTU3',
+            education: 'bntu',
             city: 'Minsk',
             webSite: 'https://www.facebook.com/profile.php?id=100004583561001&ref=bookmarks',
             photoProfile: 'https://i.pinimg.com/originals/0b/a9/e4/0ba9e4af9f7ac7439a9ccece4ac14474.jpg',
