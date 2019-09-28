@@ -11,7 +11,7 @@ let Users = (props) => {
     }
     let users = props.users.map(user =>
         <div key={user.id} className={css.User}>
-            {/*заглушка для фото `https://via.placeholder.com/150/`*/}
+
             <NavLink to={'/profile/' + user.id}>
                 <img src={user.photos.small === null ? manWithBeard : user.photos.small} alt=""/>
             </NavLink>
@@ -28,6 +28,7 @@ let Users = (props) => {
                             onClick={() => props.setFollow(user.id)}>setFollowed</button>
                 }
             </div>
+
         </div>
     );
     return (
