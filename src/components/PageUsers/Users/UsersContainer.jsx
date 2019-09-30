@@ -10,7 +10,7 @@ import {
     setTotalUsersCount,
     setUnFollow,
     setUsers, statuses
-} from "../../../Redux/PageUsersReducer";
+} from "../../../Redux/UsersReducer";
 
 
 class UsersAPIContainer extends React.Component {
@@ -19,7 +19,8 @@ class UsersAPIContainer extends React.Component {
             this.props.setStatus(statuses.INPROGRESS);
             this.props.setFetching(true);
             axios
-                .get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+                .get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`,
+                    {withCredentials: true, headers: {"API-KEY": "326adc8b-48be-4905-a33d-14875af1c491"}})
                 .then(response => {
                     this.props.setStatus(statuses.SUCCESS);
                     this.props.setUsers(response.data.items);
@@ -33,11 +34,37 @@ class UsersAPIContainer extends React.Component {
         this.props.setFetching(true);
         this.props.setCurrentPage(currentPage);
         axios
-            .get(`https://social-network.samuraijs.com/api/1.0/users?page=${currentPage}&count=${this.props.pageSize}`)
+            .get(`https://social-network.samuraijs.com/api/1.0/users?page=${currentPage}&count=${this.props.pageSize}`,
+                {withCredentials: true, headers: {"API-KEY": "326adc8b-48be-4905-a33d-14875af1c491"}})
             .then(response => {
                 this.props.setStatus(statuses.SUCCESS);
                 this.props.setUsers(response.data.items);
                 this.props.setFetching(false);
+            })
+    };
+
+    setFollow = userId => {
+        axios.post(
+            `https://social-network.samuraijs.com/api/1.0/follow/${userId}`,
+            {},
+            {withCredentials: true, headers: {"API-KEY": "326adc8b-48be-4905-a33d-14875af1c491"}})
+            .then(response => {
+                // if we have login (resultCode === 0) then we can make request to setFollow
+                if (response.data.resultCode === 0) {
+                    this.props.setFollow(userId);
+                }
+            })
+    };
+
+    setUnFollow = userId => {
+        axios.delete(
+            `https://social-network.samuraijs.com/api/1.0/follow/${userId}`,
+            {withCredentials: true, headers: {"API-KEY": "326adc8b-48be-4905-a33d-14875af1c491"}})
+            .then(response => {
+                // if we have login (resultCode === 0) then we can make request to setFollow
+                if (response.data.resultCode === 0) {
+                    this.props.setUnFollow(userId);
+                }
             })
     };
 
@@ -47,8 +74,8 @@ class UsersAPIContainer extends React.Component {
             <Users totalUsersCount={this.props.totalUsersCount}
                    pageSize={this.props.pageSize}
                    users={this.props.users}
-                   unFollow={this.props.setUnFollow}
-                   setFollow={this.props.setFollow}
+                   setUnFollow={this.setUnFollow}
+                   setFollow={this.setFollow}
                    setCurrentPageMethod={this.setCurrentPageMethod}
                    currentPage={this.props.currentPage}/>
         </div>
@@ -67,13 +94,8 @@ const mapStateToProps = state => {
     }
 };
 
-const UsersContainer = connect(mapStateToProps, {
-    setUsers,
-    setStatus,
-    setFollow,
-    setUnFollow,
-    setCurrentPage,
-    setTotalUsersCount,
-    setFetching
-})(UsersAPIContainer);
+const UsersContainer = connect(
+    mapStateToProps,
+    {setUsers, setStatus, setFollow, setUnFollow, setCurrentPage, setTotalUsersCount, setFetching}
+)(UsersAPIContainer);
 export default UsersContainer;

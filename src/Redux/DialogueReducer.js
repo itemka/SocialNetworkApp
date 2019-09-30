@@ -15,7 +15,7 @@ let initialState = {
     ],
 };
 
-const PageDialogueReducer = (state = initialState, action) => {
+const DialogueReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_MESSAGE: {
             let stateCopy = { //let z =  cloneObject(state)
@@ -60,4 +60,4 @@ export const onClickAddMessageActionCreator = () => ({
     type: ADD_MESSAGE,
 });
 
-export default PageDialogueReducer;
+export default DialogueReducer;

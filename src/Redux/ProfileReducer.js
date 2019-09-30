@@ -108,7 +108,7 @@ let initialState = {
     profile: null
 };
 
-const PageProfileReducer = (state = initialState, action) => {
+const ProfileReducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_POST: {
             let stateCopy = {   //let stateCopy = cloneObject(state);
@@ -150,4 +150,4 @@ const PageProfileReducer = (state = initialState, action) => {
     }
 };
 
-export default PageProfileReducer;
+export default ProfileReducer;

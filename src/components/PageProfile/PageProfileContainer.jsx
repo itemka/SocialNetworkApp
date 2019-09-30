@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import PageProfile from './PageProfile';
 import axios from 'axios';
-import {setUserProfile} from "../../Redux/PageProfileReducer";
+import {setUserProfile} from "../../Redux/ProfileReducer";
 import {withRouter} from "react-router-dom";
 
 class PageProfileContainer extends React.Component {

@@ -1,7 +1,7 @@
 import {
     onChangePostActionCreator,
     onClickAddPostActionCreator
-} from "../../../../Redux/PageProfileReducer";
+} from "../../../../Redux/ProfileReducer";
 import {connect} from "react-redux";
 import PublishPost from "./PublishPost";
 

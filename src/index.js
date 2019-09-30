@@ -7,18 +7,20 @@ import * as serviceWorker from './serviceWorker';
 
 import {BrowserRouter} from "react-router-dom";
 import {combineReducers, createStore} from "redux";
-import PageDialogueReducer from "./Redux/PageDialogueReducer";
-import PageProfileReducer from "./Redux/PageProfileReducer";
+import DialogueReducer from "./Redux/DialogueReducer";
+import ProfileReducer from "./Redux/ProfileReducer";
 import SiteBarLeftReducer from "./Redux/SiteBarLeftReducer";
 import {Provider} from "react-redux";
-import PageUsersReducer from "./Redux/PageUsersReducer";
+import UsersReducer from "./Redux/UsersReducer";
+import AuthReducer from "./Redux/AuthReducer";
 
 //Склеиваем все страницы в state
 let combinedReducers = combineReducers({
-    pageDialogue: PageDialogueReducer,
-    pageProfile: PageProfileReducer,
+    pageDialogue: DialogueReducer,
+    pageProfile: ProfileReducer,
     siteBarLeft: SiteBarLeftReducer,
-    pageUsers: PageUsersReducer
+    pageUsers: UsersReducer,
+    authUserData: AuthReducer
 });
 //Создаем Store из склеянных страниц
 let store = createStore(combinedReducers);

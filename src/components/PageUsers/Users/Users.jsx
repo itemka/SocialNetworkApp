@@ -22,10 +22,8 @@ let Users = (props) => {
                 <div>status: {user.status ? user.status : `no status :(`}</div>
                 <div>followed: {user.followed ? `Yes!!!` : `No :(`}</div>
                 {user.followed ?
-                    <button className={css.buttonUserFollowed}
-                            onClick={() => props.unFollow(user.id)}>unFollowed</button> :
-                    <button className={css.buttonUserFollowed}
-                            onClick={() => props.setFollow(user.id)}>setFollowed</button>
+                    <button className={css.buttonUserFollowed} onClick={() => props.setUnFollow(user.id)}>unFollowed</button> :
+                    <button className={css.buttonUserFollowed} onClick={() => props.setFollow(user.id)}>setFollowed</button>
                 }
             </div>
 

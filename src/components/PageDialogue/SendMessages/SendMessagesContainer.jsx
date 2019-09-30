@@ -1,4 +1,4 @@
-import {onChangeAddMessageActionCreator, onClickAddMessageActionCreator} from "../../../Redux/PageDialogueReducer";
+import {onChangeAddMessageActionCreator, onClickAddMessageActionCreator} from "../../../Redux/DialogueReducer";
 import {connect} from "react-redux";
 import SendMessages from "./SendMessages";
 
