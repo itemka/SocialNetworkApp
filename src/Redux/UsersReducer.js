@@ -5,6 +5,7 @@ const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT';
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_FETCHING = 'SET_FETCHING';
+const SET_CHECK_FOLLOW = 'SET_CHECK_FOLLOW';
 
 
 export const setUsers = users => ({type: SET_USERS, users: users});
@@ -21,6 +22,7 @@ export const statuses = {
     CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
 };
 export const setFetching = loading => ({type: SET_FETCHING, loading: loading});
+export const setCheckFollow = (checked, userId) => ({type: SET_CHECK_FOLLOW, checked, userId});
 
 
 let initialState = {
@@ -29,7 +31,8 @@ let initialState = {
     totalUsersCount: 0,
     pageSize: 10,
     currentPage: 1,
-    isFetching: true
+    isFetching: true,
+    checkFollow: []
 };
 
 const UsersReducer = (state = initialState, action) => {//debugger
@@ -64,9 +67,13 @@ const UsersReducer = (state = initialState, action) => {//debugger
                 }),
             };
         case SET_FETCHING:
+            return {...state, isFetching: action.loading};
+        case SET_CHECK_FOLLOW:
             return {
                 ...state,
-                isFetching: action.loading
+                checkFollow: action.checked
+                    ? [...state.checkFollow, action.userId]
+                    :  state.checkFollow.filter(id => id !== action.userId)
             };
         default:
             return state;
