@@ -2,14 +2,14 @@ const SET_USER_DATA = 'SN/HEADER/SET_USER_DATA';
 const SET_USER_FOTO = 'SN/HEADER/SET_USER_FOTO';
 
 export const setUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
-export const setUserFoto = userFoto => ({type: SET_USER_FOTO, userFoto: userFoto});
+export const setUserPhoto = userPhoto => ({type: SET_USER_FOTO, userPhoto: userPhoto});
 
 let initialState = {
     id: null,
     email: null,
     login: null,
     isAuth: false,
-    userFoto: null,
+    userPhoto: null,
 };
 
 const AuthReducer = (state = initialState, action) => {
@@ -23,7 +23,7 @@ const AuthReducer = (state = initialState, action) => {
         case SET_USER_FOTO:
             return {
                 ...state,
-                userFoto: action.userFoto,
+                userPhoto: action.userPhoto,
             };
         default: {
             return state;

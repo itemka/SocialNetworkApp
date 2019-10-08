@@ -10,7 +10,8 @@
 }
 .oneDialogue:hover{
     background-color: rgba(41, 41, 41, 0.5);
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+    padding-left: 30px;
 }
 .nameFriends{
     float: left;

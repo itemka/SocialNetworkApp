@@ -11,7 +11,8 @@ import {
     setUnFollow,
     setUsers, statuses
 } from "../../../Redux/UsersReducer";
-import {getUsersAPI, setFollowAPI, setUnFollowAPI} from "../../../API/API";
+import {api} from "../../../API/API";
+
 
 
 class UsersAPIContainer extends React.Component {
@@ -19,7 +20,7 @@ class UsersAPIContainer extends React.Component {
         if (this.props.status === statuses.NOT_INITIALIZED) {
             this.props.setStatus(statuses.INPROGRESS);
             this.props.setFetching(true);
-            getUsersAPI(this.props.currentPage, this.props.pageSize).then(data => {
+            api.getUsersAPI(this.props.currentPage, this.props.pageSize).then(data => {
                 this.props.setStatus(statuses.SUCCESS);
                 this.props.setUsers(data.items);
                 this.props.setTotalUsersCount(data.totalCount);
@@ -31,7 +32,7 @@ class UsersAPIContainer extends React.Component {
     setCurrentPageMethod = currentPage => {
         this.props.setFetching(true);
         this.props.setCurrentPage(currentPage);
-        getUsersAPI(currentPage, this.props.pageSize).then(data => {
+        api.getUsersAPI(currentPage, this.props.pageSize).then(data => {
             this.props.setStatus(statuses.SUCCESS);
             this.props.setUsers(data.items);
             this.props.setFetching(false);
@@ -40,7 +41,7 @@ class UsersAPIContainer extends React.Component {
 
     setFollow = userId => {
         this.props.setCheckFollow(true, userId);
-        setFollowAPI(userId).then(data => {
+        api.setFollowAPI(userId).then(data => {
             if (data.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to setFollow
                 this.props.setFollow(userId);
                 this.props.setCheckFollow(false, userId);
@@ -50,7 +51,7 @@ class UsersAPIContainer extends React.Component {
 
     setUnFollow = userId => {
         this.props.setCheckFollow(true, userId);
-        setUnFollowAPI(userId).then(data => {
+        api.setUnFollowAPI(userId).then(data => {
             if (data.resultCode === 0) { // if we have login (resultCode === 0) then we can make request to setFollow
                 this.props.setUnFollow(userId);
                 this.props.setCheckFollow(false, userId);
