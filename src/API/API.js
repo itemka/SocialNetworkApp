@@ -10,16 +10,9 @@ export const api = {
     getUsersAPI: (currentPage, pageSize) => {
         return instance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data);
     },
-    setFollowAPI: userId => {
-        return instance.post(`follow/${userId}`, {},).then(response => response.data)
-    },
-    setUnFollowAPI: userId => {
-        return instance.delete(`follow/${userId}`).then(response => response.data)
-    },
-    setUserDataAPI: () => {
-        return instance.get(`auth/me`).then(response => response.data)
-    },
-    getProfilePhotoAPI: id => {
-        return instance.get(`profile/${id}`).then(response => response.data)
-    },
+    setFollowAPI: userId => instance.post(`follow/${userId}`, {},).then(response => response.data),
+    setUnFollowAPI: userId => instance.delete(`follow/${userId}`).then(response => response.data),
+    setUserDataAPI: () => instance.get(`auth/me`).then(response => response.data),
+    getProfilePhotoAPI: id => instance.get(`profile/${id}`).then(response => response.data),
+    getUserProfileAPI: (userId) => instance.get(`profile/${userId}`).then(response => response.data),
 };

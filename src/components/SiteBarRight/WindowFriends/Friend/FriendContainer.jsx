@@ -1,14 +1,6 @@
 import {connect} from "react-redux";
 import Friend from "./Friend";
 
-const mapStateToProps = state => {
-    return {
-        profiles: state.pageProfile.profiles,
-    }
-};
-const mapDispatchToProps = () => {
-    return {}
-};
-const FriendContainer = connect(mapStateToProps, mapDispatchToProps)(Friend);
-
+const mapStateToProps = state => ({profiles: state.pageProfile.profiles,});
+const FriendContainer = connect(mapStateToProps, {})(Friend);
 export default FriendContainer;

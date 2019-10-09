@@ -1,3 +1,5 @@
+import {api} from "../API/API";
+
 const SET_USERS = 'SN/USERS/SET_USERS';
 const SET_STATUS = 'SN/USERS/SET_STATUS';
 const SET_CURRENT_PAGE = 'SN/USERS/SET_CURRENT_PAGE';
@@ -6,23 +8,58 @@ const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_FETCHING = 'SET_FETCHING';
 const SET_CHECK_FOLLOW = 'SET_CHECK_FOLLOW';
-
-
+export const statuses = {
+    NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS',
+    CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
+};
 export const setUsers = users => ({type: SET_USERS, users: users});
 export const setStatus = status => ({type: SET_STATUS, status: status});
 export const setFollow = userId => ({type: FOLLOW, userId: userId});
 export const setUnFollow = userId => ({type: UNFOLLOW, userId: userId});
 export const setCurrentPage = currentPage => ({type: SET_CURRENT_PAGE, currentPage: currentPage});
-export const setTotalUsersCount = totalUsersCount => ({
-    type: SET_TOTAL_USERS_COUNT,
-    totalUsersCount: totalUsersCount
-});
-export const statuses = {
-    NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS',
-    CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
-};
+export const setTotalUsersCount = totalUsersCount => ({type: SET_TOTAL_USERS_COUNT, totalUsersCount: totalUsersCount});
 export const setFetching = loading => ({type: SET_FETCHING, loading: loading});
 export const setCheckFollow = (checked, userId) => ({type: SET_CHECK_FOLLOW, checked, userId});
+
+export const GetUserThunkCreator = (currentPage, pageSize, status) => dispatch => {
+    if (status === statuses.NOT_INITIALIZED) {
+        dispatch(setStatus(statuses.INPROGRESS));
+        dispatch(setFetching(true));
+        api.getUsersAPI(currentPage, pageSize).then(data => {
+            dispatch(setStatus(statuses.SUCCESS));
+            dispatch(setUsers(data.items));
+            dispatch(setTotalUsersCount(data.totalCount));
+            dispatch(setFetching(false));
+        })
+    }
+};
+export const SetCurrentPageMethodThunkCreator = (currentPage, pageSize) => dispatch => {
+    dispatch(setFetching(true));
+    dispatch(setCurrentPage(currentPage));
+    api.getUsersAPI(currentPage, pageSize).then(data => {
+        dispatch(setStatus(statuses.SUCCESS));
+        dispatch(setUsers(data.items));
+        dispatch(setFetching(false));
+    })
+};
+export const SetFollowThunkCreator = userId => dispatch => {
+    dispatch(setCheckFollow(true, userId));
+    api.setFollowAPI(userId).then(data => {
+        if (data.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to setFollow
+            dispatch(setFollow(userId));
+            dispatch(setCheckFollow(false, userId));
+        }
+    })
+};
+export const SetUnFollowThunkCreator = (userId) => dispatch => {
+    dispatch(setCheckFollow(true, userId));
+    api.setUnFollowAPI(userId).then(data => {
+        if (data.resultCode === 0) { // if we have login (resultCode === 0) then we can make request to setFollow
+            dispatch(setUnFollow(userId));
+            dispatch(setCheckFollow(false, userId));
+        }
+    })
+};
 
 
 let initialState = {
@@ -73,7 +110,7 @@ const UsersReducer = (state = initialState, action) => {//debugger
                 ...state,
                 checkFollow: action.checked
                     ? [...state.checkFollow, action.userId]
-                    :  state.checkFollow.filter(id => id !== action.userId)
+                    : state.checkFollow.filter(id => id !== action.userId)
             };
         default:
             return state;

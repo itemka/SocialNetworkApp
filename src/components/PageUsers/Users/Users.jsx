@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Users.module.css';
 import manWithBeard from './../../../Files/Images/manBeard.png';
 import {NavLink} from "react-router-dom";
-import Preloader from "../../Common/Preloader/Preloader";
+import Spinner42px from './../../../Files/Images/Spinner42px.svg';
 
 
 let Users = (props) => {
@@ -28,12 +28,12 @@ let Users = (props) => {
                     className={user.followed ? css.followOK : css.followNOTOK}>followed: {user.followed ? `Yes!!!` : `No :(`}</div>
                 {user.followed
                     ? props.checkFollow.some(id => id === user.id)
-                        ? <Preloader/>
+                        ? <img src={Spinner42px} width="10px" alt=""/>
                         : <button disabled={props.checkFollow.some(id => id === user.id)}
                                   className={`${css.buttonUserFollowed} ` + requestLoad(user.id)}
                                   onClick={() => props.setUnFollow(user.id)}>unFollowed</button>
                     : props.checkFollow.some(id => id === user.id)
-                        ? <Preloader/>
+                        ? <img src={Spinner42px} width="10px" alt=""/>
                         : <button disabled={props.checkFollow.some(id => id === user.id)}
                                   className={`${css.buttonUserFollowed} ` + requestLoad(user.id)}
                                   onClick={() => props.setFollow(user.id)}>setFollowed</button>

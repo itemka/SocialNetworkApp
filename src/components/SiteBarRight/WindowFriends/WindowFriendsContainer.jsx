@@ -1,13 +1,6 @@
 import {connect} from "react-redux";
 import WindowFriends from "./WindowFriends";
 
-const mapStateToProps = state => {
-    return {
-        profiles: state.pageProfile.profiles,
-    }
-};
-const mapDispatchToProps = () => { return {} };
-
-const WindowFriendsContainer = connect(mapStateToProps, mapDispatchToProps)(WindowFriends);
-
+const mapStateToProps = state => ({profiles: state.pageProfile.profiles});
+const WindowFriendsContainer = connect(mapStateToProps, {})(WindowFriends);
 export default WindowFriendsContainer;

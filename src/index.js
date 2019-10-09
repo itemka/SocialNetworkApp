@@ -6,13 +6,15 @@ import * as serviceWorker from './serviceWorker';
 // import oldStore from './Redux/Store';
 
 import {BrowserRouter} from "react-router-dom";
-import {combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
 import DialogueReducer from "./Redux/DialogueReducer";
 import ProfileReducer from "./Redux/ProfileReducer";
 import SiteBarLeftReducer from "./Redux/SiteBarLeftReducer";
 import {Provider} from "react-redux";
 import UsersReducer from "./Redux/UsersReducer";
 import AuthReducer from "./Redux/AuthReducer";
+import thunk from "redux-thunk";
+
 
 //Склеиваем все страницы в state
 let combinedReducers = combineReducers({
@@ -23,7 +25,7 @@ let combinedReducers = combineReducers({
     authUserData: AuthReducer
 });
 //Создаем Store из склеянных страниц
-let store = createStore(combinedReducers);
+let store = createStore(combinedReducers, applyMiddleware(thunk));
 
 //Добавляем subscribe(перерисовку всего) в oldStore. Было: // oldStore.subscribe(() => renderAll());
 // store.subscribe(() => {

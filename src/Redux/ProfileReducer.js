@@ -1,3 +1,5 @@
+import {api} from "../API/API";
+
 const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
 const ADD_POST = 'SN/PROFILE/ADD_POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
@@ -5,6 +7,10 @@ const SET_USER_PROFILE = 'SET_USER_PROFILE';
 export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
 export const onClickAddPostActionCreator = () => ({type: ADD_POST,});
 export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: profile});
+
+export const GetUserProfileThunkCreator = userId => dispatch => {
+    api.getUserProfileAPI(userId).then(data => dispatch(setUserProfile(data)));
+};
 
 let initialState = {
     profiles: [
