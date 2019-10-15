@@ -48,7 +48,19 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(
-    mapStateToProps,
-    {GetUserThunkCreator, SetCurrentPageMethodThunkCreator, SetFollowThunkCreator, SetUnFollowThunkCreator}
-)(withAuthRedirectComponentHOC(UsersAPIContainer));
+// export default connect(
+//     mapStateToProps,
+//     {GetUserThunkCreator, SetCurrentPageMethodThunkCreator, SetFollowThunkCreator, SetUnFollowThunkCreator}
+// )(withAuthRedirectComponentHOC(UsersAPIContainer);
+
+export default compose(
+    connect(
+        mapStateToProps,
+        {
+            GetUserThunkCreator,
+            SetCurrentPageMethodThunkCreator,
+            SetFollowThunkCreator,
+            SetUnFollowThunkCreator
+        }),
+    withAuthRedirectComponentHOC
+)(UsersAPIContainer);

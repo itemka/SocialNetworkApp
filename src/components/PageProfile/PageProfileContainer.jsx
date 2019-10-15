@@ -4,6 +4,7 @@ import PageProfile from './PageProfile';
 import {withRouter} from "react-router-dom";
 import {GetUserProfileThunkCreator} from "../../Redux/ProfileReducer";
 import {withAuthRedirectComponentHOC} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
 
 class PageProfileContainer extends React.Component {
     componentDidMount() {
@@ -17,7 +18,10 @@ class PageProfileContainer extends React.Component {
     }
 }
 
-let PageProfileContainerHOC = withAuthRedirectComponentHOC(PageProfileContainer);
-let WithUrlDataContainerComponent = withRouter(PageProfileContainerHOC);
-const ConnectedPageProfileContainer = connect(null, {GetUserProfileThunkCreator})(WithUrlDataContainerComponent);
-export default ConnectedPageProfileContainer;
+// let PageProfileContainerHOC = withAuthRedirectComponentHOC(PageProfileContainer);
+// let WithUrlDataContainerComponent = withRouter(PageProfileContainerHOC);
+// const ConnectedPageProfileContainer = connect(null, {GetUserProfileThunkCreator})(WithUrlDataContainerComponent);
+// export default ConnectedPageProfileContainer;
+
+export default compose(connect(null, {GetUserProfileThunkCreator}), withRouter, withAuthRedirectComponentHOC
+)(PageProfileContainer)
