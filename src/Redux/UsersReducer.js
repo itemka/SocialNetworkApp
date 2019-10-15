@@ -12,6 +12,7 @@ export const statuses = {
     NOT_INITIALIZED: 'NOT_INITIALIZED', ERROR: 'ERROR', INPROGRESS: 'INPROGRESS',
     CAPTCHA_REQUIRED: 'CAPTCHA_REQUIRED', SUCCESS: 'SUCCESS'
 };
+
 export const setUsers = users => ({type: SET_USERS, users: users});
 export const setStatus = status => ({type: SET_STATUS, status: status});
 export const setFollow = userId => ({type: FOLLOW, userId: userId});

@@ -7,7 +7,6 @@ import SiteBarRight from "../SiteBarRight/SiteBarRight";
 const PageUsers = () => {
     return (
         <div className={css.PageUsers}>
-
             <div>
                 <SiteBarLeftContainer/>
             </div>

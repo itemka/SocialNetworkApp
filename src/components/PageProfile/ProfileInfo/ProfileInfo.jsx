@@ -1,13 +1,14 @@
 import React from 'react';
 import css from './ProfileInfo.module.css';
 import Preloader from "../../Common/Preloader/Preloader";
+import manWithBeard from './../../../Files/Images/manBeard.png';
 
 const ProfileInfo = (props) => {
     return (
         <div className={css.ProfileInfo}>
             {!props.profile ? <Preloader/> : <>
                 <div>
-                    <img src={props.profile.photos.large}/>
+                    <img src={props.profile.photos.large !== null ? props.profile.photos.large : manWithBeard}/>
                 </div>
                 <div className={css.listProfileInfo}>
                     <div className={css.nameProfile}>{props.profile.fullName}</div>
