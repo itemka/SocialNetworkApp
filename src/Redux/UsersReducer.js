@@ -1,4 +1,5 @@
-import {api} from "../API/API";
+import {userAPI} from "../API/API";
+
 
 const SET_USERS = 'SN/USERS/SET_USERS';
 const SET_STATUS = 'SN/USERS/SET_STATUS';
@@ -26,7 +27,7 @@ export const GetUserThunkCreator = (currentPage, pageSize, status) => dispatch =
     if (status === statuses.NOT_INITIALIZED) {
         dispatch(setStatus(statuses.INPROGRESS));
         dispatch(setFetching(true));
-        api.getUsersAPI(currentPage, pageSize).then(data => {
+        userAPI.getUsersAPI(currentPage, pageSize).then(data => {
             dispatch(setStatus(statuses.SUCCESS));
             dispatch(setUsers(data.items));
             dispatch(setTotalUsersCount(data.totalCount));
@@ -37,7 +38,7 @@ export const GetUserThunkCreator = (currentPage, pageSize, status) => dispatch =
 export const SetCurrentPageMethodThunkCreator = (currentPage, pageSize) => dispatch => {
     dispatch(setFetching(true));
     dispatch(setCurrentPage(currentPage));
-    api.getUsersAPI(currentPage, pageSize).then(data => {
+    userAPI.getUsersAPI(currentPage, pageSize).then(data => {
         dispatch(setStatus(statuses.SUCCESS));
         dispatch(setUsers(data.items));
         dispatch(setFetching(false));
@@ -45,7 +46,7 @@ export const SetCurrentPageMethodThunkCreator = (currentPage, pageSize) => dispa
 };
 export const SetFollowThunkCreator = userId => dispatch => {
     dispatch(setCheckFollow(true, userId));
-    api.setFollowAPI(userId).then(data => {
+    userAPI.setFollowAPI(userId).then(data => {
         if (data.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to setFollow
             dispatch(setFollow(userId));
             dispatch(setCheckFollow(false, userId));
@@ -54,7 +55,7 @@ export const SetFollowThunkCreator = userId => dispatch => {
 };
 export const SetUnFollowThunkCreator = (userId) => dispatch => {
     dispatch(setCheckFollow(true, userId));
-    api.setUnFollowAPI(userId).then(data => {
+    userAPI.setUnFollowAPI(userId).then(data => {
         if (data.resultCode === 0) { // if we have login (resultCode === 0) then we can make request to setFollow
             dispatch(setUnFollow(userId));
             dispatch(setCheckFollow(false, userId));

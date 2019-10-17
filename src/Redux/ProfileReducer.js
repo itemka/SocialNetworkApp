@@ -1,15 +1,26 @@
-import {api} from "../API/API";
+import {profileAPI} from "../API/API";
+
 
 const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
 const ADD_POST = 'SN/PROFILE/ADD_POST';
-const SET_USER_PROFILE = 'SET_USER_PROFILE';
+const SET_USER_PROFILE = 'SN/PROFILE/SET_USER_PROFILE';
+const STATUS = 'SN/PROFILE/STATUS';
 
 export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
 export const onClickAddPostActionCreator = () => ({type: ADD_POST,});
 export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: profile});
+export const setStatus = statusText => ({type: STATUS, statusText: statusText});
 
 export const GetUserProfileThunkCreator = userId => dispatch => {
-    api.getUserProfileAPI(userId).then(data => dispatch(setUserProfile(data)));
+    profileAPI.getUserProfileAPI(userId).then(data => dispatch(setUserProfile(data)));
+};
+export const SetStatusProfilePageThunkCreator = (userId) => dispatch => {
+    profileAPI.setStatus(userId).then(data => dispatch(setStatus(data)));
+};
+export const UpdateStatusProfilePageThunkCreator = (statusText) => dispatch => {
+    profileAPI.updateStatus(statusText).then(data => {
+        if (data.resultCode === 0) dispatch(setStatus(statusText));
+    })
 };
 
 let initialState = {
@@ -111,11 +122,17 @@ let initialState = {
         {id: 2, text: 'It is new Application!', like: '2',},
         {id: 1, text: 'hi', like: '1',},
     ],
-    profile: null
+    profile: null,
+    status: null,
 };
 
 const ProfileReducer = (state = initialState, action) => {
     switch (action.type) {
+        case STATUS:
+            return {
+                ...state,
+                status: action.statusText
+            };
         case CHANGE_POST: {
             let stateCopy = {   //let stateCopy = cloneObject(state);
                 ...state,
