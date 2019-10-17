@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import oldStore from './Redux/Store';
 
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import DialogueReducer from "./Redux/DialogueReducer";
 import ProfileReducer from "./Redux/ProfileReducer";
@@ -36,9 +36,12 @@ window.store = store;
 
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+
+        {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
+        <HashRouter>
             <App/>
-        </BrowserRouter>
+        </HashRouter>
+        {/*</BrowserRouter>*/}
     </Provider>
     , document.getElementById('root'));
 
