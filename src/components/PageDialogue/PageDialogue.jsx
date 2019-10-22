@@ -16,8 +16,13 @@ const PageDialogue = () => {
                 <div className={css.titleChat}>Chat</div>
                 <div className={css.DialoguesWithMessages}>
 
-                    <DialoguesContainer/> <MessagesContainer/>
-                                          <SendMessagesContainer/>
+                    <div className={css.DialoguesContainer}>
+                        <DialoguesContainer/>
+                    </div>
+                    <div className={css.MessagesContainer}>
+                        <MessagesContainer/>
+                        <SendMessagesContainer/>
+                    </div>
 
                 </div>
             </div>

@@ -1,6 +1,7 @@
 .Posts{
     grid-area: Posts;
     margin: 10px 10px 0 10px;
+    width: 700px;
 }
 .nameListPosts{
     font-size: 1.5em;

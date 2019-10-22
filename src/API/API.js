@@ -12,9 +12,15 @@ export const userAPI = {
     },
     setFollowAPI: userId => instance.post(`follow/${userId}`, {},).then(response => response.data),
     setUnFollowAPI: userId => instance.delete(`follow/${userId}`).then(response => response.data),
+    getTotalCountUsersAPI: () => instance.get(`users`).then(response => {
+        // debugger
+        return response.data
+    }),
+    getUsersAllAPI: (countUsers) => instance.get(`users?count=${countUsers}`).then(response => response.data),
 };
 export const authAPI = {
     setUserDataAPI: () => instance.get(`auth/me`).then(response => response.data),
+    logIn: (email, password, rememberMe)=> instance.post(`/auth/login`, {email, password, rememberMe}).then(response=>response.data),
 };
 export const profileAPI = {
     getProfilePhotoAPI: id => instance.get(`profile/${id}`).then(response => response.data),

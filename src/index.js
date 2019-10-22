@@ -14,6 +14,8 @@ import {Provider} from "react-redux";
 import UsersReducer from "./Redux/UsersReducer";
 import AuthReducer from "./Redux/AuthReducer";
 import thunk from "redux-thunk";
+import SiteBarRightReducer from "./Redux/SiteBarRightReducer";
+import {reducer as formReducer} from "redux-form";
 
 
 //Склеиваем все страницы в state
@@ -22,7 +24,9 @@ let combinedReducers = combineReducers({
     pageProfile: ProfileReducer,
     siteBarLeft: SiteBarLeftReducer,
     pageUsers: UsersReducer,
-    authUserData: AuthReducer
+    authUserData: AuthReducer,
+    siteBarRight: SiteBarRightReducer,
+    form: formReducer
 });
 //Создаем Store из склеянных страниц
 let store = createStore(combinedReducers, applyMiddleware(thunk));

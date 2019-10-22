@@ -1,10 +1,10 @@
 .PageUsers{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .UsersContainer{
-    margin: 10px 0 30px 40px;
+    margin: 10px 0 30px 100px;
     padding: 10px 0;
     border-radius: 3px;
     /*background-color: rgba(66, 66, 66, 0.9);*/

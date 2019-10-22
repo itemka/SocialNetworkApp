@@ -1,6 +1,15 @@
 import {connect} from "react-redux";
 import Friend from "./Friend";
+import React from "react";
 
-const mapStateToProps = state => ({profiles: state.pageProfile.profiles,});
-const FriendContainer = connect(mapStateToProps, {})(Friend);
-export default FriendContainer;
+class FriendContainer extends React.Component {
+    render() {
+        return <Friend {...this.props}/>
+    }
+}
+
+const mapStateToProps = state => ({
+    users: state.siteBarRight.users
+});
+
+export default connect(mapStateToProps, {})(FriendContainer)

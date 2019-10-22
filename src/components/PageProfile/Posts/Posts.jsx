@@ -3,13 +3,14 @@ import css from './Posts.module.css';
 import Post from "./Post/Post";
 import PropTypes from 'prop-types';
 import PublishPostContainer from "./PublishPost/PublishPostContainer";
+import manWithBeard from "../../../Files/Images/manBeard.jpg";
 
 const Posts = (props) => {
+    // console.log(props.profile);
     // let reversePosts = props.posts.reverse();
     let post = props.posts.map(item => <Post key={item.id}
                                              id={item.id} text={item.text} like={item.like}
-                                             photoProfile={props.profiles[0].photoProfile}
-    />);
+                                             photoProfile={manWithBeard}/>);
     return (
         <div className={css.Posts}>
 

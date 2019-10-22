@@ -3,9 +3,11 @@ import {authAPI, profileAPI} from "../API/API";
 
 const SET_USER_DATA = 'SN/HEADER/SET_USER_DATA';
 const SET_USER_PHOTO = 'SN/HEADER/SET_USER_PHOTO';
+const LOG_IN = 'SN/HEADER/LOG_IN';
 
 export const setUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
 export const setUserPhoto = userPhoto => ({type: SET_USER_PHOTO, userPhoto: userPhoto});
+export const logIn = (email) => ({type: LOG_IN, email});
 
 export const checkUserDataThunkCreator = (isAuth) => dispatch => {
     authAPI.setUserDataAPI().then(data => {
@@ -21,12 +23,20 @@ export const checkUserDataThunkCreator = (isAuth) => dispatch => {
     })
 };
 
+export const logInThunkCreator = (email, password, rememberMe)=>dispatch=>{
+  authAPI.logIn(email, password, rememberMe).then(data=>{
+      dispatch(logIn(data.userId))
+  })
+};
+
 let initialState = {
     id: null,
-    email: null,
     login: null,
     isAuth: false,
     userPhoto: null,
+    email: null,
+    password: null,
+    rememberMe: null,
 };
 
 const AuthReducer = (state = initialState, action) => {
@@ -41,6 +51,11 @@ const AuthReducer = (state = initialState, action) => {
             return {
                 ...state,
                 userPhoto: action.userPhoto,
+            };
+        case LOG_IN:
+            return {
+              ...state,
+              email: action.email
             };
         default: {
             return state;

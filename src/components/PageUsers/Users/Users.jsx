@@ -9,7 +9,7 @@ let Users = (props) => {
     let pagesCounter = Math.ceil(props.totalUsersCount / props.pageSize);
     let arrayPagesCounter = [];
     for (let i = 1; i <= pagesCounter; i++) {
-        arrayPagesCounter.push(i);
+            arrayPagesCounter.push(i);
     }
     let requestLoad = userId => props.checkFollow.some(id => id === userId) ? `${css.requestLoad}` : ``;
 

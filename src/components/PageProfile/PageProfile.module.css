@@ -1,9 +1,19 @@
 .PageProfile{
-    display: grid;
-    grid-template-row: 250px auto;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-            "CoverWithProfileInfo CoverWithProfileInfo CoverWithProfileInfo"
-            "SiteBarLeft Posts SiteBarRight";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*display: grid;*/
+    /*grid-template-row: 250px auto;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    /*grid-template-areas:*/
+    /*        "CoverWithProfileInfo CoverWithProfileInfo CoverWithProfileInfo"*/
+    /*        "SiteBarLeft Posts SiteBarRight";*/
     /*background-color: rgba(255,255,255,0.2);*/
+}
+.AfterCover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
 }

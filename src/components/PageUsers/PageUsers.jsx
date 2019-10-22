@@ -2,7 +2,8 @@ import React from 'react';
 import css from './PageUsers.module.css';
 import SiteBarLeftContainer from "../SiteBarLeft/SiteBarLeftContainer";
 import UsersContainer from "./Users/UsersContainer";
-import SiteBarRight from "../SiteBarRight/SiteBarRight";
+import SiteBarRightContainer from "../SiteBarRight/SiteBarRightContainer";
+
 
 const PageUsers = () => {
     return (
@@ -14,7 +15,7 @@ const PageUsers = () => {
                 <UsersContainer/>
             </div>
             <div className={css.SiteBarRight}>
-                <SiteBarRight/>
+                <SiteBarRightContainer/>
             </div>
         </div>
     );

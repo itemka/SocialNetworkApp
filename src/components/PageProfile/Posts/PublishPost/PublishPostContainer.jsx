@@ -1,4 +1,4 @@
-import {onChangePostActionCreator, onClickAddPostActionCreator} from "../../../../Redux/ProfileReducer";
+import {onClickAddPostActionCreator} from "../../../../Redux/ProfileReducer";
 import {connect} from "react-redux";
 import PublishPost from "./PublishPost";
 
@@ -10,8 +10,8 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
     return {
-        onChangePost: message => dispatch(onChangePostActionCreator(message)),
-        onClickAddPost: () => dispatch(onClickAddPostActionCreator()),
+        // onChangePost: message => dispatch(onChangePostActionCreator(message)),
+        onClickAddPost: (message) => dispatch(onClickAddPostActionCreator(message)),
     }
 };
 const PublishPostContainer = connect(mapStateToProps, mapDispatchToProps)(PublishPost);
