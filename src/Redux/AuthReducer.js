@@ -1,4 +1,5 @@
 import {authAPI, profileAPI} from "../API/API";
+import {stopSubmit} from "redux-form";
 
 const SET_USER_DATA = 'SN/HEADER/SET_USER_DATA';
 const SET_USER_PHOTO = 'SN/HEADER/SET_USER_PHOTO';
@@ -23,6 +24,9 @@ export const logInThunkCreator = (email, password, rememberMe,isAuth) => dispatc
     authAPI.login(email, password, rememberMe).then(data => {
         if (data.resultCode === 0) {
             dispatch(checkUserDataThunkCreator(isAuth));
+        }
+        else{
+            dispatch(stopSubmit("login", {_error: data.messages, }))
         }
     })
 };

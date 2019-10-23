@@ -24,8 +24,11 @@ const LoginForm = props => {
                         <Field component={Input} validate={[required, maxLength20]} name={`Password`}
                                placeholder={"Password"} type={"password"} className={css.input}/>
                     </div>
-                    <div><Field component={"input"} name={`Remember`} type={"checkbox"}/> Remember me</div>
+                    <div>
+                        <Field component={"input"} name={`Remember`} type={"checkbox"}/> Remember me
+                    </div>
                 </div>}
+                {props.error && <div className={css.formError}>{props.error}</div>}
                 <div>{props.isAuth ? <button>Log out</button> : <button className={css.button}>Log in</button>}</div>
             </form>
         )
