@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Route} from "react-router-dom";
+import {Redirect, Route} from "react-router-dom";
 import PageProfileContainer from "./components/PageProfile/PageProfileContainer";
 import PageUsers from "./components/PageUsers/PageUsers";
 import HeaderContainer from "./components/Header/HeaderContainer";
-import Login from "./components/Login/Login";
 import PageDialogueContainer from "./components/PageDialogue/PageDialogueContainer";
+import LoginContainer from "./components/Login/LoginContainer";
 
 class App extends React.Component {
     render() {
@@ -16,8 +16,9 @@ class App extends React.Component {
                     <Route path='/profile/:userId?' render={() => <PageProfileContainer/>}/>
                     <Route path='/messages' render={() => <PageDialogueContainer/>}/>
                     <Route path='/users' render={() => <PageUsers/>}/>
-                    <Route path='/login' render={() => <Login/>}/>
+                    <Route path='/login' render={() => <LoginContainer/>}/>
                 </div>
+                <Redirect to={`/profile`}/>
             </div>
         );
     }

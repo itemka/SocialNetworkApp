@@ -1,4 +1,5 @@
 .Messages{
+
     grid-area: Messages;
     overflow-y: scroll; /*for scroll*/
     /*background-color: lightsalmon;*/

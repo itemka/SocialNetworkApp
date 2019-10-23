@@ -1,6 +1,6 @@
 .Header{
     grid-area: Header;
-    padding: 5px 0 5px 50px;
+    padding: 10px 10px 10px 50px;
     background-color: #343434;
     display: flex;
     flex-direction: row;
@@ -13,3 +13,22 @@
 .textLogin{
     float: right;
 }
+.textLogin span span{
+    background-color: orangered;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px 15px;
+}
+.textLogin span span:hover{
+    background-color: red;
+}
+
+/*.textLogin .span{*/
+/*    width: 50px;*/
+/*    border-radius: 50%;*/
+/*}*/
+/*.textLogin .span:hover{*/
+/*    width: 48px;*/
+/*    border: 1px solid #2bcabc;*/
+/*    border-radius: 50%;*/
+/*}*/

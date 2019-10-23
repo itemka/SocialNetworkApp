@@ -20,7 +20,12 @@ export const userAPI = {
 };
 export const authAPI = {
     setUserDataAPI: () => instance.get(`auth/me`).then(response => response.data),
-    logIn: (email, password, rememberMe)=> instance.post(`/auth/login`, {email, password, rememberMe}).then(response=>response.data),
+    login: (email, password, rememberMe = false) => instance.post(`auth/login`, {
+        email,
+        password,
+        rememberMe
+    }).then(response => response.data),
+    logout: () => instance.delete(`auth/login`).then(response => response.data)
 };
 export const profileAPI = {
     getProfilePhotoAPI: id => instance.get(`profile/${id}`).then(response => response.data),

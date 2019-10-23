@@ -6,7 +6,7 @@
     grid-template-areas:
             "ProfileInfo_img listProfileInfo";
     grid-gap: 10px;
-    width: 50%;
+    width: 55%;
 }
 .ProfileInfo img{
     width: 100%;
@@ -23,8 +23,26 @@
 .nameProfile{
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .status{
+    margin: 20px;
+}
+.status span{
+    padding: 10px;
     width: 100%;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: gold;
+    background-color: dimgrey
+}
+.status input{
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    background-color: #343434;
+    border: 1px solid #2bcabc;
+    border-radius: 2px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
