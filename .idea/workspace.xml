@@ -2,59 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/ReactIconSVG.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/precache-manifest.d5eefce485f3ffe33445f58ca17723e7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.a7ff0fba.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.a7ff0fba.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.469ecea5.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.469ecea5.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.6edea3f9.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.6edea3f9.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/runtime~main.966b10e4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/runtime~main.966b10e4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/Preloader.0cfb3a5f.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/Spinner42px.a1652bca.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/manBeard.728ca8a3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/SiteBarRightReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SiteBarRight/SiteBarRightContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.49ee8f9df5fb4d9efdeec49e22ee4746.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.451bf40e.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.451bf40e.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.d4a9bfc3.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.d4a9bfc3.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.14f00c49.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.14f00c49.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/media/manBeard.55bb4191.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/DialogueReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/DialogueReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.d5eefce485f3ffe33445f58ca17723e7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.a7ff0fba.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.a7ff0fba.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.469ecea5.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.469ecea5.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.6edea3f9.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.6edea3f9.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/UsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/UsersReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/PageDialogue.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessagesContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDialogue/SendMessages/SendMessagesContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Post/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/PostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/PostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPostContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/PublishPost/PublishPostContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/PageUsers.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friend/Friend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friend/Friend.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friend/FriendContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/Friend/FriendContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/WindowFriends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/WindowFriends.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/WindowFriendsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends/WindowFriendsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +57,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Common/FormsControls" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -93,19 +67,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Common/FormsControls" />
+      <recent name="$PROJECT_DIR$/src/components/Login" />
+      <recent name="$PROJECT_DIR$/src/components/SiteBarRight" />
+      <recent name="$PROJECT_DIR$/src/Redux" />
+      <recent name="$PROJECT_DIR$/src/components/PageDialogue" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends" />
       <recent name="$PROJECT_DIR$/src/Redux" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Login" />
-      <recent name="$PROJECT_DIR$/src/components/SiteBarRight" />
-      <recent name="$PROJECT_DIR$/src/Redux" />
-      <recent name="$PROJECT_DIR$/src/components/PageDialogue" />
-      <recent name="$PROJECT_DIR$/src/API" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,7 +162,7 @@
       <workItem from="1571513410845" duration="1262000" />
       <workItem from="1571594799917" duration="12784000" />
       <workItem from="1571679130966" duration="10589000" />
-      <workItem from="1571771113269" duration="6703000" />
+      <workItem from="1571771113269" duration="15651000" />
     </task>
     <servers />
   </component>

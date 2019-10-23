@@ -8,23 +8,16 @@ import Login from "./components/Login/Login";
 import PageDialogueContainer from "./components/PageDialogue/PageDialogueContainer";
 
 class App extends React.Component {
-    componentDidMount() {
-    }
-
     render() {
         return (
             <div className={'app_wrapper'}>
-
                 <HeaderContainer/>
                 <div className={'Content'}>
-
                     <Route path='/profile/:userId?' render={() => <PageProfileContainer/>}/>
                     <Route path='/messages' render={() => <PageDialogueContainer/>}/>
                     <Route path='/users' render={() => <PageUsers/>}/>
                     <Route path='/login' render={() => <Login/>}/>
-
                 </div>
-
             </div>
         );
     }

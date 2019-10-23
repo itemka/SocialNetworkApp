@@ -2,15 +2,15 @@ import React from 'react';
 import '../../../App.css';
 import css from './SendMessages.module.css';
 import {Field, reduxForm} from "redux-form";
+import {Textarea} from "../../Common/FormsControls/FormsControls";
+import {maxLengthCreator, required} from "../../../utils/validators/validators";
 
+const maxLength10 = maxLengthCreator(10);
 const AddMessageForm = props => {
     return (
         <form onSubmit={props.handleSubmit} className={`${css.SendMessages} clearFix`}>
-            <Field component={"textarea"}
-                   className={`${css.inputMessages}`}
-                   name={"newMessage"}
-                   rows={2}
-                   placeholder={'Enter Messages Text...'}/>
+            <Field component={Textarea} className={`${css.inputMessages}`} name={"newMessage"}
+                   rows={2} placeholder={'Enter Messages Text...'} validate={[required, maxLength10]}/>
             <button className={css.buttonSendMessages}>Send</button>
         </form>
     )
