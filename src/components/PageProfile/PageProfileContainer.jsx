@@ -9,7 +9,12 @@ import {compose} from "redux";
 class PageProfileContainer extends React.Component {
     componentDidMount() {
         let userId = this.props.match.params.userId;
-        if (!userId) userId = 1579;
+        if (!userId) {
+            userId = this.props.userId;
+            if (!userId) {
+                this.props.history.push('/login');
+            }
+        }
         this.props.GetUserProfileThunkCreator(userId);
         this.props.SetStatusProfilePageThunkCreator(userId);
     }
@@ -23,6 +28,9 @@ class PageProfileContainer extends React.Component {
 // let WithUrlDataContainerComponent = withRouter(PageProfileContainerHOC);
 // const ConnectedPageProfileContainer = connect(null, {GetUserProfileThunkCreator})(WithUrlDataContainerComponent);
 // export default ConnectedPageProfileContainer;
-
-export default compose(connect(null, {GetUserProfileThunkCreator, SetStatusProfilePageThunkCreator}), withRouter, withAuthRedirectComponentHOC
+const mapStateToProps = state => ({userId: state.authUserData.userId});
+export default compose(connect(mapStateToProps, {
+        GetUserProfileThunkCreator,
+        SetStatusProfilePageThunkCreator
+    }), withRouter, withAuthRedirectComponentHOC
 )(PageProfileContainer)

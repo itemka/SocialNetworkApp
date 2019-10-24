@@ -1,12 +1,12 @@
 import {profileAPI} from "../API/API";
 
 
-const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
+// const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
 const ADD_POST = 'SN/PROFILE/ADD_POST';
 const SET_USER_PROFILE = 'SN/PROFILE/SET_USER_PROFILE';
 const STATUS = 'SN/PROFILE/STATUS';
 
-export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
+// export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
 export const onClickAddPostActionCreator = message => ({type: ADD_POST, message});
 export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: profile});
 export const setStatus = statusText => ({type: STATUS, statusText: statusText});

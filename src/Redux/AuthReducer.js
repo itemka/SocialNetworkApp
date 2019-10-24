@@ -4,29 +4,32 @@ import {stopSubmit} from "redux-form";
 const SET_USER_DATA = 'SN/HEADER/SET_USER_DATA';
 const SET_USER_PHOTO = 'SN/HEADER/SET_USER_PHOTO';
 
-export const setUserData = (userId, email, login, isAuth) => ({type: SET_USER_DATA, data: {userId, email, login, isAuth}});
+export const setUserData = (email, userId, login, isAuth) => ({
+    type: SET_USER_DATA,
+    data: {email, userId, login, isAuth}
+});
 export const setUserPhoto = userPhoto => ({type: SET_USER_PHOTO, userPhoto: userPhoto});
 
-export const checkUserDataThunkCreator = (isAuth) => dispatch => {
-    authAPI.setUserDataAPI().then(data => {
-        if (data.resultCode === 0) { // if we have login (resultCode === 0) then we can make request to get setUserData
-            let {id, email, login} = data.data;
-            dispatch(setUserData(id, email, login, true));
-            if (isAuth) {
-                profileAPI.getProfilePhotoAPI(id).then(data => {
-                    dispatch(setUserPhoto(data.photos.small));
-                })
-            }
+export const checkUserDataThunkCreator = () => dispatch => {
+    return authAPI.setUserDataAPI().then(data => {
+        if (data.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to get setUserData
+            // let {email, userId, login} = data.data;
+            let email = data.data.email;
+            let userId = data.data.id;
+            let login = data.data.login;
+            dispatch(setUserData(email, userId, login, true));
+            profileAPI.getProfilePhotoAPI(userId).then(data => {
+                dispatch(setUserPhoto(data.photos.small));
+            })
         }
-    })
+    });
 };
-export const logInThunkCreator = (email, password, rememberMe,isAuth) => dispatch => {
+export const logInThunkCreator = (email, password, rememberMe, isAuth) => dispatch => {
     authAPI.login(email, password, rememberMe).then(data => {
         if (data.resultCode === 0) {
             dispatch(checkUserDataThunkCreator(isAuth));
-        }
-        else{
-            dispatch(stopSubmit("login", {_error: data.messages, }))
+        } else {
+            dispatch(stopSubmit("login", {_error: data.messages,}))
         }
     })
 };
@@ -39,7 +42,7 @@ export const logOutThunkCreator = () => dispatch => {
 };
 
 let initialState = {
-    id: null,
+    userId: null,
     email: null,
     login: null,
     isAuth: false,

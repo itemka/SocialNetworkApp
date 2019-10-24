@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom';
 // import manWithBeard from "../../Files/Images/manBeard.jpg";
 
 const Header = (props) => {
-    const LOGOUT = <NavLink onClick={props.logOutThunkCreator}>log uot</NavLink>;
+    const LOGOUT = <NavLink onClick={props.logOutThunkCreator}>Log out</NavLink>;
     return (
         <div className={css.Header}>
             <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="logo"/>

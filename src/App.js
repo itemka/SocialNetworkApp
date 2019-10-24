@@ -6,10 +6,19 @@ import PageUsers from "./components/PageUsers/PageUsers";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import PageDialogueContainer from "./components/PageDialogue/PageDialogueContainer";
 import LoginContainer from "./components/Login/LoginContainer";
+import {checkUserDataThunkCreator} from "./Redux/AuthReducer";
+import {connect} from "react-redux";
+import {compose} from "redux";
+import {withRouter} from "react-router-dom";
+import {initializedTC} from "./Redux/AppReducer";
+import Preloader from "./components/Common/Preloader/Preloader";
 
 class App extends React.Component {
+    componentDidMount = () => this.props.initializedTC();
+
     render() {
-        return (
+        if (!this.props.initialized) return <Preloader/>;
+        else return (
             <div className={'app_wrapper'}>
                 <HeaderContainer/>
                 <div className={'Content'}>
@@ -24,4 +33,11 @@ class App extends React.Component {
     }
 }
 
-export default App;
+const mapStateToProps = state => {
+    return {
+        initialized: state.app.initialized
+    }
+};
+export default compose(
+    withRouter,
+    connect(mapStateToProps, {checkUserDataThunkCreator, initializedTC}))(App);
