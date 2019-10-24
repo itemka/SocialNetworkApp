@@ -13,7 +13,8 @@ let mapStateToProps = state => {
     return {
         isAuth: state.authUserData.isAuth,
         login: state.authUserData.login,
-        userPhoto: state.authUserData.userPhoto
+        userPhoto: state.authUserData.userPhoto,
+        userId: state.authUserData.userId,
     }
 };
 export default connect(mapStateToProps, {logOutThunkCreator})(HeaderContainer);

@@ -5,6 +5,7 @@ import {Input} from "../Common/FormsControls/FormsControls";
 import {maxLengthCreator, required} from "../../utils/validators/validators";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
+import copyToClipboard from 'copy-to-clipboard';
 
 const maxLength20 = maxLengthCreator(20);
 const LoginForm = props => {
@@ -43,15 +44,25 @@ const LoginReducerForm = reduxForm({form: `login`})(ConnectorLoginForm);
 
 const Login = props => {
     const onSubmit = formData => {
+
         props.isAuth ? props.logOutThunkCreator() : props.logInThunkCreator(formData.Email, formData.Password, formData.Remember, props.isAuth);
     };
     if (props.isAuth) return <Redirect to={`/profile`}/>;
     return (
         <div className={css.Login}>
             <h1>Login</h1>
+            <div className={css.textAboutClipboard}>
+                <div>If you will click on the red field</div>
+                text will be copy to Clipboard
+            </div>
             <div>
-                <h3>Login: itemka2503@gmail.com</h3>
-                <h3>Password: Developer2503</h3>
+                <h3>Login:
+                    <text onClick={() => copyToClipboard('test@gmail.com')}
+                          className={css.LoginPassword}>test@gmail.com</text>
+                </h3>
+                <h3>Password:
+                    <text onClick={() => copyToClipboard('test')} className={css.LoginPassword}>test</text>
+                </h3>
             </div>
             <LoginReducerForm onSubmit={onSubmit}/>
         </div>

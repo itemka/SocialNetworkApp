@@ -21,10 +21,13 @@ class ProfileInfo extends React.Component {
 
     changeStatus = (e) => {
         this.setState({statusText: e.currentTarget.value});
+    };
+    
+    activateEditMode = () => this.setState({isMode: true});
+    deactivateEditMode = () => {
+        this.setState({isMode: false});
         this.props.UpdateStatusProfilePageThunkCreator(this.state.statusText);
     };
-    activateEditMode = () => this.setState({isMode: true});
-    deactivateEditMode = () => this.setState({isMode: false});
 
     render() {
         return (

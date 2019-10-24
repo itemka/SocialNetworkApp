@@ -1,7 +1,6 @@
 import React from 'react';
 import css from './Header.module.css';
-import {NavLink} from 'react-router-dom';
-// import Preloader from '../Common/Preloader/Preloader';
+import {NavLink, Redirect} from 'react-router-dom';
 // import manWithBeard from "../../Files/Images/manBeard.jpg";
 
 const Header = (props) => {
@@ -11,7 +10,7 @@ const Header = (props) => {
             <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="logo"/>
             <div className={css.textLogin}>
                 {props.isAuth
-                    ? <span> <NavLink to={`/profile/`}>{
+                    ? <span> <NavLink to={`/profile/${props.userId}`}>{
                         /*`${props.userPhoto
                             ? `${props.userPhoto ? props.userPhoto : manWithBeard} ${props.login}`
                             : <img src={Preloader} alt=""/>}*/

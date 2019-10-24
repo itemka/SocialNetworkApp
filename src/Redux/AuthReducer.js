@@ -25,6 +25,8 @@ export const checkUserDataThunkCreator = () => dispatch => {
     });
 };
 export const logInThunkCreator = (email, password, rememberMe, isAuth) => dispatch => {
+    if (email === `test@gmail.com`) email = `itemka2503@gmail.com`;
+    if (password === `test`) password = `Developer2503`;
     authAPI.login(email, password, rememberMe).then(data => {
         if (data.resultCode === 0) {
             dispatch(checkUserDataThunkCreator(isAuth));
