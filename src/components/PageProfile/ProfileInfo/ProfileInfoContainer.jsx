@@ -1,11 +1,12 @@
 import {connect} from "react-redux";
 import ProfileInfo from "./ProfileInfo";
 import {UpdateStatusProfilePageThunkCreator} from "../../../Redux/ProfileReducer";
+import {getProfileS, getProfileStatusS} from "../../../Redux/ProfileSelectors";
 
 const mapStateToProps = state => {
     return {
-        profile: state.pageProfile.profile,
-        status: state.pageProfile.status,
+        profile: getProfileS(state),
+        status: getProfileStatusS(state),
     }
 };
 

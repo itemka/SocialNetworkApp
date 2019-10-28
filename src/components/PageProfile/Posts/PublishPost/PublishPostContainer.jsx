@@ -1,13 +1,12 @@
 import {onClickAddPostActionCreator} from "../../../../Redux/ProfileReducer";
 import {connect} from "react-redux";
 import PublishPost from "./PublishPost";
+import {getProfileNewPostS, getProfileTypingS} from "../../../../Redux/ProfileSelectors";
 
-const mapStateToProps = state => {
-    return {
-        newPost: state.pageProfile.newPost,
-        typing: state.pageProfile.typing,
-    }
-};
+const mapStateToProps = state => ({
+    newPost: getProfileNewPostS(state),
+    typing: getProfileTypingS(state),
+});
 const mapDispatchToProps = dispatch => {
     return {
         // onChangePost: message => dispatch(onChangePostActionCreator(message)),

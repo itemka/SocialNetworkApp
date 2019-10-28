@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import Login from "./Login";
 import {logInThunkCreator, logOutThunkCreator} from "../../Redux/AuthReducer";
+import {getAuthUserIsAuthS} from "../../Redux/AuthSelectors";
 
 class LoginContainer extends React.Component {
 
@@ -10,10 +11,5 @@ class LoginContainer extends React.Component {
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        isAuth: state.authUserData.isAuth,
-    }
-};
-
+const mapStateToProps = state => ({isAuth: getAuthUserIsAuthS(state)});
 export default connect(mapStateToProps, {logInThunkCreator, logOutThunkCreator})(LoginContainer);
