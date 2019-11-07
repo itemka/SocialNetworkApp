@@ -1,31 +1,40 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import css from './Posts.module.css';
 import Post from "./Post/Post";
 import PropTypes from 'prop-types';
 import PublishPostContainer from "./PublishPost/PublishPostContainer";
 import manWithBeard from "../../../Files/Images/manBeard.jpg";
 
-const Posts = (props) => {
-    // console.log(props.profile);
-    // let reversePosts = props.posts.reverse();
-    let post = props.posts.map(item => <Post key={item.id}
-                                             id={item.id} text={item.text} like={item.like}
-                                             photoProfile={manWithBeard}/>);
-    return (
-        <div className={css.Posts}>
+//PureComponent: rerender if nextProps !== this.props or nextState !== this.state
+class Posts extends PureComponent {
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     //return true if nextProps !== this.props or nextState !== this.state
+    //     return nextProps !== this.props || nextState !== this.state;
+    // }
 
-            <PublishPostContainer/>
+    render() {
+        console.log('qwe');
+        // let reversePosts = props.posts.reverse();
+        let post = this.props.posts.map(item => <Post key={item.id}
+                                                      id={item.id} text={item.text} like={item.like}
+                                                      photoProfile={manWithBeard}/>);
+        return (
+            <div className={css.Posts}>
 
-            <div className={css.listPosts}>
-                <div className={css.nameListPosts}>My posts</div>
-                <div>
-                    {post}
+                <PublishPostContainer/>
+
+                <div className={css.listPosts}>
+                    <div className={css.nameListPosts}>My posts</div>
+                    <div>
+                        {post}
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    );
-};
+            </div>
+        );
+    }
+}
+
 Posts.protoTypes = {
     posts: PropTypes.arrayOf(
         PropTypes.shape({

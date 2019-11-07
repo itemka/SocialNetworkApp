@@ -27,7 +27,7 @@ class App extends React.Component {
                     <Route path='/users' render={() => <PageUsers/>}/>
                     <Route path='/login' render={() => <LoginContainer/>}/>
                 </div>
-                <Redirect to={`/profile`}/>
+                <Redirect to={'/profile'}/>
             </div>
         );
     }
