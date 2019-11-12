@@ -1,31 +1,11 @@
-import {profileAPI} from "../API/API";
+// 1. test data
+// 2. do action
+// 3. expectation
 
+import profileReducer, {deletePost, onClickAddPostActionCreator} from "./ProfileReducer";
 
-// const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
-const ADD_POST = 'SN/PROFILE/ADD_POST';
-const SET_USER_PROFILE = 'SN/PROFILE/SET_USER_PROFILE';
-const STATUS = 'SN/PROFILE/STATUS';
-const DELETE_POST = 'SN/PROFILE/DELETE_POST';
-
-// export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
-export const onClickAddPostActionCreator = message => ({type: ADD_POST, message});
-export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: profile});
-export const setStatus = statusText => ({type: STATUS, statusText: statusText});
-export const deletePost = postsId => ({type: DELETE_POST, postsId});
-
-export const GetUserProfileThunkCreator = userId => dispatch => {
-    profileAPI.getUserProfileAPI(userId).then(data => dispatch(setUserProfile(data)));
-};
-export const SetStatusProfilePageThunkCreator = (userId) => dispatch => {
-    profileAPI.setStatus(userId).then(data => dispatch(setStatus(data)));
-};
-export const UpdateStatusProfilePageThunkCreator = (statusText) => dispatch => {
-    profileAPI.updateStatus(statusText).then(data => {
-        if (data.resultCode === 0) dispatch(setStatus(statusText));
-    })
-};
-
-let initialState = {
+// 2. do action
+let testsState = {
     profiles: [
         {
             id: 1,
@@ -130,62 +110,35 @@ let initialState = {
     // newPost: '',
     typing: '',
     posts: [
-        {id: 1, text: 'Hi! It is new Application!', like: '1',},
-        {id: 2, text: 'It is new Application!', like: '2',},
+        {id: 1, text: 'It is new Application!', like: '2',},
+        {id: 2, text: 'hi', like: '1',},
     ],
     profile: null,
     status: null,
 };
 
-const ProfileReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case DELETE_POST:
-            return {
-                ...state,
-                posts: [...state.posts.filter(item=> item.id !== action.postsId)],
-            };
-        case STATUS:
-            return {
-                ...state,
-                status: action.statusText
-            };
-        case ADD_POST: {
-            let stateCopy = { // let stateCopy = cloneObject(state);
-                ...state,
-                posts: state.posts.map(item => ({...item})),
-            };
+it('length of post should be incremented', () => {
+    // 1. test data
+    let action = onClickAddPostActionCreator("I added this text.");
+    let newState = profileReducer(testsState, action);
+    // 3. expectation
+    expect(newState.posts.length).toBe(3);
+});
 
-            if (action.message !== '') {
-                let newPost = {
-                    id: stateCopy.posts.length + 1, text: action.message,
-                    like: `${stateCopy.posts.length + 1}`
-                };
-                let newPosts = [newPost, ...stateCopy.posts];
-                // console.log(newPosts);
-                stateCopy.posts = newPosts;
-                // stateCopy.newPost = '';
-                stateCopy.typing = '';
-            }
-            return stateCopy;
-        }
-        case SET_USER_PROFILE: {
-            return {...state, profile: action.profile}
-        }
-        // case CHANGE_POST: {
-        //     let stateCopy = {   //let stateCopy = cloneObject(state);
-        //         ...state,
-        //         profiles: state.profiles.map(item => ({...item})),
-        //         newPost: action.newPost,
-        //         typing: 'typing...',
-        //         posts: state.posts.map(item => ({...item}))
-        //     };
-        //     console.log(stateCopy.newPost);
-        //     return stateCopy;
-        // }
-        default: {
-            return state;
-        }
-    }
-};
+it('text of new post should be correct', () => {
+    let action = onClickAddPostActionCreator("I added this text.");
+    let newState = profileReducer(testsState, action);
+    expect(newState.posts[0].text).toBe("I added this text.");
+});
 
-export default ProfileReducer;
+// Test-driven development
+it('length of posts should be decrement after deleting', () => {
+    let action = deletePost(2);
+    let newState = profileReducer(testsState, action);
+    expect(newState.posts.length).toBe(1);
+});
+it('length of posts don`t should be decrement after deleting', () => {
+    let action = deletePost(1000);
+    let newState = profileReducer(testsState, action);
+    expect(newState.posts.length).toBe(2);
+});
