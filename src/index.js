@@ -41,14 +41,15 @@ let store = createStore(combinedReducers, applyMiddleware(thunk));
 window.store = store;
 
 ReactDOM.render(
-    <Provider store={store}>
-
-        {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
-        <HashRouter>
+    <HashRouter>
+        <Provider store={store}>
+            {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
+            {/*HashRouter - should be for GitHub Pages*/}
+            {/*BrowserRouter - should be for usual server*/}
             <App/>
-        </HashRouter>
-        {/*</BrowserRouter>*/}
-    </Provider>
+            {/*</BrowserRouter>*/}
+        </Provider>
+    </HashRouter>
     , document.getElementById('root'));
 
 

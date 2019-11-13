@@ -1,4 +1,5 @@
 import {userAPI} from "../API/API";
+import {updateObjectInArray} from "../utils/shortFunctionToArray";
 
 
 const SET_USERS = 'SN/USERS/SET_USERS';
@@ -47,19 +48,15 @@ const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) =>
     dispatch(setCheckFollow(true, userId));
     let responseData = await apiMethod(userId);
     if (responseData.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to setFollow
-        dispatch(actionCreator);
+        dispatch(actionCreator(userId));
         dispatch(setCheckFollow(false, userId));
     }
 };
 export const SetFollowThunkCreator = userId => async dispatch => {
-    let actionCreator = setFollow(userId);
-    let apiMethod = userAPI.setFollowAPI.bind(userAPI);
-    followUnfollowFlow(dispatch, userId, apiMethod, actionCreator);
+    followUnfollowFlow(dispatch, userId, userAPI.setFollowAPI.bind(userAPI), setFollow);
 };
 export const SetUnFollowThunkCreator = (userId) => async dispatch => {
-    let actionCreator = setUnFollow(userId);
-    let apiMethod = userAPI.setUnFollowAPI.bind(userAPI);
-    followUnfollowFlow(dispatch, userId, apiMethod, actionCreator);
+    followUnfollowFlow(dispatch, userId, userAPI.setUnFollowAPI.bind(userAPI), setUnFollow);
 };
 
 
@@ -90,19 +87,13 @@ const UsersReducer = (state = initialState, action) => {//debugger
         case FOLLOW: {
             return {
                 ...state,
-                users: state.users.map(user => {
-                    if (user.id === action.userId) return {...user, followed: true};
-                    else return user;
-                }),
+                users: updateObjectInArray(state.users, "id", action.userId, {followed: true})
             }
         }
         case UNFOLLOW:
             return {
                 ...state,
-                users: state.users.map(user => {
-                    if (user.id === action.userId) return {...user, followed: false};
-                    else return user;
-                }),
+                users: updateObjectInArray(state.users, "id", action.userId, {followed: false})
             };
         case SET_FETCHING:
             return {...state, isFetching: action.loading};
