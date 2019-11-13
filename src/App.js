@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
-import {Redirect, Route} from "react-router-dom";
+import {HashRouter, Redirect, Route} from "react-router-dom";
 import PageProfileContainer from "./components/PageProfile/PageProfileContainer";
 import PageUsers from "./components/PageUsers/PageUsers";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import PageDialogueContainer from "./components/PageDialogue/PageDialogueContainer";
 import LoginContainer from "./components/Login/LoginContainer";
 import {checkUserDataThunkCreator} from "./Redux/AuthReducer";
-import {connect} from "react-redux";
+import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import {withRouter} from "react-router-dom";
 import {initializedTC} from "./Redux/AppReducer";
 import Preloader from "./components/Common/Preloader/Preloader";
+import store from "./Redux/StoreRedux";
 
 class App extends React.Component {
     componentDidMount = () => this.props.initializedTC();
@@ -38,6 +39,18 @@ const mapStateToProps = state => {
         initialized: state.app.initialized
     }
 };
-export default compose(
+let AppContainer = compose(
     withRouter,
     connect(mapStateToProps, {checkUserDataThunkCreator, initializedTC}))(App);
+
+export const MainApp = () => (
+    <HashRouter>
+        {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
+        {/*HashRouter - should be for GitHub Pages*/}
+        {/*BrowserRouter - should be for usual server*/}
+        <Provider store={store}>
+            <AppContainer/>
+        </Provider>
+        {/*</BrowserRouter>*/}
+    </HashRouter>
+);

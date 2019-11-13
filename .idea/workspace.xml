@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/shortFunctionToArray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.ae08fa869f1ab5e5b4bb82c4bfbd6062.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/StoreRedux.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/UsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/UsersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.68b9a3fbf8a81794f58e47060a1ce98b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.8c908d5a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.8c908d5a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.bee0e099.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.bee0e099.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,6 +55,7 @@
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -74,20 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.length of posts don`t should be decrement after deleting">
-    <configuration name="length of post should be incremented" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Redux/ProfileReducer.test.js" />
-      <test-names>
-        <test-name value="length of post should be incremented" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.renders without crashing">
     <configuration name="length of posts don`t should be decrement after deleting" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -140,13 +140,23 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.renders without crashing" />
+        <item itemvalue="npm.test" />
         <item itemvalue="Jest.length of posts don`t should be decrement after deleting" />
         <item itemvalue="Jest.length of posts should be decrement after deleting" />
         <item itemvalue="Jest.text of new post should be correct" />
-        <item itemvalue="Jest.length of post should be incremented" />
-        <item itemvalue="Jest.renders without crashing" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +238,7 @@
       <workItem from="1573125979132" duration="5540000" />
       <workItem from="1573235244502" duration="902000" />
       <workItem from="1573592600954" duration="4244000" />
-      <workItem from="1573596952755" duration="14339000" />
+      <workItem from="1573596952755" duration="18843000" />
     </task>
     <servers />
   </component>
