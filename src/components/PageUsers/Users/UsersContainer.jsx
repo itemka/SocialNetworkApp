@@ -29,7 +29,6 @@ class UsersAPIContainer extends React.Component {
     render() {
         return (
             <div>
-                {this.props.isFetching === true ? <Preloader/> : null}
                 <Users totalUsersCount={this.props.totalUsersCount}
                        pageSize={this.props.pageSize}
                        users={this.props.users}
@@ -38,6 +37,7 @@ class UsersAPIContainer extends React.Component {
                        setCurrentPageMethod={this.setCurrentPageMethod}
                        currentPage={this.props.currentPage}
                        checkFollow={this.props.checkFollow}
+                       isFetching={this.props.isFetching}
                 />
             </div>
         )

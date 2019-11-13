@@ -8,17 +8,14 @@ const setUsersAC = users => ({type: SET_USERS, users});
 const setTotalUserCountAC = totalUsersCount => ({type: SET_TOTAL_COUNT, totalUsersCount});
 const setCountUsersAC = countUsers => ({type: SET_COUNT_USERS, countUsers});
 
-export const SetCountUsersThuncCreator = () => dispatch => {
-    userAPI.getTotalCountUsersAPI().then(data => {
-        dispatch(setTotalUserCountAC(data.totalCount));
-        // dispatch(setCountUsersAC(data.totalCount));
-    })
+export const SetCountUsersThuncCreator = () => async dispatch => {
+    let responseData = await userAPI.getTotalCountUsersAPI();
+    dispatch(setTotalUserCountAC(responseData.totalCount));
+    // dispatch(setCountUsersAC(data.totalCount));
 };
-export const SetUsersSiteBarRightThunkCreator = countUsers => dispatch => {
-    userAPI.getUsersAllAPI(countUsers).then(data => {
-        // debugger
-        dispatch(setUsersAC(data.items));
-    })
+export const SetUsersSiteBarRightThunkCreator = countUsers => async dispatch => {
+    let responseData = await userAPI.getUsersAllAPI(countUsers);
+    dispatch(setUsersAC(responseData.items));
 };
 
 

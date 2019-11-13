@@ -36,7 +36,7 @@ Friend.propTypes = {
         PropTypes.shape({
             id: PropTypes.number,
             photoProfile: PropTypes.string,
-            name: PropTypes
+            name: PropTypes,
         }),
     ).isRequired,
     // ).isRequired,

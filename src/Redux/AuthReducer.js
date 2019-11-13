@@ -10,37 +10,33 @@ export const setUserData = (email, userId, login, isAuth) => ({
 });
 export const setUserPhoto = userPhoto => ({type: SET_USER_PHOTO, userPhoto: userPhoto});
 
-export const checkUserDataThunkCreator = () => dispatch => {
-    return authAPI.setUserDataAPI().then(data => {
-        if (data.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to get setUserData
-            // let {email, userId, login} = data.data;
-            let email = data.data.email;
-            let userId = data.data.id;
-            let login = data.data.login;
-            dispatch(setUserData(email, userId, login, true));
-            profileAPI.getProfilePhotoAPI(userId).then(data => {
-                dispatch(setUserPhoto(data.photos.small));
-            })
-        }
-    });
+export const checkUserDataThunkCreator = () => async dispatch => {
+    let responseData = await authAPI.setUserDataAPI();
+    if (responseData.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to get setUserData
+        // let {email, userId, login} = data.data;
+        let email = responseData.data.email;
+        let userId = responseData.data.id;
+        let login = responseData.data.login;
+        dispatch(setUserData(email, userId, login, true));
+
+        let profilePhotoData = await profileAPI.getProfilePhotoAPI(userId);
+        dispatch(setUserPhoto(profilePhotoData.photos.small));
+    }
+
 };
-export const logInThunkCreator = (email, password, rememberMe, isAuth) => dispatch => {
+export const logInThunkCreator = (email, password, rememberMe, isAuth) => async dispatch => {
     if (email === `test@gmail.com`) email = `itemka2503@gmail.com`;
     if (password === `test`) password = `Developer2503`;
-    authAPI.login(email, password, rememberMe).then(data => {
-        if (data.resultCode === 0) {
-            dispatch(checkUserDataThunkCreator(isAuth));
-        } else {
-            dispatch(stopSubmit("login", {_error: data.messages,}))
-        }
-    })
+
+    let responseData = await authAPI.login(email, password, rememberMe);
+    if (responseData.resultCode === 0) dispatch(checkUserDataThunkCreator(isAuth));
+    else dispatch(stopSubmit("login", {_error: responseData.messages,}));
 };
-export const logOutThunkCreator = () => dispatch => {
-    authAPI.logout().then(data => {
-        if (data.resultCode === 0) {
-            dispatch(setUserData(null, null, null, false));
-        }
-    })
+export const logOutThunkCreator = () => async dispatch => {
+    let responseData = await authAPI.logout();
+    if (responseData.resultCode === 0) {
+        dispatch(setUserData(null, null, null, false));
+    }
 };
 
 let initialState = {

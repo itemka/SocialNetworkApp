@@ -3,13 +3,14 @@ import css from './Users.module.css';
 import manWithBeard from './../../../Files/Images/manBeard.png';
 import {NavLink} from "react-router-dom";
 import Spinner42px from './../../../Files/Images/Spinner42px.svg';
+import Preloader from "../../Common/Preloader/Preloader";
 
 
 let Users = (props) => {
     let pagesCounter = Math.ceil(props.totalUsersCount / props.pageSize);
     let arrayPagesCounter = [];
     for (let i = 1; i <= pagesCounter; i++) {
-            arrayPagesCounter.push(i);
+        arrayPagesCounter.push(i);
     }
     let requestLoad = userId => props.checkFollow.some(id => id === userId) ? `${css.requestLoad}` : ``;
 
@@ -52,7 +53,6 @@ let Users = (props) => {
                                 <span className={`${css.buttons}`}>
                                     <button onClick={() => props.setCurrentPageMethod(pageNumber)}
                                             className={props.currentPage === pageNumber ? css.buttonUserFollowed : `${css.buttonNoActive}`}>
-
                                         {pageNumber}
                                     </button>
                                 </span>
@@ -62,6 +62,8 @@ let Users = (props) => {
                 )}
             </div>
             <br/><br/>
+
+            {props.isFetching === true ? <Preloader/> : null}
 
             {users}
         </div>

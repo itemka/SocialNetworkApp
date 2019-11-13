@@ -13,16 +13,17 @@ export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: prof
 export const setStatus = statusText => ({type: STATUS, statusText: statusText});
 export const deletePost = postsId => ({type: DELETE_POST, postsId});
 
-export const GetUserProfileThunkCreator = userId => dispatch => {
-    profileAPI.getUserProfileAPI(userId).then(data => dispatch(setUserProfile(data)));
+export const GetUserProfileThunkCreator = userId => async dispatch => {
+    let responseData = await profileAPI.getUserProfileAPI(userId);
+    dispatch(setUserProfile(responseData));
 };
-export const SetStatusProfilePageThunkCreator = (userId) => dispatch => {
-    profileAPI.setStatus(userId).then(data => dispatch(setStatus(data)));
+export const SetStatusProfilePageThunkCreator = (userId) => async dispatch => {
+    let responseData = await profileAPI.setStatus(userId);
+    dispatch(setStatus(responseData));
 };
-export const UpdateStatusProfilePageThunkCreator = (statusText) => dispatch => {
-    profileAPI.updateStatus(statusText).then(data => {
-        if (data.resultCode === 0) dispatch(setStatus(statusText));
-    })
+export const UpdateStatusProfilePageThunkCreator = (statusText) => async dispatch => {
+    let responseData = await profileAPI.updateStatus(statusText);
+    if (responseData.resultCode === 0) dispatch(setStatus(statusText));
 };
 
 let initialState = {
@@ -142,7 +143,7 @@ const ProfileReducer = (state = initialState, action) => {
         case DELETE_POST:
             return {
                 ...state,
-                posts: [...state.posts.filter(item=> item.id !== action.postsId)],
+                posts: [...state.posts.filter(item => item.id !== action.postsId)],
             };
         case STATUS:
             return {

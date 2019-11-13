@@ -23,44 +23,43 @@ export const setTotalUsersCount = totalUsersCount => ({type: SET_TOTAL_USERS_COU
 export const setFetching = loading => ({type: SET_FETCHING, loading: loading});
 export const setCheckFollow = (checked, userId) => ({type: SET_CHECK_FOLLOW, checked, userId});
 
-export const GetUserThunkCreator = (currentPage, pageSize, status) => dispatch => {
+export const GetUserThunkCreator = (currentPage, pageSize, status) => async dispatch => {
     if (status === statuses.NOT_INITIALIZED) {
         dispatch(setStatus(statuses.INPROGRESS));
         dispatch(setFetching(true));
-        userAPI.getUsersAPI(currentPage, pageSize).then(data => {
-            dispatch(setStatus(statuses.SUCCESS));
-            dispatch(setUsers(data.items));
-            dispatch(setTotalUsersCount(data.totalCount));
-            dispatch(setFetching(false));
-        })
+        let responseData = await userAPI.getUsersAPI(currentPage, pageSize);
+        dispatch(setStatus(statuses.SUCCESS));
+        dispatch(setUsers(responseData.items));
+        dispatch(setTotalUsersCount(responseData.totalCount));
+        dispatch(setFetching(false));
     }
 };
-export const SetCurrentPageMethodThunkCreator = (currentPage, pageSize) => dispatch => {
+export const SetCurrentPageMethodThunkCreator = (currentPage, pageSize) => async dispatch => {
     dispatch(setFetching(true));
     dispatch(setCurrentPage(currentPage));
-    userAPI.getUsersAPI(currentPage, pageSize).then(data => {
-        dispatch(setStatus(statuses.SUCCESS));
-        dispatch(setUsers(data.items));
-        dispatch(setFetching(false));
-    })
+    let responseData = await userAPI.getUsersAPI(currentPage, pageSize);
+    dispatch(setStatus(statuses.SUCCESS));
+    dispatch(setUsers(responseData.items));
+    dispatch(setFetching(false));
 };
-export const SetFollowThunkCreator = userId => dispatch => {
+
+const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
     dispatch(setCheckFollow(true, userId));
-    userAPI.setFollowAPI(userId).then(data => {
-        if (data.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to setFollow
-            dispatch(setFollow(userId));
-            dispatch(setCheckFollow(false, userId));
-        }
-    })
+    let responseData = await apiMethod(userId);
+    if (responseData.resultCode === 0) {// if we have login (resultCode === 0) then we can make request to setFollow
+        dispatch(actionCreator);
+        dispatch(setCheckFollow(false, userId));
+    }
 };
-export const SetUnFollowThunkCreator = (userId) => dispatch => {
-    dispatch(setCheckFollow(true, userId));
-    userAPI.setUnFollowAPI(userId).then(data => {
-        if (data.resultCode === 0) { // if we have login (resultCode === 0) then we can make request to setFollow
-            dispatch(setUnFollow(userId));
-            dispatch(setCheckFollow(false, userId));
-        }
-    })
+export const SetFollowThunkCreator = userId => async dispatch => {
+    let actionCreator = setFollow(userId);
+    let apiMethod = userAPI.setFollowAPI.bind(userAPI);
+    followUnfollowFlow(dispatch, userId, apiMethod, actionCreator);
+};
+export const SetUnFollowThunkCreator = (userId) => async dispatch => {
+    let actionCreator = setUnFollow(userId);
+    let apiMethod = userAPI.setUnFollowAPI.bind(userAPI);
+    followUnfollowFlow(dispatch, userId, apiMethod, actionCreator);
 };
 
 
