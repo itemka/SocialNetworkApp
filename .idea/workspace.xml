@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/precache-manifest.ae08fa869f1ab5e5b4bb82c4bfbd6062.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/StoreRedux.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.68b9a3fbf8a81794f58e47060a1ce98b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.8c908d5a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.8c908d5a.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.bee0e099.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.bee0e099.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +35,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -60,19 +47,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
+      <recent name="$PROJECT_DIR$/src/Redux" />
+      <recent name="$PROJECT_DIR$/src/components/Common/FormsControls" />
+      <recent name="$PROJECT_DIR$/src/components/Login" />
+      <recent name="$PROJECT_DIR$/src/components/SiteBarRight" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends" />
       <recent name="$PROJECT_DIR$/src/Redux" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Redux" />
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
-      <recent name="$PROJECT_DIR$/src/components/Common/FormsControls" />
-      <recent name="$PROJECT_DIR$/src/components/Login" />
-      <recent name="$PROJECT_DIR$/src/components/SiteBarRight" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -87,76 +74,84 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.renders without crashing">
-    <configuration name="length of posts don`t should be decrement after deleting" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.ProfileStatusWithHooc component.callback should be called">
+    <configuration name="ProfileStatusWithHooc component.callback should be called" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Redux/ProfileReducer.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" />
       <test-names>
-        <test-name value="length of posts don`t should be decrement after deleting" />
+        <test-name value="ProfileStatusWithHooc component" />
+        <test-name value="callback should be called" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="length of posts should be decrement after deleting" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatusWithHooc component.input isn't should be render" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Redux/ProfileReducer.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" />
       <test-names>
-        <test-name value="length of posts should be decrement after deleting" />
+        <test-name value="ProfileStatusWithHooc component" />
+        <test-name value="input isn't should be render" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatusWithHooc component.input should be displayed into edit mod instead of span" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" />
       <test-names>
-        <test-name value="renders without crashing" />
+        <test-name value="ProfileStatusWithHooc component" />
+        <test-name value="input should be displayed into edit mod instead of span" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="text of new post should be correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatusWithHooc component.input should be displayed into edit mod" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Redux/ProfileReducer.test.js" />
+      <test-file value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" />
       <test-names>
-        <test-name value="text of new post should be correct" />
+        <test-name value="ProfileStatusWithHooc component" />
+        <test-name value="input should be displayed into edit mod" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
+    <configuration name="ProfileStatusWithHooc component.span should contains correct status" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" />
+      <test-names>
+        <test-name value="ProfileStatusWithHooc component" />
+        <test-name value="span should contains correct status" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.renders without crashing" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="Jest.length of posts don`t should be decrement after deleting" />
-        <item itemvalue="Jest.length of posts should be decrement after deleting" />
-        <item itemvalue="Jest.text of new post should be correct" />
+        <item itemvalue="Jest.ProfileStatusWithHooc component.callback should be called" />
+        <item itemvalue="Jest.ProfileStatusWithHooc component.input should be displayed into edit mod instead of span" />
+        <item itemvalue="Jest.ProfileStatusWithHooc component.input should be displayed into edit mod" />
+        <item itemvalue="Jest.ProfileStatusWithHooc component.input isn't should be render" />
+        <item itemvalue="Jest.ProfileStatusWithHooc component.span should contains correct status" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +233,7 @@
       <workItem from="1573125979132" duration="5540000" />
       <workItem from="1573235244502" duration="902000" />
       <workItem from="1573592600954" duration="4244000" />
-      <workItem from="1573596952755" duration="18843000" />
+      <workItem from="1573596952755" duration="30554000" />
     </task>
     <servers />
   </component>
