@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Files/Images/nextPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/User/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/User/User.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/User/UserContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,19 +56,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
-      <recent name="$PROJECT_DIR$/src/Redux" />
-      <recent name="$PROJECT_DIR$/src/components/Common/FormsControls" />
-      <recent name="$PROJECT_DIR$/src/components/Login" />
-      <recent name="$PROJECT_DIR$/src/components/SiteBarRight" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Files/Images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton" />
+      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users/User" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
       <recent name="$PROJECT_DIR$/src/Redux" />
+      <recent name="$PROJECT_DIR$/src/components/Common/FormsControls" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,7 +242,10 @@
       <workItem from="1573125979132" duration="5540000" />
       <workItem from="1573235244502" duration="902000" />
       <workItem from="1573592600954" duration="4244000" />
-      <workItem from="1573596952755" duration="30554000" />
+      <workItem from="1573596952755" duration="33349000" />
+      <workItem from="1574107581997" duration="618000" />
+      <workItem from="1574118887994" duration="8711000" />
+      <workItem from="1574426942203" duration="11616000" />
     </task>
     <servers />
   </component>

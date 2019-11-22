@@ -14,8 +14,7 @@ const Header = (props) => {
                         /*`${props.userPhoto
                             ? `${props.userPhoto ? props.userPhoto : manWithBeard} ${props.login}`
                             : <img src={Preloader} alt=""/>}*/
-                            `${props.login}`
-                    }</NavLink><span>{LOGOUT}</span></span>
+                        `${props.login}`}</NavLink><span>{LOGOUT}</span></span>
                     : /*<NavLink to={`/login`}>Login</NavLink>*/ null}
             </div>
         </div>

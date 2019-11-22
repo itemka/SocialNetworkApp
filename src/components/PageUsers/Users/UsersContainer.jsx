@@ -1,21 +1,14 @@
 import React from 'react';
 import {connect} from "react-redux";
-import Users from "./Users";
-import Preloader from "../../Common/Preloader/Preloader";
 import {
     GetUserThunkCreator, SetCurrentPageMethodThunkCreator,
-    SetFollowThunkCreator, SetUnFollowThunkCreator,
 } from "../../../Redux/UsersReducer";
 import {withAuthRedirectComponentHOC} from "../../../hoc/withAuthRedirect";
 import {compose} from "redux";
 import {
-    getUsersCheckFollowS,
-    getUsersCurrentPageS, getUsersIsFetchingS,
-    getUsersPageSizeS,
-    getUsersS,
-    getUsersTotalUsersCountS,
-    geUsersStatusS
+    getUsersCurrentPageS, getUsersIsFetchingS, getUsersPageSizeS, getUsersS, getUsersTotalUsersCountS, geUsersStatusS
 } from "../../../Redux/UsersSelectors";
+import {Users} from "./Users";
 
 class UsersAPIContainer extends React.Component {
     componentDidMount() {
@@ -23,23 +16,19 @@ class UsersAPIContainer extends React.Component {
     }
 
     setCurrentPageMethod = currentPage => this.props.SetCurrentPageMethodThunkCreator(currentPage, this.props.pageSize);
-    setFollow = userId => this.props.SetFollowThunkCreator(userId);
-    setUnFollow = userId => this.props.SetUnFollowThunkCreator(userId);
 
     render() {
         return (
-            <div>
+            <>
                 <Users totalUsersCount={this.props.totalUsersCount}
                        pageSize={this.props.pageSize}
                        users={this.props.users}
-                       setUnFollow={this.setUnFollow}
-                       setFollow={this.setFollow}
                        setCurrentPageMethod={this.setCurrentPageMethod}
                        currentPage={this.props.currentPage}
                        checkFollow={this.props.checkFollow}
                        isFetching={this.props.isFetching}
                 />
-            </div>
+            </>
         )
     }
 }
@@ -52,7 +41,6 @@ const mapStateToProps = state => {
         totalUsersCount: getUsersTotalUsersCountS(state),
         currentPage: getUsersCurrentPageS(state),
         isFetching: getUsersIsFetchingS(state),
-        checkFollow: getUsersCheckFollowS(state),
     }
 };
 
@@ -62,13 +50,6 @@ const mapStateToProps = state => {
 // )(withAuthRedirectComponentHOC(UsersAPIContainer);
 
 export default compose(
-    connect(
-        mapStateToProps,
-        {
-            GetUserThunkCreator,
-            SetCurrentPageMethodThunkCreator,
-            SetFollowThunkCreator,
-            SetUnFollowThunkCreator
-        }),
+    connect(mapStateToProps, {GetUserThunkCreator, SetCurrentPageMethodThunkCreator}),
     withAuthRedirectComponentHOC
 )(UsersAPIContainer);

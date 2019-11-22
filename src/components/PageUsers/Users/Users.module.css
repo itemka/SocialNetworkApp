@@ -2,95 +2,17 @@
     width: 500px;
 }
 
-.User {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-content: flex-start;
-    /*background-color: rgba(66, 66, 66,0.8);*/
-    padding: 10px 10px 10px 20px;
-    border-radius: 0;
-
-    border-bottom: 2px solid rgba(66, 66, 66, 0.8);
-}
-
-.User:hover {
-    border-radius: 10px;
-    background-color: rgba(66, 66, 66, 0.8);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-}
-
-.User img {
-    border-radius: 10px;
-    width: 170px;
-}
-
-.User img:hover {
-    border-radius: 10px;
-    width: 164px;
-    border: 3px solid rgba(66, 66, 66, 0.8);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-}
-
-.UserInfo {
-    margin: 20px 0 0 20px;
-}
-
-.buttonUserFollowed {
-    color: #ffffff;
-    border: 0;
-    border-radius: 3px;
-    padding: 5px 15px 5px 15px;
-    background-color: rgba(7, 141, 205, 0.5);
-    margin: 10px 0 0 0;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.buttonUserFollowed:active {
-    background-color: rgba(66, 66, 66, 0.8);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-}
-
-.nameUser {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.buttons {
-    margin: 0 5px 0 5px;
-}
-
-.buttonNoActive {
-    color: #ffffff;
-    border: 0;
-    border-radius: 3px;
-    padding: 5px 15px 5px 15px;
-    background-color: rgba(66, 66, 66, 0.8);
-    margin: 10px 0 0 0;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.buttonNoActive:active {
-    background-color: red;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-}
-
 .center {
     text-align: center;
 }
-
-.requestLoad {
-    background-color: rgba(0,10,200,0.49);
-}
-
-.followOK {
-    color: lawngreen;
-}
-.followNOTOK {
-    color: orangered;
+.nextPage {
+    align-items: center;
+    background-color: #f3c26b;;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px 5px 0 5px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.30), 0 5px 5px rgba(0, 0, 0, 0.30);
 }

@@ -1,0 +1,24 @@
+.buttons {
+    color: #ffffff;
+    border: 0;
+    width: 60px;
+    border-radius: 3px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px 5px 0 5px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.buttonNoActive {
+    background-color: rgba(66, 66, 66, 0.8);
+}
+
+.buttonUserFollowed {
+    background-color: rgba(7, 141, 205, 0.5);
+}
+
+.buttonNoActive:active {
+    background-color: red;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
