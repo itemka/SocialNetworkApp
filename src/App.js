@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import './App.css';
 import {HashRouter, Redirect, Route} from "react-router-dom";
 import PageProfileContainer from "./components/PageProfile/PageProfileContainer";
 import PageUsers from "./components/PageUsers/PageUsers";
 import HeaderContainer from "./components/Header/HeaderContainer";
-import PageDialogueContainer from "./components/PageDialogue/PageDialogueContainer";
 import LoginContainer from "./components/Login/LoginContainer";
 import {checkUserDataThunkCreator} from "./Redux/AuthReducer";
 import {connect, Provider} from "react-redux";
@@ -13,6 +12,9 @@ import {withRouter} from "react-router-dom";
 import {initializedTC} from "./Redux/AppReducer";
 import Preloader from "./components/Common/Preloader/Preloader";
 import store from "./Redux/StoreRedux";
+
+import {withSuspense} from "./hoc/withSuspense";
+const PageDialogueContainer = lazy(() => import('./components/PageDialogue/PageDialogueContainer'));
 
 class App extends React.Component {
     componentDidMount = () => this.props.initializedTC();
@@ -24,7 +26,7 @@ class App extends React.Component {
                 <HeaderContainer/>
                 <div className={'Content'}>
                     <Route path='/profile/:userId?' render={() => <PageProfileContainer/>}/>
-                    <Route path='/messages' render={() => <PageDialogueContainer/>}/>
+                    <Route path='/messages' render={() => withSuspense(PageDialogueContainer)}/>
                     <Route path='/users' render={() => <PageUsers/>}/>
                     <Route path='/login' render={() => <LoginContainer/>}/>
                 </div>

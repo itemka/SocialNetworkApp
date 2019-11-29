@@ -1,4 +1,4 @@
-.PageProfile{
+.PageProfile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,8 @@
     /*        "SiteBarLeft Posts SiteBarRight";*/
     /*background-color: rgba(255,255,255,0.2);*/
 }
-.AfterCover{
+
+.AfterCover {
     display: flex;
     flex-direction: row;
     justify-content: center;

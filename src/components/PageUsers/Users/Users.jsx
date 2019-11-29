@@ -24,11 +24,9 @@ export const Users = ({totalUsersCount, pageSize, users, currentPage, setCurrent
                 {pagesCounterArray
                     .filter(pageN => pageN >= leftPortionPageNumber && pageN <= rightPortionPageNumber)
                     .map(pageNumber => {
-                            // if (((pageNumber >= props.currentPage - 1) && (pageNumber <= props.currentPage + 1)) || (pageNumber === props.currentPage)) {
                             return <PaginatorsButton key={pageNumber} pageNumber={pageNumber}
                                                      currentPage={currentPage}
                                                      callback={() => setCurrentPageMethod(pageNumber)}/>
-                            // }
                         }
                     )}
                 {portionCount > portionNumber &&

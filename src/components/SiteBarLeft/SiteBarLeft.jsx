@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const SiteBarLeft = (props) => {
     let listPages = props.siteBarLeft.listPages.map(item =>
         <NavLink key={item.id} to={`/${item.path}`} activeClassName={css.active}>
-            <div className={css.item}> {`(idPage=${item.id}) ${item.page}`} </div>
+            <div className={css.item}> {`${item.page}`} </div>
         </NavLink>
     );
     return (

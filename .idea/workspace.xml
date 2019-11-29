@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Files/Images/nextPage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/User/User.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/User/User.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/User/UserContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.ef310f84c5d8f0571869d18d48bb05a2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.f508f601.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.f508f601.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.694223cb.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.694223cb.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.bad22e5f.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.bad22e5f.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withSuspense.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/SiteBarLeftReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Preloader/Preloader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.ae08fa869f1ab5e5b4bb82c4bfbd6062.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.86d385c1.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.86d385c1.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/Spinner42px.a1652bca.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +55,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -245,7 +256,9 @@
       <workItem from="1573596952755" duration="33349000" />
       <workItem from="1574107581997" duration="618000" />
       <workItem from="1574118887994" duration="8711000" />
-      <workItem from="1574426942203" duration="11616000" />
+      <workItem from="1574426942203" duration="12799000" />
+      <workItem from="1574499988639" duration="9536000" />
+      <workItem from="1575033467978" duration="4543000" />
     </task>
     <servers />
   </component>
