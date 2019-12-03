@@ -8,7 +8,8 @@ import {compose} from "redux";
 import {getAuthUserIdS} from "../../Redux/AuthSelectors";
 
 class PageProfileContainer extends React.Component {
-    componentDidMount() {
+
+    refreshProfile = () => {
         let userId = this.props.match.params.userId;
         if (!userId) {
             userId = this.props.userId;
@@ -18,6 +19,14 @@ class PageProfileContainer extends React.Component {
         }
         this.props.GetUserProfileThunkCreator(userId);
         this.props.SetStatusProfilePageThunkCreator(userId);
+    };
+
+    componentDidMount() {
+        this.refreshProfile()
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.match.userId !== prevProps.match.params.userId) this.refreshProfile()
     }
 
     render() {
