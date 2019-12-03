@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import css from './ProfileInfo.module.css';
+import css from './ProfileStatusWithHooc.module.css';
 
 const ProfileStatusWithHooks = (props) => {
 
     let [editMode, setEditMode] = useState(false);
     let [statusText, setStatusText] = useState(props.status);
 
-    useEffect(()=>{
+    useEffect(() => {
         setStatusText(props.status)
     }, [props.status]);//зависит от props.status  и если изменится, то вызовится useEffect повторно
 
@@ -18,8 +18,8 @@ const ProfileStatusWithHooks = (props) => {
     };
 
     return (
-        <div className={css.status}>
-            Status: {editMode
+        <span className={css.status}>
+            <b>Status:</b> {editMode
             ? <input type="text"
                      autoFocus={true}
                      onChange={changeStatus}
@@ -27,7 +27,7 @@ const ProfileStatusWithHooks = (props) => {
                      value={statusText}/>
             : <span
                 onClick={activateEditMode}>{`${statusText ? statusText : ' _empty_'}`}</span>}
-        </div>
+        </span>
     )
 };
 

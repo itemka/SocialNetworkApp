@@ -1,17 +1,19 @@
 import {profileAPI} from "../API/API";
-
+import {stopSubmit} from "redux-form";
 
 // const CHANGE_POST = 'SN/PROFILE/CHANGE_POST';
 const ADD_POST = 'SN/PROFILE/ADD_POST';
 const SET_USER_PROFILE = 'SN/PROFILE/SET_USER_PROFILE';
 const STATUS = 'SN/PROFILE/STATUS';
 const DELETE_POST = 'SN/PROFILE/DELETE_POST';
+const SET_ERROR = 'SN/PROFILE/SET_ERROR';
 
 // export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
 export const onClickAddPostActionCreator = message => ({type: ADD_POST, message});
 export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: profile});
 export const setStatus = statusText => ({type: STATUS, statusText: statusText});
 export const deletePost = postsId => ({type: DELETE_POST, postsId});
+export const setError = error => ({type: SET_ERROR, error});
 
 export const GetUserProfileThunkCreator = userId => async dispatch => {
     let responseData = await profileAPI.getUserProfileAPI(userId);
@@ -24,6 +26,25 @@ export const SetStatusProfilePageThunkCreator = (userId) => async dispatch => {
 export const UpdateStatusProfilePageThunkCreator = (statusText) => async dispatch => {
     let responseData = await profileAPI.updateStatus(statusText);
     if (responseData.resultCode === 0) dispatch(setStatus(statusText));
+};
+
+export const SaveProfileThunkCreator = profile => async (dispatch, getState) => {
+    try {
+        let userId = getState().authUserData.userId;
+        let responseData = await profileAPI.saveProfile(profile);
+
+        if (responseData.resultCode === 0) {
+            dispatch(GetUserProfileThunkCreator(userId));
+            dispatch(setError(``));
+        } else {
+            // let contactsKey = responseData.messages[0].split(`->`)[1].split(`)`)[0].toLowerCase();
+            dispatch(stopSubmit(`editProfile`, {_error: responseData.messages[0]}));
+            dispatch(setError(responseData.messages[0]));
+            return Promise.reject(responseData.messages[0])
+        }
+    } catch (err) {
+        console.error(err)
+    }
 };
 
 let initialState = {
@@ -136,6 +157,7 @@ let initialState = {
     ],
     profile: null,
     status: null,
+    error: ``,
 };
 
 const ProfileReducer = (state = initialState, action) => {
@@ -172,6 +194,11 @@ const ProfileReducer = (state = initialState, action) => {
         case SET_USER_PROFILE: {
             return {...state, profile: action.profile}
         }
+        case SET_ERROR:
+            return {
+                ...state,
+                error: action.error
+            };
         // case CHANGE_POST: {
         //     let stateCopy = {   //let stateCopy = cloneObject(state);
         //         ...state,

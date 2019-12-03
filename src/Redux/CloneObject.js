@@ -1,4 +1,4 @@
-const Clone = obj => {
+export const Clone = obj => {
     let copy;
 
     // Handle the 3 simple types, and null or undefined
@@ -30,5 +30,3 @@ const Clone = obj => {
 
     throw new Error("Unable to copy obj! Its type isn't supported.");
 };
-
-export default Clone;

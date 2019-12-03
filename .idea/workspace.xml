@@ -2,31 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/precache-manifest.ef310f84c5d8f0571869d18d48bb05a2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.f508f601.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.f508f601.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.694223cb.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.694223cb.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.bad22e5f.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.bad22e5f.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withSuspense.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.d680872aa06a864e2f727456342a1b71.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.bceaa315.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.bceaa315.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.5090ed51.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.5090ed51.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.365c1466.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.365c1466.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/Contact/Contact.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/Contact/Contact.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus/ProfileStatusWithHooc.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.ae08fa869f1ab5e5b4bb82c4bfbd6062.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.ef310f84c5d8f0571869d18d48bb05a2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.86d385c1.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.86d385c1.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.19db22e6.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.e2285f7f.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/Spinner42px.a1652bca.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.f508f601.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.f508f601.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.694223cb.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.694223cb.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.bad22e5f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.bad22e5f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteBarLeft/SiteBarLeft.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/CloneObject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/CloneObject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/ProfileSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/FormsControls/FormsControls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo/CoverWithProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/Posts/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus/ProfileStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus/ProfileStatus.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatusWithHooc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus/ProfileStatusWithHooc.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +70,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,18 +83,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
       <recent name="$PROJECT_DIR$/src/Files/Images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/SiteBarRight/WindowFriends" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton" />
-      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users/User" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
-      <recent name="$PROJECT_DIR$/src/Redux" />
-      <recent name="$PROJECT_DIR$/src/components/Common/FormsControls" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/Contact" />
+      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,7 +110,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Jest.ProfileStatusWithHooc component.callback should be called">
-    <configuration name="ProfileStatusWithHooc component.callback should be called" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileStatusWithHooc component.callback should be called" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -167,7 +182,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.ProfileStatusWithHooc component.callback should be called" />
         <item itemvalue="Jest.ProfileStatusWithHooc component.input should be displayed into edit mod instead of span" />
         <item itemvalue="Jest.ProfileStatusWithHooc component.input should be displayed into edit mod" />
         <item itemvalue="Jest.ProfileStatusWithHooc component.input isn't should be render" />
@@ -258,7 +272,8 @@
       <workItem from="1574118887994" duration="8711000" />
       <workItem from="1574426942203" duration="12799000" />
       <workItem from="1574499988639" duration="9536000" />
-      <workItem from="1575033467978" duration="4543000" />
+      <workItem from="1575033467978" duration="17124000" />
+      <workItem from="1575371484130" duration="17445000" />
     </task>
     <servers />
   </component>

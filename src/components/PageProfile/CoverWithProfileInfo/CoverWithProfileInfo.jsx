@@ -5,7 +5,7 @@ import ProfileInfoContainer from "../ProfileInfo/ProfileInfoContainer";
 const CoverWithProfileInfo = () => {
     return (
         <div className={css.CoverWithProfileInfo}>
-            <ProfileInfoContainer />
+            <ProfileInfoContainer/>
         </div>
     );
 };

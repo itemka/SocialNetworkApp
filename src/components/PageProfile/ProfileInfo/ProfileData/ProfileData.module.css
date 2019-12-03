@@ -1,0 +1,22 @@
+.listProfileInfo {
+    grid-area: listProfileInfo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nameProfile {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.profileImg {
+    height: 350px;
+    grid-area: ProfileInfo_img;
+}
+.profileImg:hover{
+    height: 348px;
+    border: 1px solid #2bcabc;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './ProfileInfo.module.css';
+import css from '../ProfileInfo.module.css';
 
 class ProfileStatus extends React.Component {
     componentDidUpdate(prevProps, prevState, snapshot) {

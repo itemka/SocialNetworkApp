@@ -16,3 +16,6 @@ export const getProfileNewPostS = (state) => {
 export const getProfileTypingS = (state) => {
     return state.pageProfile.typing;
 };
+export const getProfileError = state => {
+    return state.pageProfile.error
+};

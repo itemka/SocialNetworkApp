@@ -7,7 +7,6 @@ import manWithBeard from "../../../Files/Images/manBeard.jpg";
 
 //React.memo: if props or this.state not changing -> not render again
 const Posts = React.memo(props => {
-    console.log('qwe');
     // let reversePosts = props.posts.reverse();
     let post = props.posts.map(item => <Post key={item.id}
                                              id={item.id} text={item.text} like={item.like}

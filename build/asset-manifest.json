@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SocialNetworkApp/static/css/main.f508f601.chunk.css",
-    "main.js": "/SocialNetworkApp/static/js/main.bad22e5f.chunk.js",
-    "main.js.map": "/SocialNetworkApp/static/js/main.bad22e5f.chunk.js.map",
+    "main.css": "/SocialNetworkApp/static/css/main.bceaa315.chunk.css",
+    "main.js": "/SocialNetworkApp/static/js/main.365c1466.chunk.js",
+    "main.js.map": "/SocialNetworkApp/static/js/main.365c1466.chunk.js.map",
     "runtime~main.js": "/SocialNetworkApp/static/js/runtime~main.966b10e4.js",
     "runtime~main.js.map": "/SocialNetworkApp/static/js/runtime~main.966b10e4.js.map",
-    "static/js/2.694223cb.chunk.js": "/SocialNetworkApp/static/js/2.694223cb.chunk.js",
-    "static/js/2.694223cb.chunk.js.map": "/SocialNetworkApp/static/js/2.694223cb.chunk.js.map",
+    "static/js/2.5090ed51.chunk.js": "/SocialNetworkApp/static/js/2.5090ed51.chunk.js",
+    "static/js/2.5090ed51.chunk.js.map": "/SocialNetworkApp/static/js/2.5090ed51.chunk.js.map",
     "index.html": "/SocialNetworkApp/index.html",
-    "precache-manifest.ef310f84c5d8f0571869d18d48bb05a2.js": "/SocialNetworkApp/precache-manifest.ef310f84c5d8f0571869d18d48bb05a2.js",
+    "precache-manifest.d680872aa06a864e2f727456342a1b71.js": "/SocialNetworkApp/precache-manifest.d680872aa06a864e2f727456342a1b71.js",
     "service-worker.js": "/SocialNetworkApp/service-worker.js",
-    "static/css/main.f508f601.chunk.css.map": "/SocialNetworkApp/static/css/main.f508f601.chunk.css.map",
+    "static/css/main.bceaa315.chunk.css.map": "/SocialNetworkApp/static/css/main.bceaa315.chunk.css.map",
     "static/media/Preloader.svg": "/SocialNetworkApp/static/media/Preloader.0cfb3a5f.svg",
     "static/media/manBeard.jpg": "/SocialNetworkApp/static/media/manBeard.55bb4191.jpg",
     "static/media/manBeard.png": "/SocialNetworkApp/static/media/manBeard.728ca8a3.png"
