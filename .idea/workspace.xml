@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Files/Images/404errorPage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/Error404/Error404.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Common/Error404/Error404.modules.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/AuthSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton/PaginatorsButton.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +39,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Common/Error404" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,16 +52,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Common/Error404" />
       <recent name="$PROJECT_DIR$/src/components/Login" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData" />
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/Contact" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Files/Images" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
-      <recent name="$PROJECT_DIR$/src/Files/Images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
     </key>
@@ -240,7 +243,7 @@
       <workItem from="1574499988639" duration="9536000" />
       <workItem from="1575033467978" duration="17124000" />
       <workItem from="1575371484130" duration="26615000" />
-      <workItem from="1575452278073" duration="7039000" />
+      <workItem from="1575452278073" duration="13302000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,8 @@
   "homepage": "https://itemka.github.io/SocialNetworkApp",
   "dependencies": {
     "axios": "^0.19.0",
+    "classname": "0.0.0",
+    "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",

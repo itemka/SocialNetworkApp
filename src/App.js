@@ -1,6 +1,6 @@
 import React, {lazy} from 'react';
 import './App.css';
-import {HashRouter, Redirect, Route} from "react-router-dom";
+import {HashRouter, NavLink, Redirect, Route, Switch} from "react-router-dom";
 import PageProfileContainer from "./components/PageProfile/PageProfileContainer";
 import PageUsers from "./components/PageUsers/PageUsers";
 import HeaderContainer from "./components/Header/HeaderContainer";
@@ -13,6 +13,7 @@ import {initializedTC} from "./Redux/AppReducer";
 import Preloader from "./components/Common/Preloader/Preloader";
 import store from "./Redux/StoreRedux";
 import PageDialogueContainer from "./components/PageDialogue/PageDialogueContainer";
+import {Error404} from "./components/Common/Error404/Error404";
 //import {withSuspense} from "./hoc/withSuspense";
 // const PageDialogueContainer = lazy(() => import('./components/PageDialogue/PageDialogueContainer'));
 
@@ -25,12 +26,15 @@ class App extends React.Component {
             <div className={'app_wrapper'}>
                 <HeaderContainer/>
                 <div className={'Content'}>
-                    <Route path='/profile/:userId?' render={() => <PageProfileContainer/>}/>
-                    <Route path='/messages' render={() => <PageDialogueContainer/>}/>
-                    <Route path='/users' render={() => <PageUsers/>}/>
-                    <Route path='/login' render={() => <LoginContainer/>}/>
+                    <Switch>
+                        <Route exact path='/' render={() => <Redirect to={'/profile'}/>}/>
+                        <Route path='/profile/:userId?' render={() => <PageProfileContainer/>}/>
+                        <Route path='/messages' render={() => <PageDialogueContainer/>}/>
+                        <Route path='/users' render={() => <PageUsers/>}/>
+                        <Route path='/login' render={() => <LoginContainer/>}/>
+                        <Route path='*' render={() => <Error404/>}/>
+                    </Switch>
                 </div>
-                <Redirect to={'/profile'}/>
             </div>
         );
     }
