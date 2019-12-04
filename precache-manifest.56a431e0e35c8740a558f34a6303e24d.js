@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f54bd4f9f02929d7475224e9a090de33",
+    "revision": "ec04d949810e69ce02147fd773fe4fb6",
     "url": "/SocialNetworkApp/index.html"
   },
   {
-    "revision": "34e9b01b2c32067fd1e8",
-    "url": "/SocialNetworkApp/static/css/main.4c768839.chunk.css"
+    "revision": "eaa510be293d62114969",
+    "url": "/SocialNetworkApp/static/css/main.572e2c88.chunk.css"
   },
   {
-    "revision": "825e68f2ce02161288ce",
-    "url": "/SocialNetworkApp/static/js/2.1b5556b4.chunk.js"
+    "revision": "89c61304fcad33d6e72f",
+    "url": "/SocialNetworkApp/static/js/2.119bd043.chunk.js"
   },
   {
-    "revision": "34e9b01b2c32067fd1e8",
-    "url": "/SocialNetworkApp/static/js/main.2883efb4.chunk.js"
+    "revision": "eaa510be293d62114969",
+    "url": "/SocialNetworkApp/static/js/main.a268203d.chunk.js"
   },
   {
     "revision": "72010298f9fffa750bbf",
     "url": "/SocialNetworkApp/static/js/runtime~main.966b10e4.js"
+  },
+  {
+    "revision": "3f4505ca7e06a9ed68bde7a46defe988",
+    "url": "/SocialNetworkApp/static/media/404errorPage.3f4505ca.jpg"
   },
   {
     "revision": "0cfb3a5fd0f426bdba7f46a8722498ae",
