@@ -9,7 +9,7 @@ class LoginContainer extends React.Component {
     onSubmit = formData => {
         this.props.isAuth
             ? this.props.logOutThunkCreator()
-            : this.props.logInThunkCreator(formData.Email, formData.Password, formData.Remember, this.props.isAuth);
+            : this.props.logInThunkCreator(formData.email, formData.password, formData.remember, formData.captcha, this.props.isAuth);
     };
 
     render() {

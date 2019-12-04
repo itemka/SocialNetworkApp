@@ -13,3 +13,6 @@ export const getAuthUserUserPhotoS = (state) => {
 export const getAuthUserIsOwner = (state) => {
     return state.authUserData.isOwner;
 };
+export const getCaptchaUrl = (state) => {
+    return state.authUserData.captchaUrl;
+};

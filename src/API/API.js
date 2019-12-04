@@ -20,11 +20,10 @@ export const userAPI = {
 };
 export const authAPI = {
     setUserDataAPI: () => instance.get(`auth/me`).then(response => response.data),
-    login: (email, password, rememberMe = false) => instance.post(`auth/login`, {
-        email,
-        password,
-        rememberMe
-    }).then(response => response.data),
+    login: (email, password, rememberMe = false, captcha = null) => instance.post(`auth/login`,
+        {
+            email, password, rememberMe, captcha
+        }).then(response => response.data),
     logout: () => instance.delete(`auth/login`).then(response => response.data)
 };
 export const profileAPI = {
@@ -42,4 +41,8 @@ export const profileAPI = {
             }
         }).then(response => response.data)
     },
+};
+
+export const securityAPI = {
+    getCaptcha: () => instance.get(`security/get-captcha-url`).then(response => response.data)
 };
