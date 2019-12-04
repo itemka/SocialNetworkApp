@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.4c768839.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.4c768839.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.1b5556b4.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.1b5556b4.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.2883efb4.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.2883efb4.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/LoginForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/AuthSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/ProfileSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.d680872aa06a864e2f727456342a1b71.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/precache-manifest.59bdb397efcf849d8250182f2e18244e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.bceaa315.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.bceaa315.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.5090ed51.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.5090ed51.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.365c1466.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.365c1466.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +50,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Login" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,19 +62,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Login" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData" />
+      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/Contact" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/PageProfile/CoverWithProfileInfo" />
       <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
       <recent name="$PROJECT_DIR$/src/Files/Images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/PageUsers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo" />
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileStatus" />
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData" />
-      <recent name="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/Contact" />
-      <recent name="$PROJECT_DIR$/src/components/PageUsers/Users/PaginatorsButton" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,7 +253,8 @@
       <workItem from="1574426942203" duration="12799000" />
       <workItem from="1574499988639" duration="9536000" />
       <workItem from="1575033467978" duration="17124000" />
-      <workItem from="1575371484130" duration="26198000" />
+      <workItem from="1575371484130" duration="26615000" />
+      <workItem from="1575452278073" duration="1585000" />
     </task>
     <servers />
   </component>
