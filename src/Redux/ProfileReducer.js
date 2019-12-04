@@ -7,6 +7,8 @@ const SET_USER_PROFILE = 'SN/PROFILE/SET_USER_PROFILE';
 const STATUS = 'SN/PROFILE/STATUS';
 const DELETE_POST = 'SN/PROFILE/DELETE_POST';
 const SET_ERROR = 'SN/PROFILE/SET_ERROR';
+const SET_OTHER_PEOPLE_ID = `SN/PROFILE/SET_OTHER_PEOPLE_ID`;
+const SAVE_PHOTO_SUCCESS = `SN/PROFILE/SAVE_PHOTO_SUCCESS`;
 
 // export const onChangePostActionCreator = textNewPost => ({type: CHANGE_POST, newPost: textNewPost,});
 export const onClickAddPostActionCreator = message => ({type: ADD_POST, message});
@@ -14,10 +16,13 @@ export const setUserProfile = profile => ({type: SET_USER_PROFILE, profile: prof
 export const setStatus = statusText => ({type: STATUS, statusText: statusText});
 export const deletePost = postsId => ({type: DELETE_POST, postsId});
 export const setError = error => ({type: SET_ERROR, error});
+export const setOtherPeopleId = otherId => ({type: SET_OTHER_PEOPLE_ID, otherId});
+export const savePhotoSuccess = photos => ({type: SAVE_PHOTO_SUCCESS, photos});
 
 export const GetUserProfileThunkCreator = userId => async dispatch => {
     let responseData = await profileAPI.getUserProfileAPI(userId);
     dispatch(setUserProfile(responseData));
+    dispatch(setOtherPeopleId(userId));
 };
 export const SetStatusProfilePageThunkCreator = (userId) => async dispatch => {
     let responseData = await profileAPI.setStatus(userId);
@@ -42,6 +47,14 @@ export const SaveProfileThunkCreator = profile => async (dispatch, getState) => 
             dispatch(setError(responseData.messages[0]));
             return Promise.reject(responseData.messages[0])
         }
+    } catch (err) {
+        console.error(err)
+    }
+};
+export const SavePhotoThunk = photo => async dispatch => {
+    try {
+        let responseData = await profileAPI.savePhoto(photo);
+        if (responseData.resultCode === 0) dispatch(savePhotoSuccess(responseData.data.photos))
     } catch (err) {
         console.error(err)
     }
@@ -158,10 +171,26 @@ let initialState = {
     profile: null,
     status: null,
     error: ``,
+    otherPeopleId: null,
 };
 
 const ProfileReducer = (state = initialState, action) => {
     switch (action.type) {
+        case SAVE_PHOTO_SUCCESS:
+            return {
+                ...state,
+                profile: {...state.profile, photos: action.photos}
+            };
+        case SET_OTHER_PEOPLE_ID:
+            return {
+                ...state,
+                otherPeopleId: action.otherId
+            };
+        case SET_ERROR:
+            return {
+                ...state,
+                error: action.error
+            };
         case DELETE_POST:
             return {
                 ...state,
@@ -194,11 +223,6 @@ const ProfileReducer = (state = initialState, action) => {
         case SET_USER_PROFILE: {
             return {...state, profile: action.profile}
         }
-        case SET_ERROR:
-            return {
-                ...state,
-                error: action.error
-            };
         // case CHANGE_POST: {
         //     let stateCopy = {   //let stateCopy = cloneObject(state);
         //         ...state,

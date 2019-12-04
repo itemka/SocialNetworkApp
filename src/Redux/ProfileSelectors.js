@@ -19,3 +19,6 @@ export const getProfileTypingS = (state) => {
 export const getProfileError = state => {
     return state.pageProfile.error
 };
+export const getProfileOtherPeopleId = state => {
+    return state.pageProfile.otherPeopleId
+};

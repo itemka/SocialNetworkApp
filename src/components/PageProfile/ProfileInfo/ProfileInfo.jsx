@@ -8,7 +8,8 @@ const ProfileInfo = (props) => {
     return (
         <div className={`${css.box} ${css.ProfileInfo}`}>
             {!props.profile ? <Preloader/>
-                : props.editMode ? <ProfileDataFormReduxForm {...props} initialValues={props.profile}/> : <ProfileData {...props}/>
+                : props.editMode ? <ProfileDataFormReduxForm {...props} initialValues={props.profile}/> :
+                    <ProfileData {...props}/>
             }
         </div>
     )

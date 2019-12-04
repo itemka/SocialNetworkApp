@@ -26,7 +26,7 @@ class PageProfileContainer extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.props.match.userId !== prevProps.match.params.userId) this.refreshProfile()
+        if (this.props.match.userId !== prevProps.match.params.userId) this.refreshProfile();
     }
 
     render() {
@@ -38,7 +38,9 @@ class PageProfileContainer extends React.Component {
 // let WithUrlDataContainerComponent = withRouter(PageProfileContainerHOC);
 // const ConnectedPageProfileContainer = connect(null, {GetUserProfileThunkCreator})(WithUrlDataContainerComponent);
 // export default ConnectedPageProfileContainer;
-const mapStateToProps = state => ({userId: getAuthUserIdS(state)});
+const mapStateToProps = state => ({
+    userId: getAuthUserIdS(state),
+});
 export default compose(connect(mapStateToProps, {
         GetUserProfileThunkCreator,
         SetStatusProfilePageThunkCreator

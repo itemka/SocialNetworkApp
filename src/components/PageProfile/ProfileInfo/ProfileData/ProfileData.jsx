@@ -8,8 +8,13 @@ import style3 from "../../../Login/Login.module.css";
 export const ProfileData = props => {
     return (
         <>
-            <img className={css.profileImg}
-                 src={props.profile.photos.large !== null ? props.profile.photos.large : manWithBeard}/>
+            <div>
+                <img className={css.profileImg}
+                     src={props.profile.photos.large !== null ? props.profile.photos.large : manWithBeard}/>
+                <div>
+                    {props.isOwner === props.otherPeopleId ? <input type="file" onChange={props.selectedPhoto}/> : null}
+                </div>
+            </div>
             <div className={css.listProfileInfo}>
                 {props.error && <div className={style3.formError}>{props.error}</div>}
                 <div className={css.nameProfile}>{props.profile.fullName}</div>

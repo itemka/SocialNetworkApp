@@ -5,10 +5,10 @@ import SiteBarLeftContainer from "../SiteBarLeft/SiteBarLeftContainer";
 import PostsContainer from "./Posts/PostsContainer";
 import SiteBarRightContainer from "../SiteBarRight/SiteBarRightContainer";
 
-const PageProfile = () => {
+const PageProfile = (props) => {
     return (
         <div className={css.PageProfile}>
-            <CoverWithProfileInfo/>
+            <CoverWithProfileInfo {...props}/>
             <div className={css.AfterCover}>
                 <SiteBarLeftContainer/>
                 <PostsContainer/>

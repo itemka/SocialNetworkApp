@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d5c6afb4-7191-4eb2-bbaf-b6d364f6204e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/AuthSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/AuthSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/ProfileSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ProfileSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageProfile/PageProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/PageProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileData/ProfileData.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileDataForm/ProfileDataForm.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageProfile/ProfileInfo/ProfileInfoContainer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +247,7 @@
       <workItem from="1574426942203" duration="12799000" />
       <workItem from="1574499988639" duration="9536000" />
       <workItem from="1575033467978" duration="17124000" />
-      <workItem from="1575371484130" duration="18301000" />
+      <workItem from="1575371484130" duration="26198000" />
     </task>
     <servers />
   </component>

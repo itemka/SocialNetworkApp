@@ -3,12 +3,14 @@ import {stopSubmit} from "redux-form";
 
 const SET_USER_DATA = 'SN/HEADER/SET_USER_DATA';
 const SET_USER_PHOTO = 'SN/HEADER/SET_USER_PHOTO';
+const SET_IS_OWNER = 'SN/HEADER/SET_IS_OWNER';
 
 export const setUserData = (email, userId, login, isAuth) => ({
     type: SET_USER_DATA,
     data: {email, userId, login, isAuth}
 });
 export const setUserPhoto = userPhoto => ({type: SET_USER_PHOTO, userPhoto: userPhoto});
+export const isOwnerAC = userId => ({type: SET_IS_OWNER, userId});
 
 export const checkUserDataThunkCreator = () => async dispatch => {
     let responseData = await authAPI.setUserDataAPI();
@@ -18,6 +20,7 @@ export const checkUserDataThunkCreator = () => async dispatch => {
         let userId = responseData.data.id;
         let login = responseData.data.login;
         dispatch(setUserData(email, userId, login, true));
+        dispatch(isOwnerAC(userId));
 
         let profilePhotoData = await profileAPI.getProfilePhotoAPI(userId);
         dispatch(setUserPhoto(profilePhotoData.photos.small));
@@ -38,6 +41,9 @@ export const logOutThunkCreator = () => async dispatch => {
         dispatch(setUserData(null, null, null, false));
     }
 };
+// export const SetIsOwnerThunk = userId => dispatch => {
+//     dispatch(isOwnerAC(userId))
+// };
 
 let initialState = {
     userId: null,
@@ -45,6 +51,7 @@ let initialState = {
     login: null,
     isAuth: false,
     userPhoto: null,
+    isOwner: null,
 };
 
 const AuthReducer = (state = initialState, action) => {
@@ -58,6 +65,11 @@ const AuthReducer = (state = initialState, action) => {
             return {
                 ...state,
                 userPhoto: action.userPhoto,
+            };
+        case SET_IS_OWNER:
+            return {
+                ...state,
+                isOwner: action.userId,
             };
         default: {
             return state;

@@ -16,12 +16,12 @@
 }
 
 .profileImg {
-    height: 350px;
+    height: 300px;
     grid-area: ProfileInfo_img;
 }
 
 .profileImg:hover {
-    height: 348px;
+    height: 298px;
     border: 1px solid #2bcabc;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }

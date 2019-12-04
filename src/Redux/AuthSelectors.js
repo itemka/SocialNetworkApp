@@ -10,3 +10,6 @@ export const getAuthUserLoginS = (state) => {
 export const getAuthUserUserPhotoS = (state) => {
     return state.authUserData.userPhoto;
 };
+export const getAuthUserIsOwner = (state) => {
+    return state.authUserData.isOwner;
+};

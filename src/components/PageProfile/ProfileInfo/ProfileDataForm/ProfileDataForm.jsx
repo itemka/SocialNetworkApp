@@ -13,8 +13,13 @@ const maxLength15 = maxLengthCreator(15);
 const ProfileDataForm = props => {
     return (
         <form onSubmit={props.handleSubmit} className={style.box}>
-            <img className={css.profileImg}
-                 src={props.profile.photos.large !== null ? props.profile.photos.large : manWithBeard}/>
+            <div>
+                <img className={css.profileImg}
+                     src={props.profile.photos.large !== null ? props.profile.photos.large : manWithBeard}/>
+                <div>
+                    {props.isOwner === props.otherPeopleId ? <input type="file" onChange={props.selectedPhoto}/> : null}
+                </div>
+            </div>
             <div className={css.listProfileInfo}>
                 <div>
                     <div>
